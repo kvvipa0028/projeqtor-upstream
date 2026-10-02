@@ -495,7 +495,7 @@ function jsonDumpObj($obj, $included=false, $parentObj=null, $selectedFields=nul
       // Nothing - filed already exists on parent object, so avoid dupplicate
     } else {
       if ($fld=='name' and property_exists($obj, '_isNameTranslatable') and $obj->_isNameTranslatable) {
-        $val=i18n($val);
+        $val=i18nListName(get_class($obj), $val);
       }
       $isFk=isForeignKey($fld,get_class($obj));
       $fkwa=foreignKeyWithoutAlias($fld);

@@ -258,5 +258,8 @@
 | Accountable | 问责 | RACI 的 A。有的团队写成“最终负责” |
 | Provider | 供应商 | 采购语境里“供方”也对，已统一为供应商 |
 | Bill | 客户发票 | 口语里也说“账单”。与 Invoice 对齐为发票 |
-| Hight priority | 高优先级 | 数据库原文拼写就是 Hight，译文按“高”处理 |
+| Hight priority | 高优先级 | 仅未升级的旧库仍可能保留这个拼写，键为 priorityHightPriority。V2.4.0 起库内名称是 High priority |
+| High priority | 高优先级 | 升级后的优先级名称，键为 priorityHighPriority |
+| Critical priority | 关键优先级 | V1.3.0 起库内名称。不用“紧急”，以免和紧急程度 urgencyUrgent 重名 |
+| Critical priority (immediate action required) | 关键优先级（需立即处理） | 旧名称，键 priorityCriticalPriorityImmediateActionRequired 仍保留 |
 | Function (resource) | 职能 | 调试日志里的 function tracing 仍是“函数跟踪”，不是职能 |

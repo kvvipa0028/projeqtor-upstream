@@ -362,7 +362,8 @@ $firstColor= '545381';
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../view/js/projeqtorDialogAlertNotification.js');?>"></script>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
   
-    djConfig='modulePaths: {"i18n":"../../tool/i18n",
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              modulePaths: {"i18n":"../../tool/i18n",
                             "i18nCustom":"../../plugin"},
               parseOnLoad: true, 
               isDebug: <?php echo getBooleanValueAsString(Parameter::getGlobalParameter('paramDebugMode'));?>'></script>

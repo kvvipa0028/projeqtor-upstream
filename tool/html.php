@@ -1842,7 +1842,7 @@ function htmlDrawCrossTable($lineObj, $lineProp, $columnObj, $colProp, $pivotObj
   			$breakObj=new $breakClass($test->$break,true);
   			$breakName="";
   			if ($breakObj->name) {
-  			  $breakName=(property_exists($breakObj,'_isNameTranslatable'))?i18n($breakObj->name):$breakObj->name;
+  			  $breakName=(property_exists($breakObj,'_isNameTranslatable'))?i18nListName(get_class($breakObj), $breakObj->name):$breakObj->name;
   			} 
   			//echo '<tr><td class="tabLabel" style="text-align:left;border-top:2px solid #A0A0A0;">' . $breakName  . '</td>';
   			if ($test->$break) {

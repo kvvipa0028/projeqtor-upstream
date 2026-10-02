@@ -274,7 +274,12 @@ function statusColorFormatter(name, idStatus){
 function translateFormatter(value,prefix) {
   if (value) {
     var val=value.split('#!#!#!#!#!#');
-    return i18n(val[0]);
+    var translated=i18n(val[0]);
+    if (translated==('[' + val[0] + ']') && val.length>1 && val[1]) {
+      return val[1];
+    }
+    if (translated==('[' + val[0] + ']')) return val[0];
+    return translated;
   } else {
     return '';
   }

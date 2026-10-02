@@ -1351,6 +1351,7 @@ if ($print) {
           if ($objectClass=='GlobalView' and $id=='id') continue;
           if (!isset($arrayWidth[$numField]) or $arrayWidth[$numField]=='') continue;
           if ($formatter[$numField]=="colorNameFormatter") {
+            $val=projeqtorTranslateColorNameValue($id, $val);
             $disp=colorNameFormatter($val);
             $tab=pq_explode("#split#", $val);
             if (count($tab)>1) {
@@ -1541,6 +1542,9 @@ if ($print) {
         if ($id=='validatedEndDate' and !$val and isset($line['inheritedEndDate']) and $line['inheritedEndDate']) {
           $val=$line['inheritedEndDate'] . '#';
         }
+        if ($formatter[$nbFields]=='colorNameFormatter') {
+          $val=projeqtorTranslateColorNameValue($id, $val);
+        }
         if ($id=='colorNameRunStatus') {
           $split=pq_explode('#', $val);
           foreach ($split as $ix=>$sp) {
@@ -1587,9 +1591,15 @@ if ($print) {
             $isResourceTeam=SqlList::getFieldFromId('ResourceAll', $idResource, 'isResourceTeam');
             $iconClass=($isResourceTeam)?'iconResourceTeam#:#:#:#:#:#':''; // Seperator for iconClass used in projeqtorFormatter.js function formatUpperName()
           }
+          $rawName=$val;
           $val=htmlEncodeJson($val);
           if (property_exists($obj, '_isNameTranslatable') and $obj->_isNameTranslatable) {
-            $val.='#!#!#!#!#!#' . pq_mb_strtoupper(suppr_accents(i18n($val)));
+            $listKey=i18nListTranslationKey(get_class($obj), $rawName);
+            $display=i18nListName(get_class($obj), $rawName);
+            if ($listKey) $val=htmlEncodeJson($listKey);
+            // First segment is the catalog key when one exists, so translateFormatter can call i18n().
+            // The second segment is the caption, used when the name has no catalog key.
+            $val.='#!#!#!#!#!#' . htmlEncodeJson($display);
           } else {
             $nameOupper=pq_mb_strtoupper(suppr_accents($val));
             $val=$iconClass . $nameOupper . '#!#!#!#!#!#' . $val;

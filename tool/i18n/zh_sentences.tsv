@@ -555,7 +555,7 @@ helpSetResponsibleIfSingle	若尚未设置负责人且项目只投入了一个�
 helpShowColorTypeActivity	允许将活动的基本颜色改为活动类型的颜色。
 helpShowHatchOnPlanningBar	若已在该条目上选择此选项，则允许在计划条上显示阴影线
 helpShowIdleDefault	可将&#34显示已关闭&#34默认勾选&#13;不涉及计划界面和工时表&#13;与&#34归档模式&#34&#44 不同，不会显示已关闭项目中的已关闭条目
-helpShowOnlyNotes	在活动流中只显示备注
+helpShowOnlyNotes	在动态中只显示备注
 helpShowPoolLinesToUpdateLeftWork	显示分配在相同要素上的全部资源池行&#44 只能更改剩余工时
 helpShowSubscribedItems	显示你正在关注的条目列表
 helpShowTendersOnVersions	显示一个区域，用于列出产品&#44; 组件&#44; 产品版本和组件版本上关联的招标
@@ -624,7 +624,7 @@ invalidEndDate	结束日期无效
 invalidQuantity	数量无效
 invalidSAMLdefinition	SAML 定义无效。请检查必填参数。
 is	是
-isAccountableOf	是问责人
+isAccountableOf	对其问责
 isJustifiable	此类休假必须提供证明
 isNotPool	这不是资源池
 isNotTheSameThat	与之不同
@@ -691,7 +691,7 @@ minimumThresholdInputError	最低阈值不得超过资源的最低已分配能�
 minutesBefore	分钟前
 missing	缺失
 moduleAbsenceComment	人力资源管理涵盖缺勤的行政跟进。&#10;<br/> 每个被标识为员工的资源都关联一种工作合同类型&#44; 从而获得一定数量的年假。&#10;<br/> 此模块可用于跟踪并确认已获得假期的消耗。
-moduleActivityStreamComment	活动流用于显示条目上的备注和主要更新（创建&#44 状态变更&#44 等），这些内容汇成活动流&#44 并以聊天模式展示。&#10;<br/> 可以查看给定上下文中的全部备注和主要变更（一个项目&#44 全部工单&#44 某个要素&#44 等）。
+moduleActivityStreamComment	动态用于显示条目上的备注和主要更新（创建&#44 状态变更&#44 等），这些内容汇成动态&#44 并以聊天模式展示。&#10;<br/> 可以查看给定上下文中的全部备注和主要变更（一个项目&#44 全部工单&#44 某个要素&#44 等）。
 moduleAgileComment	敏捷模块让你把 Scrum 术语纳入敏捷项目。<br/> 此模块提供可计划的冲刺&#44 便于把敏捷项目融入传统项目，实现灵活的混合管理。<br/>
 moduleBudgetFunctionOfOrgaComment	启用此模块后&#44 项目数据在组织上的汇总不再是全局汇总。<br/> 改为按年度进行&#44 并定义年度目标。<br/> 请注意，实际工时按工时录入年份汇总&#44 其他数值则按项目开始日期的年份汇总。
 moduleChecklistComment	此模块用于确保完成一项操作所必需的步骤都得到考虑。 <br/> 这样就可以&#44 例如&#44 确保质量体系的要求得到妥善处理。
@@ -808,7 +808,7 @@ paramOldPasswordDifferentNew	新密码必须与旧密码不同
 paramPlannedWorkManualType	手动计划的干预将工时录入为
 paramRequestorLimitToContact	将请求人列表限制为仅联系人
 paramSAML_isADFS	IDP 为 ADFS
-paramShowOnlyNotes	在活动流中仅显示备注
+paramShowOnlyNotes	在动态中仅显示备注
 paramSubmitAlertSendToOrganismManager	提交后&#44向组织经理发出警报
 paramSubmitAlertSendToProjectLeader	提交后&#44向项目负责人发出警报
 paramSubmitAlertSendToTeamManager	提交后&#44向团队经理发出警报
@@ -866,7 +866,7 @@ removePoolIntervention	请注意，你将删除资源池投入
 ReopenedAfterRejected	拒绝后重新打开
 ReopenedAfterValidated	验证后重新打开
 reportAdminProject	选择行政项目
-resetActivityStreamParams	这将重置活动流区域的大小
+resetActivityStreamParams	这将重置动态区域的大小
 resourceAlreadyAssigned	该资源已按周期性方式分配
 resourceAlreadyTaken	此会议与资源 '${1}' 的另一会议冲突
 resourceProjectSelected	仅限该项目所选的资源

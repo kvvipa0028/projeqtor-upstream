@@ -40,8 +40,10 @@ $token = RequestHandler::getValue('token');
 if ($token) {
   setSessionValue('passwordResetToken', $token);
 }
-$currentLocale = getSessionValue('currentLocale');
-if (! $currentLocale) $currentLocale = Parameter::getGlobalParameter('defaultLocale');
+if (!isset($currentLocale) or !projeqtorIsSupportedUiLocale($currentLocale)) {
+  $paramDefaultLocale=Parameter::getGlobalParameter('paramDefaultLocale');
+  $currentLocale=projeqtorIsSupportedUiLocale($paramDefaultLocale)?$paramDefaultLocale:'zh';
+}
 
 $pwdR = PasswordResetRequest::getSingleSqlElementFromCriteria('PasswordResetRequest', array('token'=>$token));
 

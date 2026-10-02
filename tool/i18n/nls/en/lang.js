@@ -7196,5 +7196,11 @@ messageLoading: "Loading …",
 buttonChangeSize: "Change size",
 pluginRemoteUnavailable: "Cannot access remote information for the plugin",
 pluginRemoteDisabledByVersionCheck: "Global parameter &#34;check for new version&#34; is disabled&#44 so the remote server will not be contacted.",
+statusRecorded: "Recorded",
+statusDone: "Done",
+statusClosed: "Closed",
+statusCancelled: "Cancelled",
+priorityHighPriority: "High priority",
+priorityCriticalPriority: "Critical priority",
 currentLocaleOfFile: "en"
 }

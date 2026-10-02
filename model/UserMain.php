@@ -1873,9 +1873,11 @@ class UserMain extends SqlElement {
           }
           setSessionValue('currentLocale', $chosenLocale);
         } else if (projeqtorIsSupportedUiLocale($obj->parameterValue)) {
-        setSessionValue('currentLocale', $obj->parameterValue);
+          setSessionValue('currentLocale', $obj->parameterValue);
         } else {
-          setSessionValue('currentLocale', 'zh');
+          $fallbackLocale=Parameter::getGlobalParameter('paramDefaultLocale');
+          if (!projeqtorIsSupportedUiLocale($fallbackLocale)) $fallbackLocale='zh';
+          setSessionValue('currentLocale', $fallbackLocale);
         }
         $i18nMessages=null;
         $appliedUserLang=true;
@@ -1954,6 +1956,11 @@ class UserMain extends SqlElement {
       setSessionValue('currentLocale', $chosenLocale);
       Parameter::storeUserParameter('lang', $chosenLocale, $this->id);
       $i18nMessages=null;
+    }
+    if ($explicitLocale and projeqtorIsSupportedUiLocale($chosenLocale)) {
+      // The choice is now stored on the user. Later logins follow that value
+      // or the global default, instead of keeping this flag forever.
+      unsetSessionValue('localeExplicit');
     }
     // #6864 : purge favorites that refer non existing projects
     FavoriteProjectItem::purgeDeletedProjects();
