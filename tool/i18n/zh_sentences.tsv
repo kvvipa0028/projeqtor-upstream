@@ -287,7 +287,7 @@ errorMandatoryNoteOnStatusChange	保存此状态变更之前必须添加备注�
 errorMandatoryNoteStatusNotInWorkflow	所选状态必须属于此类型的工作流。
 errorMandatoryQuantity	数量为必填
 errorMissingName	阶段划分名称无效
-errorMissingOldDaysInUpdateLeftInLeaveMain	LeaveMain 的剩余更新中缺少 old days
+errorMissingOldDaysInUpdateLeftInLeaveMain	LeaveMain 的剩余更新中缺少原有天数
 errorModeUpdateLeftInLeaveMain	错误 &#58; LeaveMain 中的剩余更新模式
 errorMonthValidated	该月份已锁定
 errorMultiSelectProject	当前选择器格式不支持多选。请使用单选，或将选择器切换为标准模式。
