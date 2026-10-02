@@ -94,6 +94,10 @@ if (strpos($id, 'batch') === 0) {
   }
 } else {
   setSessionValue($id, $value);
+  if (($id=='currentLocale' or $id=='lang') and function_exists('projeqtorIsSupportedUiLocale') and projeqtorIsSupportedUiLocale($value)) {
+    setSessionValue('localeExplicit', '1');
+    projeqtorRememberLocale($value);
+  }
   if (pq_substr($id,0,11)=='contentPane' and $screenWidth) setSessionValue($id.$screenWidth, $value);
   if ($id=='browserLocaleDateFormat') {
     //setSessionValue('browserLocaleDateFormatJs', pq_str_replace(array('D','Y'), array('d','y'), $value));

@@ -1,0 +1,493 @@
+# Reviewed captions for menus, buttons, messages and confirmations.
+# Placeholders and HTML are copied from the English bundle.
+menuAbacus	测算表
+menuAbacusDefinition	测算表定义
+menuAbacusLine	测算表填报
+menuAbacusPhase	阶段内容
+menuAbsence	缺勤
+menuAcceptance	验收
+menuAcceptanceType	验收类型
+menuActivityExpense	活动费用
+menuActivityExpenseType	活动费用类型
+menuAdministration	系统配置
+menuAgile	敏捷 Scrum
+menuAsset	资产
+menuAssetCategory	资产类别
+menuAssetManagement	资产管理
+menuAssetManagment	资产管理
+menuAssetType	资产类型
+menuAssignment	分配
+menuAssumption	假设
+menuAssumptionType	假设类型
+menuAutoSendReport	计划报表
+menuBrand	品牌
+menuBrightnessClear	浅色
+menuBrightnessColor	亮度
+menuBrightnessDark	深色
+menuCatalogUO	工作单元目录
+menuChangeRequest	变更请求
+menuChangeRequestType	变更请求类型
+menuClientContract	客户合同
+menuClientContractType	客户合同类型
+menuConstraint	约束
+menuConstraintType	约束类型
+menuConsultationPlannedWorkManual	查看干预
+menuConsultationValidation	月度汇总
+menuCriticalResources	关键资源
+menuCrmProspect	客户关系
+menuDashboardEmployeeManager	休假仪表板
+menuDataCloning	克隆环境管理
+menuDataCloningParameter	环境克隆参数
+menuDecisionMakerProspect	决策人
+menuDocumentExplorer	文档浏览器
+menuDocumentRight	各目录的文档权限
+menuDocumentVersion	文档版本
+menuDomainProspect	领域
+menuEmployee	员工
+menuEmployeeLeaveEarned	已获得的休假额度
+menuEmployeeManager	员工经理
+menuEmploymentContract	劳动合同
+menuEmploymentContractEndReason	劳动合同结束原因
+menuEmploymentContractType	劳动合同类型
+menuEngagement	承诺
+menuEpic	史诗
+menuEpicType	史诗类型
+menuGanttClientContract	客户合同甘特图
+menuGanttSupplierContract	供应商合同甘特图
+menuHierarchicalBudget	层级预算
+menuHierarchicalSkill	层级技能
+menuHumanResource	人力资源
+menuHumanResourceNav	HR
+menuHumanResourceParameters	HR 参数
+menuImputationValidation	工时表确认
+menuIncomingMail	收件
+menuIncomingMailType	收件类型
+menuIndicators	指标
+menuInputMailbox	工单收件邮箱
+menuInputMailboxImport	导入收件邮箱
+menuInputMailboxTicket	工单收件邮箱
+menuInterrogationTitle	访问新闻&#44快捷方式和关于…
+menuInterventionMode	干预模式
+menuKanban	看板
+menuLanguageSkillLevel	语言技能级别
+menuLeave	休假期间
+menuLeaveCalendar	休假日历
+menuLeavesSystemHabilitation	休假系统授权
+menuLeaveSystem	休假系统
+menuLeaveType	休假类型
+menuLessonLearned	经验教训
+menuLessonLearnedType	经验教训类型
+menuLocalization	翻译
+menuLocalizationItem	翻译条目
+menuLocalizationItemType	翻译条目类型
+menuLocalizationManagement	翻译请求管理
+menuLocalizationRequest	翻译请求
+menuLocalizationRequestType	翻译请求类型
+menuLocalizationTranslator	译员
+menuLocation	地点
+menuMailNavigation	邮件
+menuMainColor	主色
+menuMessageLegal	法律须知
+menuModel	型号
+menuModule	模块管理
+menuOther	其他
+menuOutGoing	发件
+menuOutgoingMail	发件
+menuOutgoingMailType	发件类型
+menuPersonas	画像
+menuPlannedWorkManual	计划干预
+menuPlanningView	甘特图视图
+menuPlanningWorkPlan	计划与工时计划
+menuPoker	估算扑克
+menuPokerComplexity	故事点
+menuPokerSession	估算扑克场次
+menuPokerSessionType	估算扑克场次类型
+menuPokerSessionVoting	估算扑克估算
+menuPositionProspect	职位
+menuPredefinedSituation	预置状况
+menuPrincipal	通用功能
+menuProductBacklog	产品待办列表
+menuProjectAnalysis	项目分析
+menuProjectDashboard	项目仪表板
+menuProjectDashboardDetail	仪表板详情
+menuProjectSituation	项目财务状况
+menuProjectSituationExpense	费用财务状况
+menuProjectSituationIncome	收入财务状况
+menuProspect	潜在客户
+menuProspectEstimate	潜在客户估算
+menuProspectEstimateType	潜在客户估算类型
+menuProspectEvent	潜在客户事件
+menuProspectEventType	潜在客户事件类型
+menuProspectionSource	线索来源
+menuProspectionView	CRM 仪表板
+menuProspectOrigin	线索事件
+menuProspectQualification	资质
+menuProspectType	潜在客户类型
+menuRaciModel	RACI 模型
+menuRenewal	续订
+menuRequirementsManagement	需求
+menuResourceAll	资源或资源池
+menuResourceAllNoMaterial	资源或资源池
+menuResourceMaterial	物料资源
+menuResourceSkill	按技能和可用性搜索
+menuResourceSkillSimple	按技能搜索
+menuRiskManagement	风险
+menuScrumPriority	Scrum 优先级
+menuSecondaryColor	辅色
+menuSituation	财务状况
+menuSituationNav	财务状况
+menuSkill	技能
+menuSkillLevel	技能级别
+menuSprint	冲刺
+menuSprintBacklog	冲刺待办列表
+menuSprintType	冲刺类型
+menuStartGuide	入门指南
+menuSteering	督导
+menuSubscription	订阅
+menuSupplierContract	供应商合同
+menuSupplierContractType	供应商合同类型
+menuTechnicalProgress	技术进展
+menuTicketing	工单处理
+menuTokenDefinition	工时额度定义
+menuUserScreenTopTitle	屏幕布局
+menuUserStory	用户故事
+menuUserStoryType	用户故事类型
+menuVersionsComponentPlanning	组件版本计划
+menuViewAllSubTask	待办清单
+menuVoting	投票
+menuVotingAttributionFollowUp	投票配额跟进
+menuVotingAttributionRule	投票配额规则
+menuVotingFollowUp	投票跟进
+menuVotingUseRule	投票使用规则
+menuVotingUseRulePerProject	按项目的投票使用规则
+menuWorkCommand	工时订单
+menuWorkPlan	工时计划
+buttonAffectAbacusResources	分配全部已用资源
+buttonAgree	我同意
+buttonApply	应用
+buttonAttributeLayout	套用
+buttonBackToDashBoard	返回列表
+buttonBackToLogin	转到登录页
+buttonCreateAssignmentsFromAbacus	创建分配
+buttonDefinitiveSelection	最终确定
+buttonDocumentExtraction	提取文件
+buttonEdit	编辑当前${1}
+buttonErase	清除
+buttonExcel	Excel
+buttonFull	全天
+buttonFullTab	调整页签大小
+buttonHalf	半天
+buttonInsertFieldIntoCustomEarnedRule	将字段插入规则
+buttonInsertFieldIntoCustomEarnedWhereClause	插入 Where 子句
+buttonInsertOpIntoCustomEarnedRule	将运算符插入规则
+buttonInsertOpIntoCustomEarnedWhereClause	插入 Where 子句
+buttonLater	稍后阅读
+buttonLockedImputation	汇总期间锁定项目工时表
+buttonManageAbacusable	添加可用列表
+buttonManageLayout	管理
+buttonManagePhase	添加阶段划分
+buttonMinusParameters	收起全部分区
+buttonNo	否
+buttonNoForQuestionNoSave	取消
+buttonNone	清除
+buttonOK	确定
+buttonPlusParameters	展开全部分区
+buttonProjectDate	从项目获取日期
+buttonProjectDateTitle	若已设置则取确认日期&#44否则取项目的计划日期
+buttonPurge	清理导入结果
+buttonResendOtp	重新发送验证码
+buttonResetPassword	忘记密码
+buttonSaveForQuestionNoSave	保存
+buttonSearch	在计划中搜索
+buttonShowLeftMenu	显示或隐藏左侧菜单
+buttonShowTopMenu	显示或隐藏顶部菜单
+buttonTransform	转换
+buttonTransformTitle	将潜在客户转为联系人或客户
+buttonValid	确认
+buttonValidAndSubmit	确认并提交
+buttonValidationImputation	确认项目汇总
+buttonYes	是
+buttonYesForQuestionNoSave	继续
+buttonChangeSize	调整大小
+messageAlertCancelSubmitByOther	资源 '${1}' 取消了你对 '${2}' 的提交
+messageAlerteDeleteClientContract	
+messageAlertImputationWorkTooSoonBody	资源 ${1} 在条目计划开始日期之前的 ${3} 填报了 ${2} 工时
+messageAlertImputationWorkTooSoonTitle	${1} 在条目 ${2} #${3} 上提前填报了工时
+messageAlertSkillExpiry	有一项技能将在 ${2} 之前到期
+messageAlertSkillsExpiry	有 ${1} 项技能将在 ${2} 之前到期
+messageAlertSubmitedWork	资源 '${1}' 已提交 ${2} '${3}' 的工时
+messageCantDeleteAnActivityAssociatedToLeaveType	不能删除已关联到休假类型的活动
+messageDocumentsRightsNoChangeSaved	文档权限没有需要保存的更改
+messageDocumentsRightsSaved	文档权限已保存
+messageInvalidLoginOrEmail	登录名或电子邮件地址无效
+messageLeavesSystemHabilitationSaved	休假系统授权已保存
+messageMandatoryNoteOnStatusChange	变更到此状态必须填写备注
+messageMandatorySubTask	仍有待办清单未完成
+messageOtpCodeResentAt	验证码已于 ${1} 重新发送
+messageResetPasswordDone	密码已重置
+messageResetPasswordEmailSent	密码重置邮件已发送
+messageRoleNotAvailableForResource	所选职能不适用于此资源
+messageSkill	技能 '${1}'（级别 ${2}）将于 ${3} 到期
+messageTooManyOtpRequests	最近一小时内请求验证码次数过多。请稍后再试
+messageTooManyPasswordResetRequests	最近 24 小时内密码重置请求过多。<br/>请明天再试，或联系管理员。
+messageUnique	唯一字段 '${1}' 已存在值为 '${2}' 的条目
+messageLoading	正在加载…
+confirmAffectAbacusResources	此操作会把测算表中尚未分配的资源全部分配到项目。是否继续？
+confirmCancelChange	是否刷新页面并放弃当前更改？
+confirmChangeLoosingNoSave	有更改尚未保存。<br/><br/><div class='messagePopUpDetail'> - 单击&nbsp;<span class='messagePopUpButton'>&nbsp;保存&nbsp;</span>&nbsp;以保存并继续</br> - 单击&nbsp;<span class='messagePopUpButton'>&nbsp;继续&nbsp;</span>&nbsp;以不保存并继续<br/> - 单击&nbsp;<span class='messagePopUpButton'>&nbsp;取消&nbsp;</span>&nbsp;以留在当前条目
+confirmCloseAbacusDefinition	确定关闭此测算表定义吗？<br/>关联的测算表行也会一并关闭。
+confirmCloseAbacusLine	确定关闭此测算表行吗？
+confirmCloseAbacusPhase	确定关闭此阶段吗？
+confirmControlDeletePlannedWork	<b>警告&#44部分带有计划工时的条目将被删除</b><br/>此操作无法撤销，并可能导致数据不一致。
+confirmControlDeleteRealWork	<b>警告&#44部分带有实际工时的条目将被删除</b><br/>此操作无法撤销，并可能导致数据不一致。
+confirmCreateAssignmentsFromAbacus	此操作会删除此前由测算表生成的全部分配并重新创建。是否继续？
+confirmDeleteActivitySkill	确定删除此活动技能吗？
+confirmDeleteAttributionVote	删除此投票配额规则吗？
+confirmDeleteCustomEarnedRulesOfEmpContractType	确认删除劳动合同类型上的自定义已获得休假额度规则
+confirmDeleteEmployeesManaged	确认删除所管理的员工
+confirmDeleteFavorite	删除收藏列表 '${1}' 吗？
+confirmDeleteLvTypeOfContractType	确认删除已获得休假额度的属性
+confirmDeleteMultiple	删除选中的 ${2} 个${1}吗？
+confirmDeleteMultiplePlanning	删除选中的计划条目吗？
+confirmDeletePokerItem	确定删除此用户故事吗？
+confirmDeleteResourceCapacity	确定删除此资源能力吗？
+confirmDeleteResourceIncompatible	确定删除此不兼容资源吗？
+confirmDeleteResourceSkill	确定删除此资源技能吗？
+confirmDeleteResourceSupport	确定删除此支持资源吗？
+confirmDeleteResourceSurbooking	确认删除此超额使用期间
+confirmDeleteSynchronizedItem	删除此条目也会移除与已同步条目 <b>${1}  #${2}</b> 的同步关联
+confirmDeleteTodoList	确定删除待办清单&#34${1}&#34吗？
+confirmDeleteUserStory	确定从当前条目移除此用户故事吗？
+confirmDeleteWorkUnit	确定删除此工作单元吗？
+confirmDeleteWorkUnitCatalogPhase	确定删除此阶段吗？
+confirmDisconnectionSSO	确认断开你的 ${1} 会话
+confirmDissociate	解除与 ${1} #${2} 的关联吗？
+confirmLockRevisionUpdate	${1}（${2}）正在安装更新。<br/>是否继续？
+confirmPurgeAssignment	清除 ${1} #${2} 的分配吗？
+confirmRemoveAbacusDefinitionLine	删除此测算表定义行吗？
+confirmRemoveAbacusLine	确定删除此测算表行吗？
+confirmRemoveAbacusPhaseLine	确定删除此阶段吗？
+confirmRemoveAbacusProjectLine	确定删除此测算表使用行吗？
+confirmRemoveLayout	删除布局 '${1}' 吗？
+confirmRemoveMessageFollowup	确定删除法律须知跟进吗？
+confirmRemovePhasing	确定删除此阶段划分吗？
+confirmRemoveReportLayout	删除报表 '${1}' 吗？
+confirmRemoveWorkCommand	确定删除此工时订单吗？
+confirmReopenAbacusLine	确认重新打开此行吗？
+confirmResetAssignment	清除 ${1} #${2} 的全部分配吗？
+confirmSplit	确定拆分 ${1} #${2} 吗？
+confirmUninstallPlugin	确认卸载插件 '${1}'
+confirmWorkPlanCalculToLong	按这些参数计算工时计划会比预期更久。<br/><br/>是否继续？
+confirmWorkPlanNoParam	未选择参数时计算工时计划会花费很长时间。<br/><br/>是否继续？
+colChangeIsLDAP	更改来自 LDAP
+colOAuthRedirectUri	重定向 URI
+colPwdImap	IMAP 密码
+colScrumMaster	Scrum Master
+colWorkUnit	单元数量
+connexionSocket	通过 Socket 连接
+corpusChristi	基督圣体节
+cronStarting	cron 正在启动…
+cronStopping	cron 正在停止…
+extractSubDirectory	提取子目录
+extractSubProjectDirectory	提取子项目文件
+fontForPdfArabic	freeserif（用于阿拉伯字符）
+fontForPdfArial	arial（文件更小）
+fontForPdfAsia	droidsansfallback（用于亚洲字符）
+fontForPdfFreesans	freesans（用于非 ANSI 字符）
+fontForPdfHelvetica	helvetica（文件更小）
+free	自由选择
+langAr	阿拉伯语
+langBg	保加利亚语
+langDe	德语
+langEl	希腊语
+langFa	波斯语
+langFr	法语
+langFrCa	法语（加拿大）
+langIt	意大利语
+langKo	韩语
+langKu	库尔德语
+langPl	波兰语
+langPt	葡萄牙语
+langPtBr	葡萄牙语（巴西）
+langRo	罗马尼亚语
+langSe	瑞典语
+langTr	土耳其语
+langUa	乌克兰语
+langVn	越南语
+leaveTypesDontExist	休假类型不存在
+libraryPHPMailer	PHPMailer 库（推荐）
+liveMeetingOrganizator	组织者（双倍发言时间）
+mostRecent	最近
+msgUnableToMoveAssignment	无法移动分配
+noAbacusResourcesToAffect	测算表中没有可分配的资源
+operationalWork	运营工时
+otpCodeNotReceived	没有收到验证码？
+paramAllowSendingStatistics	允许向 ProjeQtOr 发送统计信息
+paramExportBillInFormatFacturX	按 Factur-X 格式导出客户发票
+paramIncludeProductInProductStructure	在结构中包含子产品
+paramIsManualProgress	固定工期活动的手动进展
+paramParamMailSmtpUseUnsecureSsl	允许不安全的 SSL 连接
+paramSAML_isADFS	身份提供者是 ADFS
+parentPlanningModeCDUR	含跨项目超额使用
+parentPlanningModeDDUR	含项目内超额使用
+PlanningHistory	计划历史
+planningMSProject	MS-Project
+refTypeMustBeActivity	refType 必须为“活动”
+reportCategoryAgile	敏捷 Scrum
+restOfCommand	订单剩余
+sectionMentionDetection	提及检测时的行动
+sectionMultiCurrency	多币种
+seeAllAbsences	查看所有人的缺勤
+selectSourceFirst	请先选择 OAuth2 来源
+smallGlobal	全局
+startReorderingWBS	开始重排
+themeProjectom	Projectom
+tornado	龙卷风图
+tornadoChartRiskVsOpportunity	龙卷风图：风险与机会
+welcomeOnProjeQtOr	欢迎使用 ProjeQtOr
+doesntExists	不存在
+Kawa	来杯咖啡？
+applicationTitle	ProjeQtOr
+Excel	Excel
+oAuth2	OAuth2
+dialogImportFacturX	导入 Factur-X
+importFacturX	导入 Factur-X
+facturXMessageError	Factur-X&#58缺少必填数据
+facturXMessageErrorNoBill	Factur-X&#58未能检索到发票
+helpCronDirectory	供标志文件使用的 cron 工作目录
+helpParamLdap_base_dn	ProjeQtOr 用户的 LDAP 基准 DN
+helpParamMailSmtpServer	SMTP 服务器［默认 localhost］
+ssoReconnect	返回 ProjeQtOr
+moduleAgile	敏捷 Scrum
+passNum	dijit
+pwdErrorDijit	一个 dijit
+invalidPasswordChange	新密码不正确
+pluginIntegratedInCommunityVersion	插件 '${1}' 现已纳入社区版。
+validatedWorkPeriod	由 ${2} 于 <br/>${1} 确认
+colSelected	已选择<br/>（按计算）
+confirmControlSave	以下依赖条目也会关闭<br/><span style='color&#58#A00000;font-weight&#58bold'>（已勾选&#34已关闭&#34&#44且不更改状态）</span>
+contactAdministrator	请联系管理员。<br/><i>（详细错误已写入日志文件）</i>
+errorConnectionDB	SQL 错误<BR/>连接错误：未知数据库 '${1}'。<BR/>请检查 parameter 文件。
+passwordResetMessage	密码已重置为<br/>${1}<br/><br/>首次登录时必须更改。
+submittedWorkPeriod	提交于 <br/>${1}
+tooltipAlertValue	指标不可接受的限值<br/>将发出警报
+tooltipWarningValue	指标的提醒值<br/>将发出警告
+uploadUncomplete	文件上传失败。请重试。<br/>若问题仍然存在&#44可能是文件超出系统大小限制。
+automaticRunPlanHelp	启用或停用计划的自动计算&#13;此自动计算仅在你位于计划页面时生效
+colLockDone	锁定&#34已完成&#34
+colLockIntoservice	锁定&#34已投入使用&#34
+colLockSolved	锁定&#34已解决&#34
+confirmUncloseBudgetElement	重新打开预算期间&#44;会按当前要素更新该期间。<br/>确定继续吗？
+errorXhrPostMessage	可能由于网络连接不佳而发生技术问题。<br/>请重试。<br/>若问题仍然存在&#44;请联系管理员。
+externalLibrary	外部库版本 &#58;
+helpAutoLinkMilestone	填写目标里程碑时，自动把它加入关联要素列表。&#13这样可以从里程碑查看关联要素。
+helpAutoUpdateActivityStatus	按子条目的状态自动设置父条目（WBS 结构中）的状态&#44因此&#13当第一个子条目进入进行中时&#44父条目进入进行中&#13当全部子条目已完成时&#44父条目进入已完成
+infoLocaleChange	你更改了显示语言。<br/>在下次连接之前，部分信息可能显示不正确。<br/>请保存参数&#44;断开连接并重新登录，以便全部改用新语言。
+NoLeftOnDone	剩余工时不为空&#44;把此要素标为已完成之前请先清除剩余工时。
+rightClickToCopy	右键并选择复制链接，或单击后按 [CTRL]+C 复制此对象的直接链接
+saveNewBaselineAlreadyExists	此日期已有基线&#44;它将被替换
+selectCurrentProject	在项目选择器中选择当前条目的项目&#13;双击可设为&#34;全部项目&#34;
+statusMustChangeHandled	若已勾选&#44“进行中”只能通过状态来更改
+statusMustChangeLeftDone	有剩余工时时条目不能标为&#34已完成&#34
+warningIE	<br/>你正在使用 Internet Explorer ${1}&#44;<br/>或已启用兼容模式。<br/><br/>请使用 Internet Explorer 11 或更新版本<br/>或关闭兼容模式<br/>或使用其他浏览器。<br/><br/>
+colAccountableShort	问责
+FOR	用于
+periodicFor	用于
+realWorkElement	${1}（${2}）在 ${4} 上的 ${3}
+weekStartLabel	自
+buttonMail	此 ${1} 的邮件详情
+colEmail	电子邮件地址
+colEmailSent	已发送邮件
+colIdEmailTemplate	邮件模板
+colIsLdap	来自 LDAP
+colMailBody	邮件正文
+colMimeType	MIME 类型
+colShowAdminProj	显示管理项目
+menuAudit	登录审计
+menuEmailTemplate	邮件模板
+menuMail	已发送邮件
+menuStatusMail	事件通知
+menuStatusMailPerProject	按项目的事件通知
+messageSelectedNotAvailable	你选择了 '${1}'。<br/>此版本的 ProjeQtOr 不提供该功能。<br/>抱歉…
+paramCronCheckEmails	邮件收取检查的 cron 间隔（秒）
+paramLdapMsgOnUserCreation	从 LDAP 创建新用户时的消息
+paramMailerTestMessage	邮件正文
+paramParamMailReplyTo	发送邮件时的回复地址
+paramParamMailSender	发送邮件时的发件地址
+paramParamMailSmtpPassword	SMTP 登录密码（将在数据库中加密）
+
+# Captions reviewed after the generated catalog. These win over an upstream zh rebuild.
+ActivityStream	动态
+addTenderSubmission	添加报价提交
+businessValueLeft	剩余业务值
+calculCriticalResource	重新计算关键资源的使用情况
+colBusinessValueShort	业务值
+colCriticality	关键程度
+colFixPerimeter	不可扩展的项目
+colIdCriticality	关键程度
+colIdSeverity	严重程度
+colIdUrgency	紧急程度
+colLeftQuantity	剩余数量
+colLeftToPlan	剩余待计划
+colSeverityShort	严重
+colTokenLeft	剩余工时额度
+colUnitLeft	剩余单位
+colUrgency	紧急程度
+colWeekday1	一
+colWeekday2	二
+colWeekday3	三
+colWeekday4	四
+colWeekday5	五
+colWeekday6	六
+colWeekday7	日
+colWorkElementLeftWork	工单上的剩余工时
+Criticality	关键程度
+earnedPeriodPlusOne	已获得/剩余<br/>下一期间
+errorMagicQuotesGpc	magic_quotes_gpc 必须禁用（置为 false）。<br/>请更新 Php.ini 文件。
+errorRegisterGlobals	register_globals 必须禁用（置为 false）。<br/>请更新 Php.ini 文件。
+errorSessionHash	当前会话发生错误。<br/>请刷新浏览器页面，或关闭浏览器后重试。<br/>并请检查 cookies 是否开启。<br/>若问题仍然存在，请联系管理员。
+helpCriticalLeftToPlan	待计划的剩余工时（剩余工时）
+helpParamAttachmentDirectory	附件的存放目录（出于安全考虑，请移出 web 访问范围）
+helpSslKey	包含 SSL 密钥的文件名
+hideListAndDetail	隐藏左侧的列表和详情
+labelShowAttributionWithoutLetf	显示没有剩余工时的投入
+leftTerms	剩余付款节点
+legendRemainingTasks	剩余活动
+menuActivityStream	动态
+menuCriticality	关键程度
+menuTerm	付款节点
+menuUrgency	紧急程度
+paramLdapSslOverTls	通过 TLS 使用 SSL
+paramMenuLeftDisplayMode	左侧菜单显示模式
+paramParamLdap_base_dn	LDAP 基准 DN
+periodicOn	在
+periodicTh	个
+pointsLeft	剩余点数
+pointsLeftClient	客户剩余点数
+raciAccountable	问责
+raciResponsible	执行
+RealWorkOverValidatedWork	已确认工时的进度%（实际/已确认）
+rememberMe	记住我
+reportTermTitle	当期设定的截止日期 
+reportTicketGlobalCrossReport	按已定性统计的工单报表 - 全局
+reportTicketMonthlyCrossReport	按已定性统计的工单报表 - 月
+reportTicketWeeklyCrossReport	按已定性统计的工单报表 - 周
+reportTicketYearlyCrossReport	按已定性统计的工单报表 - 年
+requirementLeft	剩余需求
+showAll	全部版本（无限制）
+showAllActivityStream	显示全部动态
+showColorActivity	左侧部分的颜色
+showListAndDetail	显示左侧的列表和详情
+showListLeft	在左侧显示列表
+storyPointsLeft	剩余故事点
+Term	付款节点
+ticketLeft	剩余工单
+TicketReport	按已定性统计的工单报表
+titleStream	动态
+todayAccountableTasks	我问责的任务
+todayResponsibleTodoList	我负责的待办列表
+undefinedCriticality	未定义关键程度
+undefinedUrgency	未定义紧急程度
+Urgency	紧急程度
+userPointsLeft	自己的剩余点数
+userStoryLeft	剩余用户故事

@@ -101,7 +101,7 @@ oldValueProjectCriticalResources = <?php echo(json_encode($proj));?>
           </td>
           <td width="250px"><span class="title"><?php echo i18n('menuCriticalResources');?></span></td>
           <td>
-            <span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="button" aria-labelledby="planButton_label" tabindex="0" id="planButton" title="Calculer le planning des projets" style="user-select: none;margin-left:15px;">
+            <span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="button" aria-labelledby="planButton_label" tabindex="0" id="planButton" title="<?php echo i18n('calculCriticalResource');?>" style="user-select: none;margin-left:15px;">
               <div title ="<?php echo i18n('calculCriticalResource');?>" class="dijitReset dijitInline dijitIcon iconPlanStopped imageColorNewGui"  onclick="refreshDataCriticalResources()"  data-dojo-attach-point="iconNode"></div>
             </span>
           </td>

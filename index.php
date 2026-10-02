@@ -90,7 +90,8 @@ if (is_file ( "../tool/parametersLocation.php" )) {
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('view/js/projeqtor.js');?>" ></script>
   <title>ProjeQtOr</title>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('external/dojo/dojo.js');?>"
-    djConfig='parseOnLoad: false, 
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              parseOnLoad: false, 
               isDebug: false'></script>
   <script language="javascript">
     var isNewGui=<?php echo (isNewGui())?'true':'false';?>;
@@ -150,7 +151,7 @@ if (is_file ( "../tool/parametersLocation.php" )) {
             <td style="height:99%" align="left" valign="middle">
               <div  id="formDivIndex" dojoType="dijit.layout.ContentPane" region="center" style="width: 470px; height:210px;overflow:hidden">
                 <form id="indexForm" name="indexForm" action="view/index.php" method="post" target="_top">
-                  <input type="hidden" id="xcurrentLocale" name="xcurrentLocale" value="en" />
+                  <input type="hidden" id="xcurrentLocale" name="xcurrentLocale" value="zh" />
                   <input type="hidden" id="currentWidth" name="currentWidth" value="" />
                   <?php
                   foreach (array('objectClass', 'objectId', 'directAccess') as $directAccessParameter) {

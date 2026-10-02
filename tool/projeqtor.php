@@ -1429,29 +1429,150 @@ function getUserVisibleResourcesList($limitToActiveResources=false, $listScreen=
  *
  * @return void
  */
+function projeqtorIsSupportedUiLocale($locale) {
+  return $locale==='zh' or $locale==='en';
+}
+
+function projeqtorRememberLocale($locale) {
+  if (!projeqtorIsSupportedUiLocale($locale)) return;
+  if (!headers_sent()) {
+    // '||' binds tighter than assignment. 'or' does not, so a chain of
+    // 'or' after '=' would keep only the first term.
+    $forwardedProto='';
+    if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
+      $forwardedParts=pq_explode(',', (string)$_SERVER['HTTP_X_FORWARDED_PROTO']);
+      $forwardedProto=pq_strtolower(pq_trim($forwardedParts[0]));
+    }
+    $https=(!empty($_SERVER['HTTPS']) and $_SERVER['HTTPS']!=='off')
+      || ($forwardedProto==='https')
+      || (isset($_SERVER['SERVER_PORT']) and (string)$_SERVER['SERVER_PORT']==='443');
+    // readme.txt still allows PHP 5.6. The options-array form of setcookie is PHP 7.3+.
+    // Secure is set only on HTTPS so an HTTP install can still remember the choice.
+    if (PHP_VERSION_ID >= 70300) {
+      setcookie('projeqtorLocale', $locale, array(
+        'expires'=>time()+31536000,
+        'path'=>'/',
+        'secure'=>$https,
+        'httponly'=>true,
+        'samesite'=>'Lax',
+      ));
+    } else {
+      setcookie('projeqtorLocale', $locale, time()+31536000, '/', '', $https, true);
+    }
+  }
+  $_COOKIE['projeqtorLocale']=$locale;
+}
+
+function getDojoLocale() {
+  global $currentLocale;
+  $locale=(isset($currentLocale) and $currentLocale)?$currentLocale:'zh';
+  if ($locale==='en') return 'en-us';
+  if ($locale==='zh') return 'zh';
+  return 'zh';
+}
+
+/**
+ * Translate a reference-list name stored in the database.
+ * Keeps the stored name when no caption exists, so a missing key is not shown as [key].
+ * Names with spaces are also looked up as listType + CamelCase (statusInProgress).
+ */
+function i18nListCamelKey($listType, $storedName) {
+  $parts=preg_split('/[^A-Za-z0-9]+/', (string)$storedName);
+  $camel='';
+  if (is_array($parts)) {
+    foreach ($parts as $part) {
+      if ($part==='') continue;
+      $camel.=pq_ucfirst($part);
+    }
+  }
+  if ($camel==='') return null;
+  return pq_strtolower($listType).$camel;
+}
+
+/**
+ * Catalog key for a stored reference name, or null when the name should stay as written.
+ * Status, priority and the other phrase lists only use listType+CamelCase.
+ * A custom name that equals an unrelated caption (blocked, planned) is not translated.
+ * Other lists still accept a stored name that is itself a caption key (profileAdministrator).
+ */
+function i18nListTranslationKey($listType, $storedName) {
+  if ($storedName===null or $storedName==='') return null;
+  $camelKey=i18nListCamelKey($listType, $storedName);
+  if ($camelKey) {
+    $trans=i18n($camelKey);
+    if ($trans!=='['.$camelKey.']') return $camelKey;
+  }
+  $phraseLists=array('Status', 'Priority', 'Severity', 'Urgency', 'Likelihood', 'Criticality');
+  if (in_array($listType, $phraseLists, true)) return null;
+  $direct=i18n($storedName);
+  if ($direct!=='['.$storedName.']') return $storedName;
+  return null;
+}
+
+function i18nListName($listType, $storedName) {
+  if ($storedName===null or $storedName==='') return $storedName;
+  $key=i18nListTranslationKey($listType, $storedName);
+  if ($key!==null) {
+    $trans=i18n($key);
+    if ($trans!=='['.$key.']') return $trans;
+  }
+  return $storedName;
+}
+
+/**
+ * Translate the name segment of a colorName* list value (sort#split#name#split#color).
+ * The color chip stays; only the caption changes.
+ */
+function projeqtorTranslateColorNameValue($field, $value) {
+  if (!$value or !$field or pq_stripos($field, 'colorName')!==0) return $value;
+  $class=pq_substr($field, 9);
+  if (!$class or !SqlElement::class_exists($class)) return $value;
+  if (!property_exists($class, '_isNameTranslatable')) return $value;
+  $tab=pq_explode('#split#', $value);
+  if (count($tab)==2) {
+    $tab[0]=i18nListName($class, $tab[0]);
+  } else if (count($tab)>=3) {
+    $tab[1]=i18nListName($class, $tab[1]);
+  } else {
+    return $value;
+  }
+  return implode('#split#', $tab);
+}
+
 function setupLocale() {
   global $currentLocale, $browserLocale, $browserLocaleDateFormat;
   $paramDefaultLocale=Parameter::getGlobalParameter('paramDefaultLocale');
+  if (!$paramDefaultLocale or !projeqtorIsSupportedUiLocale($paramDefaultLocale)) {
+    // Installer default is zh. Empty or legacy values do not follow the browser language.
+    $paramDefaultLocale='zh';
+  }
   $paramUserLocale=Parameter::getGlobalParameter('currentLocale');
   // $paramUserLang=Parameter::getGlobalParameter('lang');
   $paramUserLang=Parameter::getUserParameter('lang');
-  if (sessionValueExists('currentLocale')) {
-    // First fetch in Session (filled in at login depending on user parameter)
-    $currentLocale=getSessionValue('currentLocale');
-  } else if (isset($_REQUEST['currentLocale'])) {
-    // Second fetch from request (for screens before user id identified)
+  if (isset($_REQUEST['currentLocale'])) {
+    // An explicit choice on this request wins over the session and replaces it.
+    // Otherwise the login page cannot switch back after the first selection.
     $currentLocale=pq_trim($_REQUEST['currentLocale']);
     Security::checkValidLocale($currentLocale);
+    if (!projeqtorIsSupportedUiLocale($currentLocale)) $currentLocale='zh';
     setSessionValue('currentLocale', $currentLocale);
+    setSessionValue('localeExplicit', '1');
+    projeqtorRememberLocale($currentLocale);
     $i18nMessages=null; // Should be null at this moment, just to be sure
-  } else if ($paramUserLocale and sessionUserExists()) {
+  } else if (sessionValueExists('currentLocale') and projeqtorIsSupportedUiLocale(getSessionValue('currentLocale'))) {
+    $currentLocale=getSessionValue('currentLocale');
+  } else if ($paramUserLocale and sessionUserExists() and projeqtorIsSupportedUiLocale($paramUserLocale)) {
     $currentLocale=$paramUserLocale;
-  } else if ($paramUserLang and sessionUserExists()) {
+  } else if ($paramUserLang and sessionUserExists() and projeqtorIsSupportedUiLocale($paramUserLang)) {
     $currentLocale=$paramUserLang;
+  } else if (isset($_COOKIE['projeqtorLocale']) and projeqtorIsSupportedUiLocale($_COOKIE['projeqtorLocale'])) {
+    $currentLocale=$_COOKIE['projeqtorLocale'];
+    setSessionValue('currentLocale', $currentLocale);
   } else {
-    // none of the above methods worked : get the default one form parameter file
+    // Browser Accept-Language is intentionally not consulted.
     $currentLocale=$paramDefaultLocale;
   }
+  if (!projeqtorIsSupportedUiLocale($currentLocale)) $currentLocale='zh';
   if (sessionValueExists('browserLocale')) {
     $browserLocale=getSessionValue('browserLocale');
   } else {

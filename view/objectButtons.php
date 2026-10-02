@@ -231,7 +231,7 @@ use http\Client\Request;
                     if (property_exists($obj,'name') and $obj->name){ 
                    	  echo '-&nbsp;';
                    	  if (isset($obj->_isNameTranslatable) and $obj->_isNameTranslatable) {
-                   	  	echo htmlEncode(i18n($obj->name));
+                   	  	echo htmlEncode(i18nListName(get_class($obj), $obj->name));
                    	  } else {
                    	  	echo htmlEncode($obj->name);
                       }

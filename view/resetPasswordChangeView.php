@@ -40,8 +40,10 @@ $token = RequestHandler::getValue('token');
 if ($token) {
   setSessionValue('passwordResetToken', $token);
 }
-$currentLocale = getSessionValue('currentLocale');
-if (! $currentLocale) $currentLocale = Parameter::getGlobalParameter('defaultLocale');
+if (!isset($currentLocale) or !projeqtorIsSupportedUiLocale($currentLocale)) {
+  $paramDefaultLocale=Parameter::getGlobalParameter('paramDefaultLocale');
+  $currentLocale=projeqtorIsSupportedUiLocale($paramDefaultLocale)?$paramDefaultLocale:'zh';
+}
 
 $pwdR = PasswordResetRequest::getSingleSqlElementFromCriteria('PasswordResetRequest', array('token'=>$token));
 
@@ -89,7 +91,8 @@ $user = ($tokenValid) ? new User($pwdR->idUser) : null;
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('js/projeqtorDialog.js');?>" ></script>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('js/projeqtorDialogAlertNotification.js');?>"></script>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
-    djConfig='modulePaths: {"i18n":"../../tool/i18n",
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              modulePaths: {"i18n":"../../tool/i18n",
                             "i18nCustom":"../../plugin"},
               parseOnLoad: true, 
               isDebug: <?php echo getBooleanValueAsString(Parameter::getGlobalParameter('paramDebugMode'));?>'></script>

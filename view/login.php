@@ -94,7 +94,8 @@ $mobile=false;
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../view/js/projeqtorDialogAlertNotification.js');?>"></script>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../view/js/projeqtorFormatter.js');?>" ></script>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
-    djConfig='modulePaths: {"i18n":"../../tool/i18n",
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              modulePaths: {"i18n":"../../tool/i18n",
                             "i18nCustom":"../../plugin"},
               parseOnLoad: true, 
               isDebug: <?php echo getBooleanValueAsString(Parameter::getGlobalParameter('paramDebugMode'));?>'></script>
@@ -220,6 +221,21 @@ echo '<input type="hidden" id="objectId" value="' . htmlEncode($_REQUEST['object
 }    
 $dbVersion=Sql::getDbVersion();
 ?>
+  <div style="position:absolute;top:12px;left:16px;z-index:40;">
+    <form method="get" action="" style="margin:0;">
+      <?php
+      foreach ($_GET as $loginQueryKey=>$loginQueryValue) {
+        if ($loginQueryKey==='currentLocale' or is_array($loginQueryValue)) continue;
+        echo '<input type="hidden" name="'.htmlspecialchars($loginQueryKey, ENT_QUOTES, 'UTF-8').'" value="'.htmlspecialchars($loginQueryValue, ENT_QUOTES, 'UTF-8').'" />';
+      }
+      ?>
+      <label for="loginLocale" style="color:#fff;margin-right:6px;"><?php echo i18n('paramLang');?></label>
+      <select id="loginLocale" name="currentLocale" onchange="this.form.submit()" style="padding:4px 8px;">
+        <option value="zh" <?php if ($currentLocale=='zh') echo 'selected';?>>中文</option>
+        <option value="en" <?php if ($currentLocale=='en') echo 'selected';?>>English</option>
+      </select>
+    </form>
+  </div>
   <div class="listTitle" style="position:absolute;top:10px;right:10px;<?php if(isNewGui()) echo'padding: 3px;border-radius: 5px;color:var(--color-toolbar-text) !important;font-size:20px;background:transparent !important';?>;opacity:<?php echo($version!=$dbVersion)?'':'60%;';?>"><?php ;
   
   if ($version==$dbVersion) {

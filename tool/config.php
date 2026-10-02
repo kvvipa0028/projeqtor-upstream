@@ -228,7 +228,7 @@ $param['crlf02']='';
 $label['crlf02']='crlf';
 $value['crlf02']="Localization <span style='font-size:70%;'><i>(Can be changed afterwards on Global Parameters screen)</i></span>";
 
-$param['DefaultLocale'] = 'en';                              
+$param['DefaultLocale'] = 'zh';                              
 $label['DefaultLocale'] = "Default language";
 $value['DefaultLocale'] = "Default language for the General User Interface<br/><i>Each user will be able to select his own display language</i>";
 $pname['DefaultLocale'] = 'paramDefaultLocale';
@@ -362,7 +362,8 @@ $firstColor= '545381';
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../view/js/projeqtorDialogAlertNotification.js');?>"></script>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
   
-    djConfig='modulePaths: {"i18n":"../../tool/i18n",
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              modulePaths: {"i18n":"../../tool/i18n",
                             "i18nCustom":"../../plugin"},
               parseOnLoad: true, 
               isDebug: <?php echo getBooleanValueAsString(Parameter::getGlobalParameter('paramDebugMode'));?>'></script>

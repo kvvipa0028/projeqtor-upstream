@@ -159,7 +159,7 @@ class SqlList {
         	if ($listType=='Linkable' and pq_substr($name,0,7)=='Context') {
         		$name=SqlList::getNameFromId('ContextType', pq_substr($name,7,1));
         	} else {
-            $name=i18n($name);
+            $name=i18nListName($listType, $name);
         	}
         }
         if ($displayCol=='name' and property_exists($obj,'_constructForName') and !$calculated) {
@@ -352,7 +352,11 @@ class SqlList {
       while ($line = Sql::fetchLine($result)) {
         $name=$line['name'];
         if ($obj->isFieldTranslatable($displayCol)){
-          $name=i18n($name);
+          if ($listType=='Linkable' and pq_substr($name,0,7)=='Context') {
+            $name=SqlList::getNameFromId('ContextType', pq_substr($name,7,1));
+          } else {
+            $name=i18nListName($listType, $name);
+          }
         }
         if ($displayCol=='name' and property_exists($obj,'_constructForName') and !$calculated ) {
 //           if ($listType=='TargetVersion') $listType='OriginalVersion';
@@ -414,11 +418,7 @@ class SqlList {
       $name=$list[$id];
       $obj=new $listType();
       if ($translate and $obj->isFieldTranslatable($field)) {
-      	$trans=i18n(pq_strtolower($listType) . pq_ucfirst($name));
-      	if ($trans=='['.pq_strtolower($listType) . pq_ucfirst($name).']') {
-      		$trans=i18n($name);
-      	}
-        $name=$trans;
+        $name=i18nListName($listType, $name);
       }
 //       if (property_exists($listType, '_constructForName')) {
 //         $temp=new $listType($id,false);
@@ -443,12 +443,25 @@ class SqlList {
     } else {
       $list=self::getList($listType);      
       $id=array_search($name,$list);
+      // Callers such as PlanningElement pass the stored English name.
+      // The translated list no longer contains that name, so fall back to the raw list.
+      if ($id===false) {
+        $raw=self::getListNotTranslated($listType);
+        $id=array_search($name, $raw);
+      }
       return $id;
     }
   }
   
   public static function getIdFromTranslatableName($listType, $name) {
-    return self::getIdFromName($listType, i18n($name));
+    $id=self::getIdFromName($listType, i18nListName($listType, $name));
+    if ($id) return $id;
+    $translated=i18n($name);
+    if ($translated!==$name and $translated!=='['.$name.']') {
+      $id=self::getIdFromName($listType, $translated);
+      if ($id) return $id;
+    }
+    return self::getIdFromName($listType, $name);
   }
   
   public static function getStatusList($class) {

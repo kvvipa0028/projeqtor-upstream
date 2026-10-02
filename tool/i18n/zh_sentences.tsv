@@ -1,0 +1,1285 @@
+abacusableUsed	此 Abacusable 已用于测算表定义
+abacusDefinitionUsedInLines	此定义已用于测算表行
+actionMailNONE	不修改电子邮件
+ActivityIsWorkOnRealTime	不能在 OnWorkTime 活动上添加工作单元
+activityNotInProject	该活动不在所选项目中
+activityWithSon	没有待完成工时的活动不能将权重类型设为&#58 工作单元
+ActivityWorkCommandComplexityIsMissing	复杂度为必填项
+addIncompatibleResource	添加与你不兼容的资源
+addSupportResource	为你添加支持资源
+addVoteKanban	点击以添加投票
+alertActivityVersion	必须选择一个活动，才能确定新活动在 WBS 中的位置
+alertIncorrectScreenSwitch	无法在未同时显示列表和详情的界面上从详情更改布局。<br/> 若处于计划视图&#44 请先显示详情再更改显示模式。
+alertLatencyForBigGantt	即将显示大量行。<br/>这可能导致浏览器变慢并出现显示延迟。
+allResourcesAlreadyAffected	所有资源都已投入该项目
+alreadyLock	项目已于 ${1}  ${2} 锁定
+alwaysHelp	将覆盖现有值
+amountStillReceived	尚待收取的金额
+applicationBackup	执行备份
+applicationBackupMessage	建议备份数据库
+applicationIsClosed	应用程序已关闭
+applicationIsKickUser	用户已被断开连接
+applicationIsNotClosed	应用程序尚未关闭，但建议先关闭
+applicationUserAreNotKick	仍有用户登录应用程序，因此建议先断开
+AreYouSure	是否确定
+asPlannedWork	该日存在手工计划工时
+assetParentCanNotBeHimself	父资产不能是其自身
+assignmentsCreatedWithErrors	创建分配时出错&#58
+assignmentsStillExist	无法删除此投入&#44 因为分配仍然存在。
+assingedWorkCantBeLowerInWorkOnRealTime	若活动启用了&#34按实际工时&#34选项，则不能将分配工时改为低于实际工时的值
+billedQuantityCantBeSuperiorThanCommand	开票数量不能大于订单数量
+budgetParentIsApprouved	无法更新父预算 # ${1}，因其已批准
+buttonProjectDateTitle	若已设置则取验证日期，否则取计划日期&#44 来自项目
+canAddNoteReadOnlyElement	向只读要素添加备注
+canAttributeLayout	可将布局强制应用于其他用户
+cancelDataCloning	是否要取消你的删除请求？
+canChangeNote	可管理所有备注
+canCreateTags	可创建新标签
+canDeleteAttachment	可删除所有附件
+canDeleteRealWork	可删除含有实际工时的条目
+canManageVotes	可管理投票
+cannotDeleteUsedAbacusDefinition	不能删除此定义，因为它已用于测算表行。可以改为将其关闭。
+canPlanWithInfiniteCapacity	可在资源超用的情况下制定计划
+cantAddMaterialToResourcePool	不能将物料资源加入资源池
+cantAddNewItemDiaryWoResource	未选择资源时不能添加新条目
+cantAssociateAnActivityWithLeadProject	不能将活动关联到线索项目
+cantAssociateAnActivityWithProjectLeave	不能在休假系统专用项目上关联活动
+cantAssociateATestSessionWithLeadProject	不能将测试场次关联到线索项目
+cantAssociateATestSessionWithoutSameProject	不能关联不属于同一项目的测试场次
+cantBeDynamicFilter	此筛选不能是动态的
+cantBeUpdatedUntilStatusIsUnknown	只要其在受管制缺勤工作流中的状态为 'unknown'，就不能修改
+cantBeUpdatedUntilStatusIsUnsynchronized	只要其状态转换仍为 DESYNCHRONIZED，就不能修改
+cantChangeActivityParentOnActivityAssociatedWithProjectLeave	不能更改休假系统专用活动或项目的父活动
+cantChangeProjectOfActivityAssociatedWithProjectLeave	不能更改关联到休假系统专用项目的活动所属项目
+cantChangeProjectUsed	不能更改已订购工时额度的合同所属项目
+cantChangeStatusOnActivityAssociatedWithProjectLeave	不能更改关联到休假系统专用项目的活动状态
+cantChangeTypeOfProjectToLeadProjectIfYouHaveActivities	若项目包含活动或测试场次，则不能将项目类型改为线索项目
+cantChangeTypeOnActivityAssociatedWithProjectLeave	不能更改关联到休假系统专用项目的活动类型
+CantCloseEndDateInvalidOrEndReasonEmpty	无法关闭&#58 结束日期无效或结束原因为空
+cantCreateAnActivityFromLeadProject	不能在线索项目中创建活动
+cantCreateAnActivityFromProjectLeave	不能在休假系统专用项目上创建活动
+cantCreateATestSessionFromLeadProject	不能在线索项目中创建测试场次
+cantDeleteASubmittedRejectedAcceptedLeave	不能删除已提交、已拒绝或已接受的休假时段
+cantDeleteSubBudgetToDoneBudget	不能删除已完成预算的子预算
+CantDeleteTheDefaultEmploymentContractType	不能删除默认的劳动合同类型
+cantDeleteTheLeaveMngProject	不能删除休假系统专用项目
+cantDeleteTheLeaveMngWorkflow	不能删除休假系统专用工作流
+cantDeleteUsingComplexity	不能删除活动正在使用的复杂度
+cantDeleteUsingUOComplexity	不能删除工作单元正在使用的复杂度
+cantHaveHabilitaionLocked	无法验证你不能解锁的已锁定项目
+CantHaveMoreThatOneManagerAtTheSameTime	同一时间不能有多名经理
+cantHaveParentWithWorkUnit	使用工作单元的活动不能作为父活动
+cantHaveSubActivity	新的父活动不能拥有与其活动类型相符的子活动
+CantHaveTwoContractsUnclosedForAnEmployee	一名员工不能同时有多份未关闭的合同
+CantLeaveBeforeAfterPeriod	不能在员工入职日期之前或离职之后休假
+cantMoveActivityWithoutAffectedResource	不能将该活动移到新项目下，因为已分配的资源未投入目标项目
+cantOpenActivityWithoutAffectedResource	不能重新打开已不再投入该项目的资源的分配
+cantSaveFilterWithNoClause	不能保存没有条件的筛选。
+cantSplitActivityWorkUnit	不能拆分带有工作单元的活动
+CantStartPMEndAMIfOneDay	单日休假不能选择下午开始且上午结束
+cantTakeAStartDatePriorTo	开始日期不能早于
+cantTakeAStartDateSuperiorTo	开始日期不能晚于
+CantTakeLeaveAfterEndOfContract	不能在合同结束之后休假
+CantUpdateTheWorkflowDedicatedToTheLeaveMng	不能更新休假系统专用工作流
+canWorkOnTicket	可在工单上填报工时
+CatalogProjectIsNotTheSame	目录的项目与活动的项目不同
+changeIsEmployee	更改是否为员工
+changePlanMan	请注意，更改计划模式将删除已记录的手工计划
+changeResourceToMaterial	是否要将此资源改为物料资源？<br/><br/><i style='color&#58red'>请注意，此操作不可撤销！</i>
+changeStatusDone	若工单已完成或已关闭
+changeStatusIdle	若工单已关闭
+changeStatusStream	已将状态从  ${1} 改为 ${2}
+changeSurbooking	额外容量不能为零。
+ChangeWorkflowWithLeavesHavingStatusOutOfWorkflow	工作流的这一更改会使受管制休假具有其类型对应工作流之外的状态
+checkBbsFirst	预算 #${2} 的 BBS '${1}' 作为父级第一项不正确（应为 001）
+checkBbsOrder	预算 #${2} 的 BBS '${1}' 在 '${3}' 之后的顺序不正确
+checkBbsParentIssue	预算 #${2} 的 BBS '${1}' 与其父预算 #${4} 的 BBS '${3}' 不一致
+checkIncorrectAssignmentOnTicket	${4} 上 '${5}' 的 ${1} #${2} 工时未正确关联到活动 #${3}
+checkIncorrectIdle	${1} #${2} 的已关闭标志不正确&#44 ilde=${3}&#44 planningelement.idle=${4}&#44 assignment.idle=${5}
+checkIncorrectSumWork	${1} #${2} 的工时合计不正确&#44 实际（${3}）&#43; 剩余（${4}）!= 修订（${5}）
+checkIncorrectWork	${1} #${2} 的工时显示为 ${3}&#44 但工时合计为 ${4}
+checkIncorrectWorkOnMeeting	${1} #${2} 上 ${3} 的工时不应存储在 ${1} 上
+checkInvalidReferenceOnWork	工时 #${1} 的引用无效 - idResource='${2}' - refType='${3}' - refId='${4}'
+checkNotFixed	此问题无法自动修复。请尝试更新相关条目。
+checkPeriodicMeetingAssignInvalidIdle	项目 #${3} 的周期性会议 #${2} 上资源 '${1}' 的分配有误，必须为已关闭
+checkPeriodicMeetingAssignInvalidLeftWork	错误&#44 资源 '${1}' 对项目 #${3} 的周期性会议 #${2} 的分配不能有 leftwork
+checkPlanningElementMissing	缺少 ${1} #${2} 的计划要素
+checkProjectInvalid	${2} 上的项目 ${1} 无效，与 ${4} 上的项目 ${3} 不同
+checkSubTaskProjectInvalid	待办条目 #${2}&#58 项目 #${1} 不正确&#44 应为项目 #${3}（与父级 ${4} #${5} 相同）
+checkUnknownError	${1} #${2} 出现未知错误
+checkWorkWithoutProject	${2} #${3} 上的工时 #${1} 没有项目
+clickIntoToClose	点击内部以关闭
+clickIntoToCloseHelpMessage	点击此处隐藏信息
+clickToAccessToLeave	点击以访问休假数据
+clickToValidOrCanceled	点击以确认或取消
+colCanHaveSubActivity	可以有子活动
+colEarnedPeriod	可使用前的延迟（月）
+colHasSupport	有支持
+colIndivisibility	不可拆分的工时
+colIsAnticipated	这些休假可以预支
+colIsDefault	是默认
+colIsEmployee	是员工
+colIsFalseAssumption	该假设不成立
+colIsFalseConstraint	该约束已解除
+colIsJustifiable	此类休假必须提供理由
+colIsLeaveManager	是休假管理员
+colIsMaterial	是物料资源
+colIsNotImputable	不可填报工时
+colIsResourceTeam	是资源团队
+colNotificationGenerateBeforeInMin	提前此分钟数发出通知
+colNotRequiredRight	不需要权限
+colOrNotSet	或未设置
+colRejectMotif	拒绝时的原因
+colRemainToDo	剩余待办
+colShowErrorOnly	有错误的周
+colShowUnsubmitWork	显示未提交的周
+colShowUnvalidated	显示未验证的周
+colStatusSetLeaveChange	状态未同步
+colStudent	是学生
+colSynchroniseActivityType	要创建的活动类型
+colToBeRecontacted	待再次联系的日期
+CommandIsNotOnTheSameProject	订单所属项目与活动所属项目不同
+complexityCantBeSuperiorThan	复杂度数量不能大于 ${1}
+complexityCantBeSuperiorThan10	复杂度数量不能大于 10
+componentVersionOrProductVersion	必须在组件版本和产品版本之间选择其一
+confirmAffectAbacusResources	此操作会将测算表中使用且尚未投入该项目的全部资源投入项目。是否继续？
+confirmCancelChange	是否要刷新界面并放弃当前更改？
+confirmChangeLoosingNoSave	部分更改尚未保存。<br/><br/><div class='messagePopUpDetail'> - 点击&nbsp;<span class='messagePopUpButton'>&nbsp;保存&nbsp;</span>&nbsp;以保存并继续</br> - 点击&nbsp;<span class='messagePopUpButton'>&nbsp;继续&nbsp;</span>&nbsp;以不保存并继续<br/> - 点击&nbsp;<span class='messagePopUpButton'>&nbsp;取消&nbsp;</span>&nbsp; 以留在已更新的条目
+confirmCloseAbacusDefinition	确定要关闭此测算表定义吗？<br/> 所有关联的测算表行也将关闭。
+confirmCloseAbacusLine	确定要关闭此测算表行吗？
+confirmCloseAbacusPhase	确定要关闭此阶段吗？
+confirmControlDeletePlannedWork	<b>警告&#44 部分含计划工时的条目将被删除</b><br/>此操作无法撤销，并可能导致数据不一致。
+confirmControlDeleteRealWork	<b>警告&#44 部分含实际工时的条目将被删除</b><br/>此操作无法撤销，并可能导致数据不一致。
+confirmCreateAssignmentsFromAbacus	此操作将删除此前由测算表创建的全部分配并重新创建。是否继续？
+confirmDeleteActivitySkill	确定要删除此活动技能吗？
+confirmDeletePokerItem	确定要删除此用户故事吗？
+confirmDeleteResourceCapacity	确定要删除此资源容量吗？
+confirmDeleteResourceIncompatible	确定要删除此不兼容资源吗？
+confirmDeleteResourceSkill	确定要删除此资源技能吗？
+confirmDeleteResourceSupport	确定要删除此资源支持吗？
+confirmDeleteSynchronizedItem	删除此条目还会移除与已同步条目 <b>${1}  #${2}</b> 的同步链接
+confirmDeleteTodoList	确定要删除待办清单 &#34${1}&#34 吗？
+confirmDeleteUserStory	确定要从该条目移除此用户故事吗？
+confirmDeleteWorkUnit	确定要删除工作单元吗？
+confirmDeleteWorkUnitCatalogPhase	确定要删除此阶段吗？
+confirmDisconnectionSSO	确认断开你的 ${1} 会话
+confirmLockRevisionUpdate	${1}（${2}）正在安装更新。<br/>是否继续？
+confirmRemoveAbacusDefinitionLine	是否要删除此测算表定义行？
+confirmRemoveAbacusLine	确定要删除此测算表行吗？
+confirmRemoveAbacusPhaseLine	确定要删除此阶段吗？
+confirmRemoveAbacusProjectLine	确定要删除此测算表使用行吗？
+confirmRemoveMessageFollowup	确定要删除法律声明跟进吗？
+confirmRemovePhasing	确定要删除此阶段划分吗？
+confirmRemoveWorkCommand	确定要删除此工时订单吗？
+confirmSplit	确定要拆分此 ${1} #${2} 吗？
+confirmWorkPlanCalculToLong	根据这些特定参数计算工作计划将比预期更久。<br/><br/>是否继续？
+confirmWorkPlanNoParam	在未选择任何参数时计算工作计划将耗时很长。<br/><br/>是否继续？
+connectionAlreadyExists	你已在此浏览器中连接&#44 可能是在另一个标签页。<br/>请使用“打开新标签页”按钮打开新标签页，以免扰乱会话。
+consolidateIfSet	仅在已设置时（不清除父级）
+contactAllreadyLink	联系人已关联
+createNothingFromLdapUser	仅保留为用户
+createReject	若用户在 ProjeQtOr 中不存在，则拒绝连接
+criticalPathFilterExpandCollapseDisabled	关键路径筛选生效时，展开/折叠已禁用。
+criticalResourceIndicatorValueColor	指标大于
+criticalResourceLateHint	该活动的结束晚于最优计划
+criticalResourceLateStartHint	该活动本应已经开始，才能遵循最优计划
+criticalResourceNormalHint	遵循最优计划不缺少可用性
+criticalResourceSurbooked	缺少容量
+criticalResourceSurbookedHint	资源的可用性不足以遵循最优计划
+cronDefineParametersHelp	用于触发处理的参数<br/><i>格式与 Linux 系统上的 Cron 相同</i>
+cronExecutionNotRunningAdmin	此功能未按周期运行
+cronExecutionRunningAdmin	此功能正在按周期运行
+cronRunning	cron 已启动 &#58 点击此处停止
+cronStopped	cron 已停止 &#58; 点击此处启动 cron
+dataCloningErrorCanNotCopy	克隆数据出错 - 无法复制代码
+dataCloningErrorCanNotCreateFolder	克隆数据出错 - 无法创建目标文件夹
+dataCloningErrorCantCreateDb	克隆数据出错 - 无法创建数据库
+dataCloningErrorCantCreateParameter	克隆数据出错 - 无法创建参数文件
+dataCloningErrorCantCreateUnderFolder	克隆数据出错 - 无法在目标文件夹下创建文件
+dataCloningErrorCantDeleteFolder	克隆数据出错 - 无法创建目标文件夹
+dataCloningErrorDeleteDb	克隆数据出错 - 无法删除数据库
+dataCloningErrorPathDontExist	克隆数据出错 - 目标路径不存在
+daysBefore	天之前或
+delayNotDone	未按时完成工单的平均数量
+delayNotHandled	未按时处理工单的平均数量
+deletedElementStream	已删除要素
+dialogWorkflowProfileParameter	选择要显示或隐藏的权限配置
+documentLockedInfo	<b>此文档已锁定</b><br/>完成后请务必解锁
+doesntExists	不存在
+EmployeeManagerOrLeaveSystemAdminCanChangeStatus	员工经理或休假系统管理员可以更改状态
+EmployeePassedInRequestIsNotAnEmployee	请求中传入的员工并不是员工
+EndDateMustBeSuperiorOrEqualToStartDate	结束日期必须大于或等于开始日期
+EndReasonIsMandatoryWhenEndDateIsNotNull	设置了结束日期时，结束原因为必填
+EnforceConnection	我确定已没有残留连接。<br/> 强制重新连接
+errorAbacusClassNotDefined	列 ${1} 未定义类&#58 ${2}
+errorAbacusColumnMustBeFilled	必须填写列 ${1}，因为此测算表中已定义 ${2}
+errorAbacusColumnNotDefined	不能填写列 ${1}，因为此测算表中未定义 ${2}
+errorAbacusDefinitionDoesNotExist	测算表定义不存在
+errorAbacusDefinitionEmpty	测算表定义行至少必须填写名称和字段 1。
+errorAbacusDefinitionNoExist	测算表定义不存在
+errorAbacusInvalidId	类 ${2} 不存在 ID ${1}
+errorAbacusPhaseDurationNotValidInteger	行 ${1}&#58 工期必须为 0 到 99999 之间的正整数
+errorAbacusPhaseEmpty	行 ${1}&#58 必须填写简称和全称
+errorAbacusValueFieldCannotBeFilled	不能填写列 ${1}，因为 ${2} 是值列（valueField）
+errorAck	确认时出错
+errorActivityMoveIncompatiblePhasing	不能移动此活动&#58 源项目与目标项目的项目阶段不兼容
+errorAddDataCloning	不能再为此用户提交更多创建请求
+errorAddDataCloningPerDay	今天不能新增数据克隆请求。请明天再试。
+errorAffectationOverlap	该资源在与所填时段重叠的期间已经投入此项目
+errorAffectingResource	分配资源 ${1} 时出错
+errorAllreadyChrono	今天已经存在文档版本
+ErrorAlreadyExistALvTypeOfContractTypeWithSameIdLvTypeAndIdContractType	此合同类型的此休假类型已存在
+errorAlreadyIncompatible	资源不能作为不兼容资源的支持资源
+errorAlreadySupport	资源不能与它所支持的资源不兼容
+errorAtLeastOneColumnRequired	验证错误&#58 至少必须指定一列
+errorAttachmentSize	错误&#58 附件过大
+errorBillingTypeMissing	发票行未定义开票类型。<br/> 可能取值&#58<br/> M&#58${1}<br/>E&#58${2}<br/>R&#58${3}<br/>P&#58${4}
+errorCannotAddSupportToMaterialResource	不能为物料资源添加支持资源
+errorCannotDeleteAbacusableUsedInDefinition	无法删除测算表定义中使用的类
+errorCannotDeleteAbacusUsedInProject	无法删除此测算表行，因为它已用于项目。
+errorCannotDeleteAbacusWithLines	无法删除此测算表定义行，因为它已用于填写测算表。
+errorCannotDeletePhaseUsedInActivities	此阶段已用于一个或多个活动，不能删除。
+errorCannotDeletePhasingUsedInAbacusLines	此阶段划分已用于测算表行，不能删除
+errorCannotEditAbacusWithLines	无法编辑此测算表定义行，因为它已用于填写测算表。
+errorCannotModifyAbacusableUsedInDefinition	不能修改已用于测算表定义的 Abacusable 的 &#34value&#34 和 &#34input&#34 字段
+errorCannotSelfIncompatible	资源不能与自身不兼容
+errorCannotSelfSupport	资源不能作为自身的支持资源
+errorCantHaveTwoBankOffDayWithSameEasterdayValue	不能有两个复活节偏移值相同的公休日
+errorCantHaveTwoBankOffDayWithSameMonthAndDay	不能有两个月和日相同的公休日
+ErrorCantTakeMoreLeaves	不能再休假
+errorClassDoesNotExist	该类不存在
+errorClassHasNoValueField	此类没有“value”字段
+errorClassNameNotFoundInAbacusable	无效的类名&#58 此类不在可用列表中
+errorClassNameSequence	行 ${1} 必须先填写字段 ${2}，然后才能填写后续字段。
+errorClosingAbacusLines	关闭关联的测算表行时出错。
+errorCopyingAbacusLines	复制时出错
+errorCreatingAssignment	在活动 ${2}（阶段 ${3}）上为 ${1} 创建分配时出错
+errorDayIsGreaterThanLastDayOfMonth	该日期大于所选月份的最后一天
+errorDeleteBilledWorkCommand	无法删除含有已开票工时的工时订单
+errorDeleteDoneWorkCommand	无法删除含有已完成工时的工时订单
+errorDeleteParentNote	无法删除已有回复的备注
+errorDeleteParentWorkCommand	该工时订单包含一个或多个子工时订单
+errorDeleteSynchItems	无法移除两个已同步对象之间的链接
+errorDependencyPeriodicMeeting	无法与周期性会议建立依赖关系
+errorDuplicateAbacusLine	测算表填写内容中有一行重复
+errorDuplicateProductAsset	此依赖关系已存在
+errorDuplicateStatusMail	已为此要素和状态定义事件邮件
+errorElementAlreadySynchronized	给定项只能有一个同步
+errorExistingBill	错误 '${1}' id # ${2} 不存在
+errorFinalizeMessage	finalizeMessageDisplay('${1}') 出错 &#58; <br/>目标不是 node，也不是 widget<br/>或者 lastOperation 或 lastOperationStatus 不是 node<br/><br/>${2}
+errorFormatTags	标签格式错误 &#58 '${1}'
+errorIncompatibleAlreadyPlanned	此期间已有不兼容的资源被手动排入计划
+errorIncompleteAbacusLines	有一行或多行内容不完整 &#58
+errorInterventionInput	请选择活动和/或介入模式。
+ErrorInTheAttributesNeededForCalculation	计算所需的属性有误
+errorLeastOneObjectAndOnlyOneInRule	一条规则中必须有且仅有一个对象
+errorLeastOneObjectAndOnlyOneInWhere	WHERE 子句中必须有且仅有一个对象
+errorLeftQSuperiorToQuantity	剩余数量大于数量
+errorLeftQuantityOrQuantityNotModuloOfZeroPointFive	剩余数量或数量不是 0.5 的倍数
+errorLinkedContact	联系人 '${1}' 已关联到 '${2}'
+errorLoadContent	loadContent('${1}'&#44; '${2}'&#44; '${3}'&#44; '${4}') 出错<br/>目标 '${5}' 不是 node，也不是 widget
+errorLvEarnedStartDateNotValidAnymore	应得休假权利的开始日期已不再有效
+errorMailMessage	无法获取来自 '${1}' 的邮件内容
+errorMailSender	收到来自 '${1}' 的邮件，无法识别为资源、用户或联系人
+errorMailSenderImport	收到来自 '${1}' 的邮件，无法识别为用户
+errorMandatoryComplexity	复杂度为必填
+errorMandatoryNoteOnStatusChange	保存此状态变更之前必须添加备注。
+errorMandatoryNoteStatusNotInWorkflow	所选状态必须属于此类型的工作流。
+errorMandatoryQuantity	数量为必填
+errorMissingName	阶段划分名称无效
+errorMissingOldDaysInUpdateLeftInLeaveMain	LeaveMain 的剩余更新中缺少原有天数
+errorModeUpdateLeftInLeaveMain	错误 &#58; LeaveMain 中的剩余更新模式
+errorMonthValidated	该月份已锁定
+errorMultiSelectProject	当前选择器格式不支持多选。请使用单选，或将选择器切换为标准模式。
+errorMustCloseNotNullLeaveEarnedFirst	必须先关闭非空的应得休假权利
+errorMustDeleteNullLeaveEarnedFirst	必须先删除空的应得休假权利（没有开始日期或结束日期）
+errorNameAlreadyExists	此名称已存在
+errorNameisEmpty	工时订单的名称为空
+errorNoDashInWorkUnitName	工作单元名称不能包含连字符（-）
+errorNoFieldSelected	尚未选择任何字段
+errorNotBudgetItem	所选预算不是预算科目
+errorNotFoundAttachment	未找到文件
+errorObjectId	新建按钮出错 &#58; objectId 不是 node
+errorOneOfTheRequestFieldsIsMissing	错误 &#58; 请求中缺少某个字段
+errorOnlyOnePoolOrResourceAllowed	每个测算表定义只能有一个类型为&#34资源池或其资源&#34的列表
+errorOnUpdatingLeaves	更新休假期间时出错
+errorOtpActivationMailUnavailable	&#34无法启用双因素认证，因为邮件发送不可用。该设置保持禁用
+errorOtpCodeExpired	验证码已过期。请重新获取验证码
+errorOtpEmailMissing	尚未为此用户提供电子邮件地址
+errorOtpInvalidCode	验证码不正确
+errorOtpInvalidCodeAccountLocked	验证码不正确 - 账户已锁定
+errorOtpInvalidCodeRemainingTrieserrorOtpInvalidCodeRemainingTries	验证码不正确 - 剩余尝试次数 ${1}
+errorOtpRequestMissing	未找到有效的验证码请求。请重新获取验证码
+errorOtpSend	无法通过电子邮件发送验证码
+errorOtpSendDisabled	无法发送验证码。双因素认证已被禁用
+errorOtpValidationTryLimit	已达到最大尝试次数。请重新获取验证码
+errorPeriodCantOverlap	变动期间不得重叠
+errorPhaseNotInProjectPhasing	所选阶段不属于该项目的阶段划分
+errorPhasingChangeIncompatibleAbacus	无法更改阶段&#58 以下测算表使用了不同的阶段
+errorPlanWorkManDuplicate	若某资源在该活动上有重复分配，则无法将计划模式设为&#34手动&#34
+errorProjectNotSaved	创建分配之前必须先保存项目
+errorQuantityCantBeSuperiorThanCommand	数量不能大于订单数量
+errorQuantityNotModuloOfZeroPointFive	数量不是 0.5 的倍数
+errorQuantityStartDateEndDateMustBeDefinedTogether	数量&#44 开始日期和结束日期必须同时填写
+errorReopenControl	无法重新打开位于已关闭项（${1}）之下的此项
+errorRequiredLine	要将状态变为 ${2}，必须完成检查清单 &#34${1}&#34
+errorResetPasswordInvalidToken	密码重置会话无效
+errorResetPasswordLdapUser	你的账户由 LDAP 目录管理。<br/>请在目录应用程序中修改密码
+errorResetPasswordOldPassword	新密码应与旧密码不同
+errorResetPasswordTokenUsed	密码重置会话已被使用
+errorResourceNotFound	未找到资源 ID #${1}
+errorSameName	已存在同名版本
+errorSelectClass	请选择一个类
+errorStartDateAfterEndDate	该资源的关闭日期早于入职日期 <br/> 是否确认此情况？
+errorStrategicValue	提案类型的项目必须填写战略价值
+errorSubmitForm	submitForm('${1}'&#44; '${2}'&#44; '${3}') 出错 &#58; <br/> 表单 '${3}' 不是 widget。
+errorSupportMeeting	资源 #${1} 已排期&#44 无法在此会议安排其支持人员 #${2}
+ErrorThisEmployeeDoesntHaveLeaveEarned	该员工没有应得休假权利
+errorTypeRestricted	该项目不允许使用此项的类型
+errorUniqueBillLink	发票不能关联到多个客户订单
+errorUploadFile	上传文件时出错。错误代码 = ${1}
+errorUploadNotComplete	上传未完成 &#58 上传可能已中断
+errorValidityDate	工作单元的有效日期已过
+errorVersionLoop	不能选择版本与其自身兼容
+errorWhenEasterDayMonthAndDayMustBeNull	复活节假日的月份和日期必须为空
+errorWhenNotEasterDayMonthAndDayAreRequired	非复活节假日必须填写月份和日期
+errorWorkResource	第 ${3} 天，工时 ${4} 的资源是 '${1}'，而分配 ${5} 的资源是 '${2}'（${6} #${7}）
+errorWorkTypeMustBeFixedForDays	当单位为&#34天&#34&#44 分配工时类型必须为&#34固定&#34
+errorWrongRequest	错误 &#58; 错误的请求
+errorXhrPost	xhrPost 返回 loadContent('${1}'&#44; '${2}'&#44; '${3}'&#44; '${4}') 时出错 &#58; <br/> ${5}
+everyWeek	每周（只要结束日期未更改）
+exceedWork	不能在此期间插入缺勤&#44 否则会超出该资源的产能
+explainationOfHowWorksLeaveTypeOfEmploymentContractType	若选择 'défaut'&#44 这些值将应用于默认合同类型。若选择 'all'&#44 这些值将应用于所有合同类型。
+explainHowEnterCoef	工期为 2 天时，加成系数 1.5 得到总工期 3 天 &#13;工期为 2 天时，加成系数 0.5 得到总工期 1 天
+facturXMessageError	Factur-X&#58 缺少必填数据
+facturXMessageErrorBillLine	Factur-X&#58 尚未录入发票行
+filterGroupEmpty	筛选组必须至少包含一个条件
+filterGroupLevelMax	筛选组最多 3 级
+filterGroupNeedsTwoCriteria	筛选组必须至少包含两个条件
+filterSynthesis	不要按状态筛选汇总
+ganttMsgRightPart	项目甘特图将显示在此处
+getTagsInNote	你已被提及
+getTagsInNoteBy	在项的备注或描述中提及了你
+greaterThan	大于
+groupNotClose	语法错误&#58 缺少右括号，无法正确分组条件。
+groupNotOpen	语法错误&#58 缺少左括号，无法正确分组条件
+hasAttachments	有附件
+hasLinks	有链接
+hasNotes	有备注
+hasPredecessors	有前置项
+hasSuccessors	有后置项
+hasTakenAnticipatedLeavesForThisActualPeriod	已在当前规定休假期间使用预支休假
+helpActivityOnRealTime	将通过拉平核定工时&#44 已分配工时&#44 和修订工时来对齐工时数据
+helpAfterMailTreatment	对已处理邮件要执行的操作&#58 标为已读或删除
+helpAllowSendingStatistics	允许向 ProjeQtOr 团队发送统计数据&#13这些数据按 GDPR 匿名处理&#13“否”将阻止发送统计数据。&#13此参数不适用于无法访问互联网的本地网络（intranet）实例
+helpAllowTypeRestrictionOnProject	允许在项目类型级的限制之外，再为每个项目定义附加的类型限制
+helpAutoAffectationPool	将资源池投入项目时，自动投入该资源池中的资源。&#13显式投入会生成之后不再更改的可见投入（即使资源池的投入发生变化）。 &#13隐式投入会生成随资源池变化而更新的不可见投入（资源池对项目的投入变化，或资源对资源池的投入变化）。
+helpAutoLimitThreshold	超过此项目数量&#44 仅显示不超过该阈值的层级。0 表示禁用此限制。若已设置“显示层级项目”，则该设置优先&#44 并且在选择收藏列表时不应用此限制。
+helpAutomaticChangeTechnicalProgress	活动完成时，自动将技术进度改为 100%
+helpAutomaticFeedingOfTheReal	在完整计算计划之前&#44 自动把截至计划计算开始日期前一天的计划工时记入实际工时
+helpAutomaticPlanningCompleteDate	运行完整自动计划时，确定计划开始日期
+helpAutomaticPlanningDifferentialDate	运行差异自动计划时，确定计划开始日期
+helpAutoSetUniqueComponentVersion	若所选组件只有一个关联到所选产品版本的组件版本，则自动设置该组件版本
+helpAutoUpdateLeftWorkOnPool	当资源在已无剩余工时的个人分配上填入实际工时时，自动更新资源池的剩余工时。&#13仅扣减职能相同的资源池分配。
+helpCanHaveSubActivity	若未勾选&#44 该活动不会出现在父活动列表中
+helpCaReplaceValidCost	收入会自动记为活动和项目上的核定成本
+helpChangeReferenceOnTypeChange	要素类型变更时自动更改编号（会在编号中产生空号）
+helpComplexitiesNumber	复杂度的数量&#44 默认为 3，且不能大于 10。
+helpCriticalResourceAvailable	资源的总可用工时。&#13即其工时产能&#44 不考虑已经计划的工时。
+helpCriticalResourceCapacity	按显示期间计算的资源产能平均值
+helpCriticalResourceIndice	资源的关键程度。&#13 计算方式 = （超额负荷 - 余量）/ 可用量 * 100&#13数值越高，资源越关键。&#13负值表示其工作量可在该期间内摊平&#13;正值则突出关键资源。
+helpCriticalResourceMargin	该期间资源尚余的工时。&#13余量（期间内）= 可用（期间内）- 按正常模式计划的工时（期间内）
+helpCriticalResourceOverbooked	为排出最佳计划所缺少的工作量&#44 需计入约束（依赖关系&#44 工期&#44 核定结束日期）
+helpCriticalResourceUsedOverbooked	在显示期间内，为计入约束而按超额安排理想计划的工时（依赖关系&#44 工期&#44 核定结束日期）。
+helpCronArchiveCloseItems	项关闭后&#44 其全部历史将被归档
+helpCronArchivePlannedDate	这是每天开始归档历史的时间
+helpCronArchiveTime	历史将按所填的天数&#44 对应的频率进行归档
+helpCronCheckEmails	检查收到的邮件并将回复存为备注的间隔（秒）&#44 。&#13 -1 表示禁用此功能
+helpCronCheckEmailsHost	用于检查收件的 IMAP 主机连接字符串&#44; 例如 &#58; {imap.gmail.com&#58;993/imap/ssl}INBOX
+helpCronExecutionActivateAdmin	允许该功能每天自动运行一次
+helpCronExecutionDisconnectAll	允许该功能按设定频率自动断开所有用户的连接
+helpCronExecutionRunConsistencyCheck	允许该功能按设定频率自动通过电子邮件发送一致性检查
+helpCronImportDirectory	扫描待自动导入的新文件的目录（出于安全考虑，请将其移出 Web 可访问范围）
+helpCronImportMailList	自动导入结果日志的收件列表（若目标为电子邮件）
+helpCronTimeFormat	CRON 所发送邮件中用于显示日期的格式。当这些邮件包含日期&#44 活动详情&#44 等内容时&#44 将应用所选格式。
+helpCsvExportUTF8	导出的 CSV 文件保留 UTF-8&#10;若设为否&#44 则编码为 CP1252（建议用于英语及西欧语言的 Windows）
+helpDefaultProfile	选择创建新用户时自动设置的默认权限配置
+helpDefaultSkipCopyStatus	将自动勾选复制选项，以便直接进入状态&#34已记录&#34并跳过状态&#34已复制&#34
+helpDefaultTheme	用于登录界面以及用户自行选择主题之前整个应用的默认主题
+helpDependencyStrictMode	若采用严格模式，任务将在前置项结束的次日开始
+helpDirectAccessToComponentList	选择组件时&#44; 是否直接进入完整列表（可筛选）&#44; 而不经过弹出窗口
+helpDisplayIconMenuLeft	右键单击以显示或隐藏图标
+helpDisplayMilestonesStartDelivery	在扁平结构中显示产品版本和组件版本的开始日期与交付日期
+helpDisplayOnlyHandled	在工时表界面仅显示已开始的任务
+helpDisplayPoolsOnImputation	在工时表中&#44 是否显示资源所参与资源池的已分配工时
+helpDisplayTimeline	当选择了要显示在时间线中的项时显示时间线&#13禁用此选项后&#44 即使已选择项，时间线也会隐藏。
+helpDocumentRoot	存放文档版本的文档根目录（出于安全考虑，请将其移出 Web 可访问范围）
+helpDontAddClosedDeliveredVersionToProject	向项目添加产品时&#44 同时添加其已关闭和已交付的版本
+helpDontReceiveTeamMails	当收件人为&#34;团队&#34;时不接收电子邮件（投入该项目的资源）
+helpDontStartBeforeValidatedDate	在核定开始日期之前锁定工时表上的实际工时录入&#13适用于模式为&#34不得早于核定日期开始&#34或&#34必须在核定开始日期开始&#34的活动
+helpEnterArchiveMode	默认情况下&#44; 勾选&#34;显示已关闭要素&#34;会显示进行中项目的已关闭要素。 &#10;这不包括已关闭项目的要素。 &#10;要查看已关闭项目的要素&#44; 必须进入归档模式。
+helpExpenseLink	将自动生成的费用自动转移到尚无任何费用的关联项。
+helpExportAssignmentsForXMLFormat	是否将分配数据导出到 MS-Project 导出文件&#13若设为否&#44 MS-Project 格式中将没有资源名称
+helpFilenameCharset	在服务器上保存文件时使用的字符集，以便文件名能包含非 ASCII 字符（例如 ISO-8859-15）
+helpFontForPDF	PDF 导出所用字体&#10;'freesans' 对非 ANSI 字符的兼容性更好&#10;'helvetica' 生成的 PDF 文件更小
+helpForceProjectPriority	提高活动优先级，以便优先把同一项目的任务放在一起计算。&#13这有助于保持项目的一致性&#44 尤其是父活动。&#13与其他计划模式相比，不会优先处理固定工期的活动&#13&#34否&#34 可保留 V12.0 之前的行为
+helpGanttPlanningPrintOldStyle	若甘特图打印出错，请按旧版样式打印。这样会失去依赖关系等一些精细显示，但更稳定
+helpGestionInheritedEndDate	计算继承的结束日期，并在未设置核定结束日期时显示。&#13继承的结束日期来自后置项或父项的核定结束日期。
+helpHandledProject	隐藏未开始或已完成的项目
+helpHideClosedProjectConsolidation	隐藏在当前月份之前已关闭的项目
+helpHideItemTypeRestrictionOnProject	按权限配置限制类型时会隐藏这些项&#10; - 若设为是&#44 具有该权限配置的用户将看不到未选类型的项&#10; - 若设为否&#44 用户只是不能用这些类型创建新项
+helpImputationAlertCancelByOther	当工时表提交被其他资源取消时，发送警报或电子邮件
+helpImputationAlertControlDay	定义检查时实际工时必须填写到哪一天
+helpImputationAlertGenerationDay	定义实际工时未完全填报时发送警报的星期几
+helpImputationAlertGenerationHour	定义实际工时未完全填报时发送警报的时刻
+helpImputationAlertSendToResource	向未完全填报实际工时的资源发送警报
+helpImputationAlertWorkTooSoon	若在核定开始日期之前填报工时&#44 则提醒项目负责人
+helpImputationDiferentOrganismManagerWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationDiferentProjectLeaderWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationDiferentResourceWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationDiferentTeamManagerWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationFormat	工时表界面的输入格式&#13 - 取决于用户的选择&#13 - 按周&#13 - 按月（请注意&#44 低分辨率屏幕上的显示可能异常）
+helpImputationHideDoneG	在工时表中&#44 是否显示已完成项&#13（用户参数的默认值）
+helpImputationOnlyIncompleteOrganismManagerWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationOnlyIncompleteProjectLeaderWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationOnlyIncompleteResourceWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationOnlyIncompleteTeamManagerWork	当期合计（或逐日）与期望值不一致时立即发出警报&#44 无论偏高还是偏低。
+helpImputationTicketResponsible	在包含到期日的期间内，为工单负责人在工时表上显示工单&#13即使该工单尚未填报任何工时
+helpImputOfAmountClient	针对收入项，定义金额是按不含税录入并计算含税，还是相反
+helpImputOfAmountProvider	针对费用项，定义金额是按不含税录入并计算含税，还是相反。
+helpImputOfBillLineClient	针对收入项，定义发票行合计计入含税总额还是不含税总额。若存在发票行，则此参数优先。
+helpImputOfBillLineProvider	针对费用项，定义发票行合计计入含税总额还是不含税总额。若存在发票行，则此参数优先。
+helpIncludeProductInProductStructure	在产品结构显示中包含子产品（无论是否为扁平结构）
+helpInterventionInput	选择活动和/或介入模式。 <br/> 单击空白单元格 &#58 按为该半天所选的参数填入介入。 <br/> 单击非空单元格&#58 <br/>   => 若所选参数相同&#58 则清除介入数据 <br/>   => 若所选参数不同&#58 则替换介入数据 <br/> [CTRL]&#43;单击会同时作用于两个半天。
+helpIsManualProgress	可手动填写无分配的固定工期活动的进度。若设为是&#44 将计算实际工时&#58 [实际工时] = [核定工时] x [进度]
+helpLdapDefaultProject	首次通过 LDAP 连接创建的新用户将自动投入的项目
+helpLdapFormatUri	允许以完整 URI 填写 LDAP 服务器&#44 例如 &#34ldaps&#58//ldap.url.org&#58;686&#34 表示 LDAPS
+helpLimitPlanningActivity	将工单上的计划活动列表限制为已勾选复选框 &#34;是计划活动&#34; 的活动
+helpLockDocumentDownload	文档锁定后禁止下载
+helpLogFile	日志文件名，可包含参数 ${date}，以便每天一个文件（出于安全考虑，请将其移出 Web 可访问范围）
+helpMailerTest	发送测试邮件以检查 SMTP 配置。 &#13注意&#58; 此操作会保存全局参数。
+helpMailGroupActive	启用邮件分组后&#44; 在设定期间内发出的自动邮件会合并为一封邮件
+helpMailGroupDifferent	若分组邮件对应不同模板&#13;&nbsp;- 发送全部消息&#44; 每个模板一封&#13;&nbsp;- 只发送最后一条消息&#13;&nbsp;- 合并全部消息并发送一封邮件
+helpMailGroupPeriod	定义一段时间（秒）。在此期间内，若同一项上又发出一封邮件&#44; 则将这些邮件合并为一封
+helpManageAccountable	在工单上管理问责&#44; 此时负责人为当前执行人
+helpManageCapacityForIntervention	资源产能对已计划介入的影响 &#58 &#13 - 限制工期 &#58 产能为 0.8 的资源只能安排一个 0.5 天的半天 &#13 - 决定工期 &#58 产能为 0.8 的资源可以安排两个各 0.4 天的半天 &#13 - 无 &#58 产能为 0.8 的资源可以安排两个各 0.5 天的半天
+helpManageMilestoneOnItems	在不可计划项上管理目标里程碑（需求&#44; 工单&#44; 产品版本&#44; 输入项&#44; 交付物&#44; 交付）&#13;项的计划日期将根据里程碑日期自动更新
+helpManuallyChangePlannedDate	允许手动修改固定里程碑的计划到期日。&#13这样可以记录固定里程碑的延误日期，同时在核定到期日中保留初始日期。
+helpMarkAlertsAsRead	将所有警报标记为已读，使其不再在屏幕右下角弹出
+helpMaxDaysToBookWork	资源填报超过指定天数的未来实际工时时将收到警报
+helpMaxDaysToBookWorkBlocking	资源填报超过指定天数的未来实际工时时将收到阻止消息
+helpMaxProjectsToDisplay	数据库中的项目总数达到此上限后，将要求选择项目以限制计划视图
+helpMentionDetectionFollowup	可将被提及的人加入该项的跟踪
+helpMentionDetectionMail	可向被提及的人发送电子邮件
+helpMentionDetectionNotification	可为被提及的人创建内部通知
+helpModernUI	界面类型&#13  => classic&#58 自 V9 起使用的界面&#13  => modern&#58 更清晰&#44 更轻量的新界面&#13 &#34modern&#34 界面本质上基于 &#34classic&#34 界面&#44 颜色更柔和、边框更少。&#13 请注意，V9 之前的旧界面已不再提供。
+helpMultiCurrency	允许为每个项目设置本地货币。&#13子项目自动继承本地货币。&#13数据以本地货币录入，并按全局货币汇总。
+helpMultiCurrencyShowGlobal	当项目使用本地货币时，以全局货币显示数据
+helpNotificationSystemActiv	启用通知系统，从而新增通知定义菜单，并在需要时显示通知图标
+helpNotReceiveHisOwnEmails	允许接收自己的电子邮件
+helpNotStartBeforeValidatedStartDate	允许项目在核定开始日期之前开始。&#13这将影响计划和工时表（在此日期之前不会被锁定）
+helpOldPasswordDifferentNew	若值为是&#44 则在更改密码时 不能把旧密码用作新密码&#44&#44
+helpOrInput	与前一个条件应用逻辑运算符（默认为 AND）&#13注意&#44; 运算符 AND 先于运算符 OR 应用&#13;示例 &#58;&#34; A OR B AND C&#34; 等价于 &#34;A OR (B AND C)&#34;
+helpOtherProjects	各自占资源周产能不足 20% 的项目数据归并到同一颜色下。&#13 右键单击可查看详情
+helpOtpForAdminUsers	要求管理员进行双因素认证。&#13 系统将通过电子邮件发送一次性验证码以完成登录（OTP）
+helpOtpForDirectConnectionsWithSso	启用 SSO 后&#44 对不使用 SSO 的直接登录要求双因素认证。&#13 系统将通过电子邮件发送一次性验证码以完成登录（OTP）
+helpOtpForNewUsers	对密码尚未加密的用户要求双因素认证。&#13 系统通过电子邮件发送一次性验证码以完成登录（OTP）
+helpParamAttachmentMaxSize	附件最大字节数（必须小于或等于 php 参数 &#58 upload_max_filesize）&#13可以使用 K&#44 M 或 G 加整数值。&#13例如 1K 表示 1024
+helpParamAttachmentMaxSizeMail	附件最大字节数（必须小于或等于 php 参数 &#58 upload_max_filesize）&#13可以使用 K&#44 M 或 G 加整数值。&#13例如 1K 表示 1024
+helpParamDefaultTimezone	默认时区（列表可在网上找到）
+helpParamLdap_port	LDAP 端口（默认 389）
+helpParamLdap_user_filter	用于查找用户名的 LDAP 筛选（结果为找到的 %USERNAME%）
+helpParamLockAfterWrongTries	错误登录达到指定次数后锁定用户
+helpParamMailBodyUser	向用户通知登录信息时所发邮件的正文
+helpParamMailEol	邮件的换行格式，用于规避 Postfix < 2.1 的问题
+helpParamMailerSendAsCurrentUser	从项的详情发送邮件时&#44; 使用当前用户的电子邮件地址发送消息。 &#13;在某些情况下这可能导致错误&#44; 具体取决于 SMTP 服务器。
+helpParamMailReplyToName	邮件发件人名称。也将用作回复名称。
+helpParamMailSendmailPath	若 PHP 未能自动识别 sendmail 路径，则在此填写（否则留空）
+helpParamMailSmtpServer	SMTP 服务器［默认值为 'localhost'］
+helpParamMailSmtpUseUnsecureSsl	允许使用自签名或无法识别的证书连接 SMTP 服务器。 &#13 此选项会禁用证书校验并降低连接的安全性。 &#13 但是&#44 它可以解决证书链与 OpenSSL 版本之间的某些不兼容&#44 或允许使用自签名证书。 &#13 若连接 SMTP 服务器失败&#44 请尝试启用此选项。
+helpParamMailTitleAnyChange	发生变更时发送的邮件标题
+helpParamMailTitleAssignment	添加分配时发送的邮件标题
+helpParamMailTitleAssignmentChange	分配变更时发送的邮件标题
+helpParamMailTitleAttachment	添加新附件时发送的邮件标题
+helpParamMailTitleDescription	描述变更时发送的邮件标题
+helpParamMailTitleDirect	通过项上的发送邮件按钮手动发信时的邮件标题
+helpParamMailTitleNew	创建新项时发送的邮件标题
+helpParamMailTitleNewUserCreated	创建新用户时发送的邮件标题
+helpParamMailTitleNote	为项添加新备注时发送的邮件标题
+helpParamMailTitleNoteChange	备注变更时发送的邮件标题
+helpParamMailTitlePriorityChanged	优先级变更时发送的邮件标题
+helpParamMailTitleResponsible	负责人变更时发送的邮件标题
+helpParamMailTitleResult	结果变更时发送的邮件标题
+helpParamMailTitleStatus	状态变更时所发送邮件的标题
+helpParamMailTitleUser	向用户通知登录信息时所发送邮件的标题
+helpParamMemoryLimitForPDF	PDF 生成的内存上限（MB）。过小会导致 PDF 出错，过大可能使服务器崩溃。
+helpParamOrderNoteMail	选择邮件模板中备注的顺序是否为升序
+helpParamPasswordMinLength	新密码必须包含的最少字符数
+helpParamPasswordStrength	决定密码的强度 &#13  - 长度 &#58 至少须达到所定义的字符数 &#13  - 大小写 &#58 必须同时包含大写和小写字母 &#13  - 数字 &#58 必须至少包含一个数字&#13  - 特殊字符 &#58 必须包含若干特殊字符
+helpParamProxy	若服务器位于代理之后，则为代理参数&#13期望格式&#58 [IP 或 DNS&#58端口]&#13示例&#58 proxy-internet.yourdomain&#58;3128
+helpParamProxyLogin	代理需要认证时的代理登录名
+helpParamProxyPassword	代理需要认证时的代理密码
+helpParamReportTempDirectory	报表临时目录（必须位于网站文档根目录内才能获取图片）
+helpPasswordResetEnabled	启用重置密码功能，以便在登录前通过邮件中的链接更改密码。
+helpPasswordValidityDays	要求更改密码之前的密码有效天数&#44; 0 表示有效期不限
+helpPlannedWorkManualType	定义手动计划的干预是把工时记为计划工时，还是直接记为实际工时
+helpPlanningModeForParent	含子活动的活动会在由各子活动构成的工期上以平滑方式进行计划。&#13 此参数用于修改这种平滑的行为&#13 - 不允许超额预订&#58 若资源已被占用&#44 父活动的工期可以延长&#13 - 允许跨项目超额预订&#58 若资源被用在另一个项目上&#44 可以超额使用该资源以免延长父活动的工期&#13 - 允许项目内超额预订&#58 将通过可能超额使用资源来保持工期&#44 适用于项目内和跨项目
+helpPlanningPriorityByEndDate	若此参数为是&#44 活动将按已确认的结束日期排列优先级。&#13结束日期可以从后继项或父项继承。&#13无论此参数为是还是否&#44 最后的优先级准则是 WBS 中的顺序。&#13按结束日期排列优先级发生在此默认准则之前。
+helpPlanWithInfiniteCapacity	在资源可能被超额使用的情况下进行计划&#44 如同资源拥有无限的超额预订能力
+helpPredecessorButton	将视图限制为所选条目的前置项&#13 - 第 1 次点击 &#58 直接前置项&#13 - 第 2 次点击 &#58 全部前置项&#13 - 第 3 次点击 &#58 返回标准视图
+helpPreserveUploadedFileName	下载文件时使用上传时的原始文件名（是），还是使用按文档参照格式化的名称（否）？
+helpPrintHistory	定义打印版本是否显示要素的历史记录
+helpProfile	你的默认权限配置&#44; 定义于用户表单。&#13;它将决定你的访问权限。&#13;请注意，在某个具体项目上你可以拥有不同的权限配置。
+helpProjectDailyHours	项目可以定义自己的工作时间
+helpProjectIndentChar	项目列表（选择列表框中）用于缩进的字符
+helpProjectRestriction	当因项目选择而仅有一个可用项目时，在详情区域隐藏项目字段（所选项目没有子项目）
+helpRealWorkOnlyForResponsible	只有负责人可以在工单上录入实际工时
+helpRemoveQuickPlanningFeature	移除快速计划功能&#13更改将需要进行能力计划计算&#13'YES' 是 ProjeQtOr 在 V12.3 之前版本的行为
+helpRequestorLimitToContact	将请求人列表限制为仅包含联系人
+helpRequiredOldPassword	若值为是&#44 则在更改密码时&#44 用户必须输入旧密码才能接受密码更改
+helpResourceTeamAll	此行包含资源池中全部资源的能力&#44 以及资源池上和每个单一资源上的计划工时
+helpRestrictTypesProfileInline	限制类型时&#44 只有这些类型可供此权限配置的用户创建（并可选择是否显示）
+helpRestrictTypesProjectInline	限制类型时&#44; 只有这些类型会显示在该项目中
+helpRestrictTypesProjectTypeInline	限制类型时&#44; 只有这些类型会显示在此类型的项目中
+helpSAML_allow_login	通过 SAML2 协议使用 SSO 连接。&#13启用此功能前请务必先验证元数据
+helpSAML_defaultProject	首次通过 SAML 连接创建的新用户将自动投入的项目
+helpSAML_idpId	IDP 实体 ID&#13多数情况下它是指向 IDP 元数据的 URL&#13必填
+helpSAML_metadata	应将这些数据提供给 IDP 以配置 SP
+helpSAML_msgOnUserCreation	通过 SAML 认证创建新用户时向管理员发送的消息或警报类型
+helpScaytAutoStartup	是否在 CK Editor 中启用拼写检查。禁用可以解决某些浏览器中反复出现的错误。此参数需断开连接后才会生效。
+helpSelectFonction	在分配中把职能限制为该资源的职能。&#13（有成本的职能以及默认职能）
+helpSetDoneOnNoLeftWork	当没有剩余工时时，将任务设为第一个已完成状态
+helpSetHandledOnRealWork	当录入了实际工时时，将任务设为第一个进行中状态
+helpSetResponsibleIfNeeded	若尚未设置负责人，且按状态必须指定负责人，则自动将负责人设为当前资源
+helpSetResponsibleIfSingle	若尚未设置负责人且项目只投入了一个资源，则自动设置负责人
+helpShowColorTypeActivity	允许将活动的基本颜色改为活动类型的颜色。
+helpShowHatchOnPlanningBar	若已在该条目上选择此选项，则允许在计划条上显示阴影线
+helpShowIdleDefault	可将&#34显示已关闭&#34默认勾选&#13;不涉及计划界面和工时表&#13;与&#34归档模式&#34&#44 不同，不会显示已关闭项目中的已关闭条目
+helpShowOnlyNotes	在动态中只显示备注
+helpShowPoolLinesToUpdateLeftWork	显示分配在相同要素上的全部资源池行&#44 只能更改剩余工时
+helpShowSubscribedItems	显示你正在关注的条目列表
+helpShowTendersOnVersions	显示一个区域，用于列出产品&#44; 组件&#44; 产品版本和组件版本上关联的招标
+helpShowUnsubmitWork	显示未提交的周
+helpSizeDisplayProjectToday	今日界面上最多显示的项目数
+helpSkillsAlertCron	每日处理（在夜间触发），用于发送技能即将到期的邮件
+helpSkillsAlertPeriodicity	用于设置邮件的发送频率
+helpSortVersionComboboxNameDesc	更改组合框中版本的排序，使较新的排在前面（按名称降序）
+helpStartPage	连接之后首先显示的页面
+helpStatusChangeAssignment	在资源首次分配到该要素时&#44 将状态改为下一个定义为已分配的状态&#44 若当前状态本身并未定义为已分配状态。
+helpSubmitAlertSendToOrganismManager	提交之后，你希望向组织负责人发送哪种警报
+helpSubmitAlertSendToProjectLeader	提交之后，你希望向项目负责人发送哪种警报
+helpSubmitAlertSendToTeamManager	提交之后，你希望向团队负责人发送哪种警报
+helpSubscriptionAuto	当你关注产品或组件时，自动关注其版本。
+helpSuccessorButton	将视图限制为所选条目的后继项&#13 - 第 1 次点击 &#58 直接后继项&#13 - 第 2 次点击 &#58 全部后继项&#13 - 第 3 次点击 &#58 返回标准视图
+helpTechnicalProgress	允许以数量单位跟踪活动的技术进展&#44 而不与工作量上的实际进展关联
+helpTitle	将作为工具提示显示的标题
+helpUniqueResource	将对该分配进行计划，使资源池中只有一个资源执行该工作&#44 并选用最早能够完成的资源
+helpUpdateDeliverableResponsibleFromMilestone	里程碑负责人变更时更新交付物负责人
+helpUpdateIncomingResponsibleFromMilestone	里程碑负责人变更时更新输入项负责人
+helpUpdateMilestoneResponsibleFromDeliverable	交付物负责人变更时更新里程碑负责人
+helpUpdateMilestoneResponsibleFromIncoming	输入项负责人变更时更新里程碑负责人
+help_lib_inputMailboxMessage	要定义用于接收新工单和备注的 IMAP 邮箱&#44 请使用收件邮箱功能
+help_sla	是否存在服务级别协议？
+hideAssignationWihtoutLeftWorkSwitch	在甘特图条的详情中&#44 显示没有剩余工时的分配。&#13若停用&#44 则隐藏有实际工时但没有剩余工时的分配。&#13请注意，既无实际工时也无剩余工时的分配始终隐藏。
+hintCapacity	资源每天可以工作的天数<br/>将用于计划该资源<br/>单位为 FTE（全时当量）
+hintIdActivitySycnh	该工单与此活动同步
+hintIdActivityWork	工单上存在实际工时
+hintMaxDailyWork	资源的每日最大工时<br/>这将限制工时表上的录入</br>设为 0 表示&#34无限制&#34
+hintMaxWeeklyWork	资源的每周最大工时<br/>这将限制工时表上的录入</br>设为 0 表示&#34无限制&#34
+hintProportional	此选项根据任务工期计算工作量。&#13 工作量的计算方式为 &#58 [工期] x [分配率]&#13 此选项仅适用于固定工期或常规计划模式。
+hintProportionalAssignedWork	已分配工时已锁定，因为它将由计算得出（已启用比例模式）。&#13  [已分配工时] = [剩余工时]&#13 若任务已经开始&#44 则不再更新已分配工时。
+hintProportionalLeftWork	剩余工时已锁定，因为它将由计算得出（已启用比例模式）&#13   [剩余工时] = [工期] x [分配率]&#13 对于资源池&#13   [剩余工时] = [工期] x [分配率] x [FTE]&#13 工期按任务持续期间资源日历中的可用天数计算。&#13 若任务已经开始&#44 则只考虑从今天起的剩余工期。&#13
+hintSortOrderRelevance	在某一技能层级上，按资源与该技能的相关程度对资源排序
+hintVoteComment	你的评论将作为该条目的备注保存。<br/>它可以说明你希望如何处理该条目（需求表达或规格说明）。
+hintWorkPointConvertion	将估算工时换算为点数的比率。例如比率为 2&#44 时，估算工时 1.5 的工单目标点数为 3.0
+idAssignmentNoMatchResourceElement	idAssignment 与资源或要素不匹配
+idComplexityNoMatch	复杂度与订单不符
+idEmployeeMandatory	员工 id 为必填
+idLeaveTypeMandatory	休假类型 id 为必填
+idWorkUnitNoMatch	工作单元与订单不符
+IF	如果
+ifEmptyHelp	将<b>不会</b>覆盖已有值
+imapIsAlreadyUsed	用户 IMAP 已被使用
+importCompletedViewResult	导入已完成。是否立即查看结果？
+importFacturXNoPDF	文件扩展名不正确（必须为 PDF 格式）。
+importFacturXNoXML	此 PDF 文件不包含 XML
+impossibleAffectationResourceMaterial	不能将物料资源投入到项目
+impossibleAffectationResourcePool	资源池的投入期间不得重叠
+ImputationSubmitCancelByOther	你的工时表提交已被取消
+incompatibleResourceCannotWorkTogether	不兼容的资源不能以&#34协同工作&#34模式进行计划
+incorectPredecessorsFormat	输入的格式不正确。<br/>期望格式为 Class#id（例如 Activity#2）<br/>提供了一些快捷方式（请阅读用户手册）
+incorectPredecessorsInput	输入不正确，或该条目不存在。
+incorrectCurrencyOfCatalog	项目与其目录的本币不兼容
+incorrectCurrencyOfParent	项目与其父项的本币不兼容
+incorrectDateToEarlyFilterActivity	启用筛选后无法输入过去的日期
+installAutoDownloadFrom	点击下方某个版本，即可从 ProjeQtOr 网站下载
+installAutoList	在 '/files/version' 中找到安装文件（zip 格式）
+instructionsRestrictList	根据状态&#44 哪些版本&#44 会显示在此权限配置的“原始产品版本”列表中？
+intallRevisionUpdateError	修订更新过程中发生错误
+invalidAttributesForCustomEarnedRule	自定义获取规则的属性无效
+invalidDate	日期无效
+invalidDirectorySelf	不能将目录移动到其自身之中
+invalidEmail	邮箱无效
+invalidEndDate	结束日期无效
+invalidQuantity	数量无效
+invalidSAMLdefinition	SAML 定义无效。请检查必填参数。
+is	是
+isAccountableOf	对其问责
+isJustifiable	此类休假必须提供证明
+isNotPool	这不是资源池
+isNotTheSameThat	与之不同
+isNull	为空
+iterationInvalid	数量无效
+kanbanColumnDndHelper	使用拖放配置看板列。<br/> 将上方区域中的可用条目拖入各列以定义其内容。<br/> 看板类型决定可以使用哪些要素&#58 状态&#44 里程碑&#44 活动&#44 或产品版本。<br/> <br/> 对于基于状态的看板&#44 各列遵循工作流所定义的顺序&#58<br/> 一列从拖入其中的状态开始，并自动包含其后的各个状态<br/> 直到下一列的状态；若不存在后续列，则直到最后一个可用状态。
+kanbanImageReplaced	已替换一张图片
+kanbanSelectKanban	请选择一个看板
+lastFiveMinutes	不到 5 分钟前
+lastHalfHour	不到半小时前
+lastHour	不到 1 小时前
+lastQuarterHour	不到 15 分钟前
+leaveMngProjectAlreadyExists	专用于休假系统的项目已经存在
+leaveMngProjectCantHaveParentProject	专用于休假系统的项目不能有父项目
+leaveProcessingAfterLeaveDate	休假处理完成于休假日期之后
+leaveProjectDescription	此项目专用于休假系统管理。<br/>除非你清楚自己在做什么，否则请勿改动。
+leaveRequest	你有一条休假申请需要处理
+leaveRequestAfterLeaveDate	休假申请办理于休假日期之后
+LeavesCannotOverlapWithEachOther	各段休假不能相互重叠
+lessThan	小于
+linkSynchronized	条目已同步
+liveMeetingTitleBase	${1} &#13;点击以将该资源设为 ${2}
+lockedLeftWork	可以更新剩余工时
+lockSaveRefreshButton	锁定 / 解锁屏幕刷新&#13 &nbsp;-&nbsp;解锁&#58 需要时行内更新会刷新屏幕，并在启用自动模式时触发计算。&#13 &nbsp;-&nbsp;锁定&#58 行内更新不再刷新屏幕，且自动计算被阻止。
+mailableGoto	显示条目的 Class 和 Id（可点击以直接链接到该条目）
+mailActivityStrameSendTo	已向 ${1} 发送邮件
+mailImpossibleToSend	不能给自己发送邮件
+mailIsMinimized	已有一封邮件正在编写。 <br/>若继续&#44 将不会保存。是否继续？
+mailOtpBody	你好 ${1}&#44 <br/><br/> 你的验证码为 &#58 ${2} <br/><br/> 此验证码在 ${3} 分钟内有效。 <br/> 若这不是你发起的请求&#44 可能有他人正试图使用你的账户。请联系管理员。
+mailOtpSubject	你的验证码
+mailOtpTestBody	此测试邮件由 ${1} 实例于 ${2} 发出。<br/><br/>收到即表示 OTP 邮件发送正常。
+mailResetPasswordBody	你好 ${1}&#44  <br/><br/> 我们已收到你 Projeqtor 账户的密码重置请求。 <br/><br/> 要创建新密码&#44 请点击下方链接（10 分钟内有效）&#58 👉 ${2} <br/><br/> 若这不是你发起的请求&#44 你可以放心忽略此邮件。你的账户不会被更改。 <br/> 出于安全原因&#44 切勿与任何人分享密码。 <br/><br/> 需要帮助？请通过以下方式联系我们&#58 ${3} <br/><br/> 此致。
+maintainStatusOutOfWorkflow	此状态已不再属于与该休假类型关联的工作流。在其状态与休假类型工作流一致之前，不能更改此休假时段。
+maintainStatusSetLeaveChange	由于移动条件变为已提交、已接受或已确认，状态已发生更改。在其条件与原条件对齐之前，不能更改此休假时段。
+mandatoryNoteOnStatusChangeStatus	变更为该状态时必填
+meetingChangeStatus	${1} #${2} 已变更为 ${3}
+meetingFromPeriodicCannotBeCopied	此会议来自周期性会议&#44 不能复制。
+meetingWeekOnly	仅每周会议
+mentionEmailOptionDisabled	此资源没有邮箱地址
+mentionEmailWillBeSent	将发送一封邮件
+mentionFollowupOptionDisabled	此资源不是用户
+mentionFollowupWillBeAdded	该用户将被加入此条目的关注
+mentionNoOptionActivated	用户设置中未启用任何提及选项
+mentionNotificationOptionDisabled	此资源不是用户
+mentionNotificationWillBeSent	将向该用户发送一条内部通知
+messageAlertCancelSubmitByOther	资源 '${1}' 取消了你对 '${2}' 的提交
+messageAlertImputationWorkTooSoonBody	资源 ${1} 在条目的计划开始日期之前于 ${3} 录入了 ${2} 工时
+messageAlertSkillExpiry	有一项技能在 ${2} 之前到期
+messageAlertSkillsExpiry	有 ${1} 项技能在 ${2} 之前到期
+messageAlertSubmitedWork	资源 '${1}' 已提交 ${2} 上 '${3}' 的工时
+messageCantDeleteAnActivityAssociatedToLeaveType	不能删除与休假类型关联的活动
+messageInvalidLoginOrEmail	登录名或邮箱地址无效
+messageMandatoryNoteOnStatusChange	变更为此状态需要填写备注。
+messageMandatorySubTask	仍有待办清单尚未完成
+messageRoleNotAvailableForResource	所选职能不适用于此资源。
+messageTooManyOtpRequests	过去一小时内请求了过多验证码。请稍后再试
+messageTooManyPasswordResetRequests	过去 24 小时内的密码重置请求过多。<br/>请明天再试，或联系管理员。
+messageUnique	唯一字段 '${1}' 已存在另一个值为 '${2}' 的条目
+migrationBackupRequired	此迁移对数据库有重大影响。<br/>迁移前请务必备份数据库。
+migrationLongLasting	此迁移的耗时将长于通常情况（数分钟）
+migrationVeryLongLasting	此迁移的耗时将远长于通常情况（从数分钟直至数小时）
+minimumThresholdAssignError	资源的已分配能力（计入分配率）不得低于每日最低阈值 ${1}
+minimumThresholdInputError	最低阈值不得超过资源的最低已分配能力 ${1}
+minutesBefore	分钟前
+missing	缺失
+moduleAbsenceComment	人力资源管理涵盖缺勤的行政跟进。&#10;<br/> 每个被标识为员工的资源都关联一种工作合同类型&#44; 从而获得一定数量的年假。&#10;<br/> 此模块可用于跟踪并确认已获得假期的消耗。
+moduleActivityStreamComment	动态用于显示条目上的备注和主要更新（创建&#44 状态变更&#44 等），这些内容汇成动态&#44 并以聊天模式展示。&#10;<br/> 可以查看给定上下文中的全部备注和主要变更（一个项目&#44 全部工单&#44 某个要素&#44 等）。
+moduleAgileComment	敏捷模块让你把 Scrum 术语纳入敏捷项目。<br/> 此模块提供可计划的冲刺&#44 便于把敏捷项目融入传统项目，实现灵活的混合管理。<br/>
+moduleBudgetFunctionOfOrgaComment	启用此模块后&#44 项目数据在组织上的汇总不再是全局汇总。<br/> 改为按年度进行&#44 并定义年度目标。<br/> 请注意，实际工时按工时录入年份汇总&#44 其他数值则按项目开始日期的年份汇总。
+moduleChecklistComment	此模块用于确保完成一项操作所必需的步骤都得到考虑。 <br/> 这样就可以&#44 例如&#44 确保质量体系的要求得到妥善处理。
+moduleConfigurationComment	配置管理用于跟踪产品、组件及其版本。&#13;&#10;<br/> ProjeQtOr 中的产品应作广义理解&#58; 它是人们从事工作的对象。&#13;&#10;<br/> 这可以是新产品（开发），也可以针对现有产品（维护&#44; 演进）。&#13;&#10;<br/> 产品可以是有形要素（原型&#44; 待建建筑&#44; ……），也可以不是（软件&#44; 服务&#44; ……）。&#13;&#10;<br/> 产品以版本形式提供。每个项目关联该产品的一个或多个版本。&#13;&#10;<br/> 产品包含组件&#44; 组件同样以版本形式提供。&#13;&#10;<br/> ProjeQtOr 跟踪产品版本与组件版本的兼容性。&#13;&#10;
+moduleCrmProspectComment	面向潜在客户的客户关系管理模块，并跟进拓展行动。
+moduleDataCloningComment	克隆环境管理模块用于复制完整环境，以构成模拟环境来进行测试&#44 培训&#44 等。
+moduleDocumentComment	ProjeQtOr 集成了简单的电子文档管理（EDM）。&#10;<br/> 此系统可以创建文档&#44; 文档构成封套并纳入文档的元数据。&#10;<br/> 与文档关联的文件在创建文档版本时导入。&#10;<br/> ProjeQtOr 集成了文档版本的简单审批。&#10;<br/> ProjeQtOr 中的文档管理保持简单，并且在技术上不侵入系统&#44; 因此 ProjeQtOr 不对文档做文本索引。&#10;因此无法根据相关文件中的关键词搜索文档。
+moduleExpensesComment	费用管理跟踪扣减项目预算的要素。&#10;<br/> 这些费用将与资源成本相加，得出项目的整体成本。&#10;<br/> 可以区分仅与项目相关的项目费用&#44; 以及同样关联到某一资源的个人费用&#44; 通常用于跟进费用报表。&#10;<br/> ProjeQtOr 还提供费用的预算跟踪&#44; 以及从招标（报价请求）开始的费用跟进&#44; 对收到的报价的跟进&#44; 将其转为订单&#44; 再转为待付发票&#44; 按付款期限并最终跟进已付款项。
+moduleFollowUpComment	跟进模块提供要素，用于跟进团队成员的活动情况，并给出已完成事项的详细信息
+moduleGestionCAComment	管理项目上已实现的收入。收入可以是固定的或可变的。若为可变，则根据活动上定义的工作单元计算。
+moduleImputationComment	工时跟踪&#44 与进度安排相结合&#44 可以记录每个资源在每项活动上花费的时间。&#10;<br/> 这是按负荷进行项目管理（也称工作量控制）的必要步骤。&#10;<br/> 由资源修订剩余待完成的工作，将有助于预见项目可能出现的偏差。
+moduleIncomesComment	收入管理将项目活动作为利润中心进行跟踪。&#13;&#10;<br/> 我们从发送给客户的报价开始&#44 报价经确认后转为订单&#44 并增加项目预算。&#13;&#10;<br/> 订单随后可按付款期限安排，再转为发票&#44 并跟进其付款。&#13;&#10;<br/> ProjeQtOr 集成了多种很适合客户与供应商关系管理的开票方式&#44 例如按已花费时间开票&#44 即依据资源在 ProjeQtOr 所录入跟进中实际花费的时间。
+moduleLocalizationComment	翻译请求管理可以根据译者的语言能力向其请求文本翻译。 <br/>它与配置管理相关联&#44 使你能根据产品或组件版本的语言轻松确定需要翻译的语言。
+moduleMailComment	用于跟踪已发送和已接收的纸质或电子信函的邮件模块
+moduleMeetingComment	会议管理可用于跟进项目中的各类会议&#44; 并将其安排到进度计划上。&#10;<br/> 可以安排重复会议&#44; 并按既定周期进行。
+moduleNotificationComment	通知系统可以生成警报。&#10;<br/> 它是指标系统的补充。指标系统可根据既定目标的达成情况发送警报（内部或电子邮件）。&#10;<br/> 此系统非常强大，但其定义方式相当技术化（通知的触发条件写成 SQL 中的 Where 子句）。
+moduleOrganizationComment	组织管理提供一套对多个项目数据进行横向汇总的系统。&#10;<br/> 它也可以限制所显示资源的可见范围&#44; 即根据每个用户的权限配置&#44; 只显示与当前登录用户同属一个组织的资源。
+modulePlanningComment	计划管理可以计算活动的能力计划，并考虑可能同时参与多个项目的资源的可用性。&#10;<br/> 里程碑用于标记关键日期&#58; 决策点&#44; 交付&#44; ……&#10;<br/> 可以在活动之间&#44; 和／或与里程碑之间建立依赖关系&#44; 并且这种关系可以跨越不同项目。&#10;<br/> 多种可用的计划模式使计划计算能够适应各种情况。
+modulePokerComment	计划扑克实现了也称为 Scrum 扑克的敏捷方法&#44 它是一种基于共识的&#44 游戏化估算技术&#44 主要用于估算开发目标的工作量或相对规模。<br/> 在计划扑克中&#44 小组成员把数字牌面朝下放到桌上作出估算&#44 而不是大声说出来。<br/> 随后亮牌&#44 并讨论这些估算。
+moduleProjectAnalysisComment	可根据项目的假设 &#44 约束和经验教训来创建&#44 监督并实施行动计划的模块。
+moduleRequirementComment	需求管理记录所有必须满足的功能&#44; 技术或合同承诺。&#10;<br/> 测试用例用于描述为验证需求实现情况而进行的测试。&#10;<br/> 测试场次&#44; 可以排入计划&#44; 从而把整套测试用例组织起来。&#10;<br/> 其结果是需求覆盖矩阵。
+moduleReviewComment	管控要素管理可用于跟进影响项目的决策&#44; 疑问与答复&#44; 以及项目的输入项和交付物。&#10;<br/> 可以对输入项和交付物进行评定，以产生质量指标。&#10;<br/> 交付物可以归组到交付上&#44; 而这些交付附着于计划里程碑。
+moduleRiskComment	风险管理计划用于提前识别项目可能出现的风险。&#10;<br/> 每项风险都可以被识别&#44; 完成定性并估算其对项目的成本。&#10;<br/> 随后可以制定行动计划，以避免风险发生，或至少限制其影响。
+moduleScreenExplanation	你的实例已就绪。<br>现在你可以选择要启用或停用的模块。<br/>你可以稍后回到此界面修改选择。<br/>选择完成后请点击保存按钮。
+moduleSkillManagementComment	技能管理用于定义技能&#44 包括这些技能的层次结构&#44 以及技能的可能级别。<br/> 然后可以定义每个资源的技能。<br/> 专门界面会协助在项目上投入资源，即按给定技能搜索资源并显示其在给定期间的可用性。<br/> 也可以录入活动所需技能，从而在分配资源时协助选择最合适的资源。技能管理用于定义技能&#44 包括这些技能的层次结构&#44 以及技能的可能级别。<br/> 然后可以定义每个资源的技能。<br/> 专门界面会协助在项目上投入资源，即按给定技能搜索资源并显示其在给定期间的可用性。<br/> 也可以录入活动所需技能，从而在分配资源时协助选择最合适的资源。
+moduleTargetMilestoneComment	在不可计划的条目上管理目标里程碑（需求&#44; 工单&#44; 产品版本&#44; 输入项&#44; 交付物&#44; 交付）&#13;条目的计划日期将根据里程碑日期自动更新
+moduleTechnicalProgressComment	允许以数量单位跟踪活动的技术进展&#44 而不与工作量上的实际进展关联
+moduleTicketComment	工单管理可用于跟踪非计划事件（事故&#44 不合格项&#44 变更请求&#44 等）。&#10;<br/> 可以跟踪在工单上花费的时间，并在需要时把它们关联到一项计划活动，各个工单的工时已在该活动上作总体计划。
+moduleTodoListComment	此模块在活动&#44 工单和行动上添加待办清单&#44 以说明必须完成的内容，而无需新建条目（子活动）
+moduleTokenManagementComment	对工单上已实现的工时额度进行管理&#44 用于定义客户订购的工时额度库存及其使用情况。
+moduleVotingComment	在工单&#44 活动和需求上投票<br/> 此模块让你以协作方式为条目排列优先级<br> 管理员确定投票点数的分配规则和使用规则。用户随后可以把自己的点数分配给条目。这样就可以优先处理最受欢迎的要素。
+moveCancelledProject	不能将此项目移动到 ${1} 之下
+moveCancelledType	不能将此项目移动到 '${1}' 项目之下
+moveToDoneStatusFailChecklist	无法移到下一个已完成状态&#44 检查清单应当已经完成
+msgAffectationContact	投入并非资源的联系人（请求人）<br/>这些联系人也可以是用户（将用于登录）
+msgAffectationResource	投入将在项目上工作的资源。<br/>这些资源也可以是联系人（请求人）或用户（将用于登录）
+msgAffectationUser	投入既不是资源也不是联系人的用户
+msgCannotAddRuleOnAllProjectIfRuleWithOneProject	不能同时拥有适用于全部项目的全局规则和针对单个项目的特定规则
+msgCannotAddRuleOnAProjectIfRuleWithAllProject	若某规则已作用于全部项目，则不能再为某个项目添加规则
+msgCannotChangeLeadProjectOnType	无法将此类型设为线索项目，因为此类型的某些项目已经包含活动或测试场次
+msgClickToEnlarge	点击图片即可放大
+msgEnterRPAmountForgeneratedExpense	必须输入金额才能生成费用
+msgInvalidFileFormat	文件格式无效<br/>允许的格式 &#58 ${1}
+msgInvalidFileNameNomenclature	文件名 '${1}' 不符合导入命名规则
+msgNotaFile	${1} 出错 <br /> 文件 '${2}' 不存在
+msgPausedActivity	此活动已暂停
+msgPlanningActivityWithWork	不能更改已有实际工时的工单上的计划活动
+msgUnableToAddToFixPerimeter	无法向不可扩展的项目添加要素
+msgUnableToDeleteOfFixPerimeter	无法从不可扩展的项目删除要素
+msgUnableToMoveOnFixPerimeter	无法将要素移动到不可扩展的项目
+msgUnableToMoveOutToFixPerimeter	无法将要素移出不可扩展的项目
+msgUnableToMoveRealWork	无法更改含有实际工时的条目
+msgUnableToMoveRealWorkToUnderConstruction	无法将含有实际工时的要素移动到处于&#34建设中&#34的项目
+nameAbacus	请输入测算表的名称
+nbDaysCantBeInferiorOrEqualToZero	天数不能小于或等于零
+nbNotDone	未按时完成的工单数
+nbNotHandled	未按时处理的工单数
+newGuiMessageLegalBottom	点击&#34启用&#34以试用，或点击&#34停用&#34以继续使用标准版本
+newGuiMessageLegalTop	新界面已经可用&#44 更加动态也更好用 &#58
+newPluginVersion	插件 ${1} &#58; 有新版本可用
+newUserSSO	欢迎使用 ProjeQtor。已为你创建新的内部用户账户。
+newVersionForPluginName	插件 ${1} 已有新版本。你可以从版本 ${2} 升级到版本 ${3}
+NoActivityTypeForLeaveSystem	缺少休假所用的活动类型。<br/>必须有且仅有一个代码为 'LEAVESYST' 的类型
+noActivityVersions	没有包含至少一项活动的版本
+noAssigmentForResourceElement	无法取得 ${1} #${2} 的分配或 workelement
+noChangeItemTypeLocalizationItemAlreadyCreated	无法更改翻译条目类型，因为已经创建了一些翻译条目
+noClientProvider	没有 ${1}
+noCurrentVersion	没有当前版本
+noEmail	缺少邮箱
+noHistoryArchived	此条目没有已归档的历史记录
+noInternetAccess	没有可用的互联网连接，无法获取 ProjeQtOr 最新版本或新闻的信息
+noLanguageInComponentVersion	所选组件版本没有语言
+noLanguageInProductVersion	所选产品版本没有语言。
+noPlannedWorkOnAdmProject	管理类项目的活动不能手动计划
+noRemoteAcces	你的服务器因以下原因之一无法访问互联网
+noRemoteAccesComment	你无法使用订阅所提供的更新功能<br/>若你已订阅 ProjeQtOr 服务&#44如需删除登录页上的消息&#44请联系支持。
+noReplacementNeeded	无需替换。
+noRightOnAdminActivities	你无权为他人录入数据
+NotAllowedToChangeInThisStatus	你无权切换到此状态
+notBeginelement	尚未开始的要素
+noteIsMinimized	已有一条备注正在编辑。 <br/>如果继续&#44它将不会被保存。是否继续？
+noteProspectClosedAfterOrder	因客户已下订单而关闭
+notLocked	未锁定
+notStartedProjects	尚未开始的项目
+notXhrError	非 Xhr 错误
+noWorkDetailThisDayThisAcitvity	所选日期未记录该活动的工时明细。
+numberComplexityCanNotBeSuperiorOf10	复杂度数量不能超过 10
+numberOfComplexitiesSuperior	复杂度数量不能超过全局参数
+oneValueIsRequiered	必须填写一个值
+onlyOnce	仅一次
+onlyOne	此类字段只能有一个&#58${1}
+OnlyOneDefaultEmploymentContractType	只能有一个默认劳动合同类型
+OnlySelfEmployeeOrManagerCanChangeSomething	仅本人或其经理可以修改
+OptionCostFromDate	此选项可为资源创建自指定日期起生效的新成本
+OptionCostFromDateDescription	活动的已分配成本 &#58 不变<br/>活动的实际成本&#58 自指定日期起计入新成本<br/>活动的剩余成本 &#58 对在指定日期之后开始的活动采用新成本
+OptionFullReplaceCost	此选项可将资源的当前成本（若该金额随时间变化则为最近一次成本）替换为新成本<br/>同时将未关闭分配的初始分配成本强制设为此新成本
+OptionFullReplaceCostDescription	活动的已分配成本 &#58 采用新成本<br/>活动的实际成本 &#58 采用新成本<br/>活动的剩余成本 &#58 采用新成本
+OptionReplaceActualCost	此选项仅替换资源的当前成本（若该金额随时间变化则为最近一次成本）
+OptionReplaceActualCostDescription	活动的已分配成本 &#58 不变<br/>活动的实际成本 &#58 采用新成本<br/>活动的剩余成本 &#58 采用新成本
+otpVerificationInstructions	请输入通过电子邮件发送的 6 位验证码
+paramAfterMailTreatment	邮件处理后的操作
+paramAutoSetUniqueComponentVersion	若唯一则自动设置组件版本
+paramCronArchiveTime	归档早于（天）的历史
+paramDontStartBeforeValidatedDate	在已验证开始日期之前锁定工时表
+paramImputationAlertCancelByOther	工时表被他人取消时发出警报
+paramImputationAlertWorkTooSoon	若工时录入过早&#44则向项目负责人发出警报
+paramImputationOnlyIncompleteOrganismManagerWork	若录入为
+paramImputationOnlyIncompleteProjectLeaderWork	若录入为
+paramImputationOnlyIncompleteResourceWork	若录入为
+paramImputationOnlyIncompleteTeamManagerWork	若录入为
+paramNotApplicableValue	不适用的值
+paramNotStartBeforeValidatedStartDate	在已验证开始日期之前开始
+paramOldPasswordDifferentNew	新密码必须与旧密码不同
+paramPlannedWorkManualType	手动计划的干预将工时录入为
+paramRequestorLimitToContact	将请求人列表限制为仅联系人
+paramSAML_isADFS	IDP 为 ADFS
+paramShowOnlyNotes	在动态中仅显示备注
+paramSubmitAlertSendToOrganismManager	提交后&#44向组织经理发出警报
+paramSubmitAlertSendToProjectLeader	提交后&#44向项目负责人发出警报
+paramSubmitAlertSendToTeamManager	提交后&#44向团队经理发出警报
+param_lib_inputMailboxMessage	要定义用于接收新工单和备注的 IMAP 邮箱&#44请使用收件邮箱功能
+passwordAlreadyChanged	你已经更改过密码
+passwordResetBy	你的密码已由 '${1}' 重置。你的新密码是
+pgsqlDataCloningMessage	在 PostgreSQL 数据库上处理创建请求仅可在 ${1} 至 ${2} 之间进行。<br/>（复制期间不得使用源库）
+phasingClosedDueToUsage	分期已关闭（未删除），因其已用于测算表定义。所有引用均已移除。
+planEmpty	没有可计划的内容<br/>请确认你有权计划该项目且其并非&#34固定计划&#34
+planLeftAfterEnd	在资源投入结束日期之后仍有 ${1} 天待计划
+planLeftAfterMaxDate	资源的能力或投入率不足以计划剩余的 ${1} 天
+planningClickAction	单击显示详情
+planningClickActionMessage	甘特图现在提供两种不同的操作模式。 <ul> <li>单击显示详情模式&#44即 ProjeQtOr 的历史模式。<br/> 在此模式下&#44单击表格中的一行即可显示其详情。</li> <li>&#34双击显示&#34模式&#44这是 V11.0 引入的新模式。<br/> 在此模式下&#44单击一行即进入编辑模式。<br/> 必须双击该行才能显示详情。<br/> <b>这是新的默认模式</b>。</li> </ul> 若要恢复旧的操作模式&#44请通过图标 <img src='../view/img/iconThreePoints.png' style='width&#58 30px;top&#58 7px;position&#58 relative;'/> 在专用弹出窗口中更改设置。<br/> 也可以右键单击该行以打开上下文菜单。
+planningClickActionSwitch	单击即可打开要素详情。&#13否则&#44需要双击。&#13请注意启用单击选项后无法进行行内编辑。
+planningExportPdfLong	导出 ${1} 行可能耗时较长并可能阻塞浏览器。<br/>是否继续？
+planningModeNotProportional	计划模式与按比例工时不兼容
+PlanningModeSTARTREQUIRED	必须在已验证的开始日期开始
+planningResultError	计算过程中发生错误 - 请查看日志文件
+planningShortResultERROR	错误
+planResourceNotAvailable	在固定日期上该资源有 ${1} 天不可用
+planResourceNotAvailableBis	该资源不可用，无法在设定的截止日期前完成任务
+planThresholdTooSmall	活动最小阈值 ${2} 过于严格，无法计划剩余的 ${1} 天
+pleaseEnterValidQuantity	请输入有效的数量
+pleaseFillAllAbacusFields	请填写所有必填字段
+pleaseSelectAbacus	请选择测算表
+pleaseSelectAbacusDefinition	选择测算表
+pleaseSelectAbacusPhase	选择分期
+pleaseSelectLayout	请选择布局
+pluginErrorDelete	无法删除文件 '${1}'。<br/>请检查对此文件的访问权限。
+pluginErrorMove	无法删除文件 '${1}'（已将其复制用于插件 '${2}'）。<br/>请检查对此文件的访问权限。
+pluginNoMoreCompatibleDisabled	插件 ${1} 版本 ${2}<br/>与 ProjeQtOr ${3} 不兼容。<br/>它已被禁用。<br/>请安装版本 ${4} 或更高版本。
+pluginUnzipFail	无法解压文件 ${1}。<br/>请检查 PHP 用户对该文件以及文件夹 ${2} 具有写权限。
+poolDoesNotHaveProfil	资源池中的一个或多个资源没有权限配置
+projectIsAlreadyUsed	该项目已被使用
+projectSelectorHelp	项目选择器 &#13;选择一个项目会使所有界面进入该项目的上下文&#44;视图仅限于该项目及其子项目的要素
+projectsWithoutActivities	此类型的项目将不包含活动
+projeqtorIntroducoryText	你已完成设置。<br/><br/>要登录&#44请输入凭据&#58<br/>&nbsp;&nbsp;&nbsp;用户 &#34admin&#34<br/>&nbsp;&nbsp;&nbsp;密码 &#34admin&#34。<br/><br/>随后将填充数据库。<br/>此步骤可能需要几分钟。
+proportional	工时与任务工期成比例
+prpProjectCantHaveRealWork	提案类项目不能有实际工时
+pwdInvalidStrength	密码强度不符合要求
+quantity0	数量必须为正数
+raciFunctionAlreadyInModel	此文档 / 过程已在模型中
+raciFunctionNamePlaceholder	请输入文档 / 过程名称
+raciFunctionNameRequired	当行上填写了 RACI 值时，文档 / 过程名称为必填
+raciRoleAlreadyInModel	此职能已在模型中
+raciRoleNamePlaceholder	请输入职能名称
+raciRoleNameRequired	当列上填写了 RACI 值时，职能名称为必填
+raciSelectModel	选择 RACI 模型
+referenceIsMissing	参考字段为必填
+refreshDataCloningErrorButton	重置错误状态并重试创建
+refreshScreenForPassword	若更改此账户&#44请刷新参数界面以进入密码输入
+refTypeMustBeActivity	refType 必须为 'Activity'
+removeDataCloning	是否要请求删除？
+removePoolIntervention	请注意，你将删除资源池投入
+ReopenedAfterRejected	拒绝后重新打开
+ReopenedAfterValidated	验证后重新打开
+reportAdminProject	选择行政项目
+resetActivityStreamParams	这将重置动态区域的大小
+resourceAlreadyAssigned	该资源已按周期性方式分配
+resourceAlreadyTaken	此会议与资源 '${1}' 的另一会议冲突
+resourceProjectSelected	仅限该项目所选的资源
+resourcesAffectedSuccessfully	${1} 个资源已成功投入&#44 ${2} 个已经投入
+resourcesAffectedWithErrors	${1} 个资源已投入&#44 ${2} 个已经投入&#44但出现了一些错误
+restItemReceived	仍待接收的条目合计
+resultCommon	为共用
+resultNoCommon	不再共用
+samePassword	新密码必须与以前的密码不同
+SAML_spCertMessage	要签署 SAML 事务&#44请将文件 sp.key（私钥）和 sp.crt（公钥证书）放入 ProjeQtOr 的 sso/cert 文件夹
+satrtDateCantBeGreater	开始日期不能晚于结束日期
+saveMeetingDescription	是否要将议程加入会议纪要？
+saveNewBaselineChanged	已进行一些更改且项目尚未重新计划。<br/>基线将保存最近的计划值&#44因此可能与你当前所见不一致。
+saveSelectItemBeforAttaching	附加文件前请先保存或选择要素
+sectionCheckMissingPlanningElement	检查缺失或多余的&#34Planning Element&#34
+sectionSecurity	安全 - 检测到入侵尝试时的消息
+securityConstraint2	仅限已知用户的电子邮件
+securityConstraint3	仅限已投入该项目的已知用户的电子邮件
+selectAbacusToAdd	选择要添加的测算表
+selectAnEmployee	选择一名员工
+selectCommand	选择订单
+selectDate	选择日期
+selectDates	选择日期
+selectEndDate	选择结束日期
+selectInterventionNoCapacity	资源的能力不足
+selectItemForDependency	选择一个可见要素以显示其后续项或前置项
+SelectProject	选择项目
+selectRes	选择资源
+selectSourceFirst	请先选择 oAuth2 来源
+selectStartDate	选择开始日期
+selectStatus	选择状态
+selectStoredFavorite	选择此收藏列表
+selectStoredLayout	选择布局
+selectStoredReportLayout	选择报表
+selectTag	选择标签 &#34${1}&#34
+showActivitiesPlannedEndDate	若已分配资源则显示在计划结束日期上
+showClosedProject	显示未关闭项目中的已关闭要素。 &#13要显示已关闭项目的要素请启用归档模式（项目选择器的参数）
+showHandlelProject	仅显示进行中的项目
+showInService	仅限在用
+showOnlyActivesVersions	仅限当前版本
+showOnlyNotes	仅显示备注
+showRessourceComponentVersion	在数据合并表的列中以及甘特图活动条的末端显示资源
+showSelectedProject	隐藏未选择的项目
+situationRight	可以更新财务状况
+specifiedComponentVersionOrProductVersion	你必须指定组件版本和产品版本
+ssoChangePasswordMessage	你将在此更改本地 ProjeQtOr 密码&#44 <b>而不是</b>你的 ${1} 账户密码。<br/>这样即可在不使用 SSO（单点登录）的情况下连接 ProjeQtOr。
+ssoCloseWindowMessage	现在可以关闭窗口
+ssoConnectionFailed	${1} 连接失败。<br/>请使用内部凭据连接。
+ssoConnectionReject	该 SSO 用户在 Projeqtor 中不存在&#44请联系管理员创建。
+startGuideClient	客户是你为其工作的实体。<br/>它们可以在你的组织内部或外部。
+startGuideContact	联系人是你在客户实体中所接触的人员。
+startGuideFooter	以下是主要功能 <br/>熟悉这些功能后，你将能够发现可覆盖项目管理的其他（众多）模块。
+startGuideImputation	资源在工时表界面按天、按活动录入实际工时。<br/> 重新估算«剩余»工时可根据实际进展更新项目计划。
+startGuideIntro	这是一份简短教程，帮助你迈出使用 ProjeQtOr 的第一步。<br/> 请按这些步骤配置首批要素。<br/> 随时按 [F1] 打开用户手册以获取更多帮助。<br/> 返回&#34入门指南&#34 菜单即可回到此处。
+startGuideMilestone	里程碑是项目的关键日期。<br/>它们可以定义输入项（固定里程碑）或交付物（浮动里程碑）。
+startGuidePlanning	计划提供甘特图视图。<br/>要计划活动就必须为活动分配资源并定义待完成的工时，因为计划以工时驱动。<br/>然后可以定义任务之间的关系（前置链接）以及与里程碑的关系……<br/>随后便可运行计划计算，并考虑资源可用性等全部约束。
+startGuideResource	资源是将在任务上工作的人员或机器。<br/>若勾选«是用户»，则该资源（若为人员）将能够连接 ProjeQtOr。
+startGuideTicket	工单用于跟踪与项目相关的每个突发事项，例如缺陷或各类请求<br/>需要时可以轻松复制为活动，而无需重新录入数据，并保持与原始请求的链接。
+startGuideUser	用户是可以连接本应用程序的人员。 <br/>他们必须拥有权限配置，以确定对要素的访问权限。
+statusMustChangePaused	若已勾选&#44已暂停只能通过状态来更改
+StatusSetTransitionLeaveHasChange	状态变更导致受管制休假上的过渡不再同步
+subscriptionCodePlaceholder	在此输入代码
+subscriptionSetApplicationToConfirm	安装之后请不要忘记重新激活应用程序
+sumOfNotExistingFiles	引用了不存在文件的附件
+switchAffectationResource	是否要切换此资源的分配？
+synchronizationError	同步到要素 ${1} 时出错
+synchronizationFailedActivityNotSynchronizable	同步失败 - 工单具有无法与其同步的计划活动
+synchronizationFailedSaveLink	同步失败 - 保存 Link 时出错
+synchronizationFailedSaveOrigin	同步失败 - 保存 Origin 时出错
+synchronizationFailedSyncStatus	同步失败 - 无法更改目标的状态
+tagFormatError	标签只能包含小写字母或数字
+tagsInNoteFollowupComment	在备注或描述中被提及后自动添加
+tagsInNoteMail	你在备注或描述中被提及
+technicalError	发生了临时技术问题（死锁）。请稍后重试。
+textHiddenForSecurity	文本未显示，因其包含可疑脚本代码 <br/>（例如 <script> 标签或 onmouseover 关键字）
+thisActionWillDeleteAllsLeavesSystemElements	此操作将删除休假系统的全部事项
+ThisLeaveMustBeJustified	此休假期间必须提供正当理由
+tipsSharedFilter	在旁边的列表中选择一个筛选，即可在下方取回
+tipsSharedLayout	在旁边的列表中选择一个布局，即可在下方取回
+tipsSharedReportLayout	在旁边的列表中选择一个报表，即可在下方取回
+todayTodo	待办
+todoToday	待办
+tokenAllowOverUseLabel	允许使用超过订单数量的工时额度
+toLargeAllNotAttached	体积过大，无法附加全部文件
+tooltipAddPseudoUsers	与已知用户不对应的电子邮件地址将自动生成&#34已关闭&#34用户。<br/>这些伪用户无法登录，但可以接收电子邮件。<br/>此机制可用于记录发件人与订阅者（抄送收件人）。
+tooltipAddToFollowUp	系统性地将此邮件的发件人和收件人纳入由其创建的工单或添加的备注的跟踪中。这包括主要收件人（对应收件箱的那个除外）以及抄送收件人。
+tooltipAllowRedution	允许缩减时你可以 & # 58 </br> - 从此项目中移除事项 </br> - 将事项移出此项目
+tooltipAssignmentWorkType	定义分配的工时类型&#58 <br/>  - 若单位为 &#34day&#34&#58 仅可使用 &#34fixed&#34<br/>  - 若单位为 &#34%&#34 且无数值列&#58 仅可使用 &#34proportional&#34<br/>  - 若单位为 &#34%&#34 且有数值列&#58 两种选项均可用
+tooltipCommandOnValidWork	启用按项目客户订单的工时之和来处理已验证工时 <br/>否则将按活动的已验证工时之和计算
+tooltipFixPerimeter	项目范围固定后你不能 &#58 </br> - 向此项目添加新要素</br> - 从此项目删除要素</br> - 将要素移入此项目</br> - 将要素移出此项目
+tooltipFixPlanningActivity	活动处于&#34固定计划&#34时永不重新计算<br/>这意味着无论对其他项目做什么，计划始终相同<br/>这可能导致依赖关系不一致。
+tooltipIndivisibility	使该活动的每项分配都不可拆分。<br/>  计划将安排在可用率大于或等于最小阈值的连续日期上。<br/> 请注意休假期间会&#34拆分&#34工时&#44因此计划将推迟到该期间之后。
+tooltipInputField	若按值列表同时也是用于录入的列表&#44则填写测算表时会录入该条件&#44以便在每一行按不同分期进行分解。
+tooltipIsLeadProject	此类型的项目不包含活动。 <br/>它们用于容纳将承载活动的子项目。 <br/>但是&#44它们仍可包含会议或里程碑。
+tooltipLeaveContractStartDate	若更改此日期 <br/> 请记得检查新日期是否已有已验证的休假
+tooltipLevelNote	将把最终分数调整为对应的分数&#44;无论加权分数之和是多少
+tooltipMinimumThreshold	用于计划的每日最小阈值。 <br/> 仅当每日可用率大于或等于此阈值时，才会在该日安排活动。
+tooltipNotificationDaysBefore	应生成通知的参考日期之前的天数。 <br/> 例如提前通知 = 10 - 每日 = 已选择 <br/> 将从参考日期前 10 天起每天发出通知。 <br/>若为负数 => 仅在参考日期之后才开始生成通知。
+tooltipNotificationEveryDay	若已选择 <br/> 将在每个工作日生成相应通知
+tooltipNotificationEveryMonth	若已选择<br/>符合规则的通知将每月生成
+tooltipNotificationEveryWeek	若已选择 <br/> 将每周生成相应通知
+tooltipNotificationEveryYear	若已选择<br/>符合规则的通知将每年生成
+tooltipNotificationFixedDay	若不为空<br/>符合规则的通知将在所选日生成
+tooltipNotificationFixedMonth	若不为空<br/>符合规则的通知将在所选月生成
+tooltipNotificationGenerateBefore	通知将在实际计算出的通知日期之前这么多天生成。
+tooltipNotificationGenerateBeforeInMin	仅当参考日期为日期时间时生效<br/>通知将在实际计算出的通知日期时间之前这么多分钟生成。
+tooltipNotificationNbRepeatsBefore	应在参考日期之前生成通知的次数。 <br/> 例如次数 = 2 - 每周 = 已选择 <br/> 将从参考日期前 2 周起每周发出通知。 <br/>若为负数 => 仅在参考日期之后才按所选频率开始生成通知，只要规则仍然成立。
+tooltipNotificationReceivers	所生成通知的接收人。<br/>接收人列表以分号分隔。例如&#58; idUser;idContact。允许的接收人列表见&#34;帮助 - 允许的接收人&#34;
+tooltipNotificationRule	语法类似于 SQL 中的 WHERE。<br/>例如&#58 ${paymentAmount} <> ${fullAmount}。<br/>允许使用的词列表见 '帮助 - 允许的词' 一节&#10;
+tooltipNotificationTargetDateField	用于生成通知的日期，需减去提前通知的天数
+tooltipNotificationTitleAndContent	可以使用 ${word} 添加动态字段，其中 word 为允许使用的词。<br/>例如 = 发票 ${name} 已到期。<br/>请使用以下帮助插入字段。
+tooltipObjectClass	选择用于显示所生成通知计数的菜单
+tooltipPaused	项目处于&#34暂停&#34时计划永不重新计算。<br> 不同于&#34固定计划&#34&#44当前计划会被清除。<br> 这用于将项目推迟到未定日期。
+tooltipPausedActivity	活动处于&#34暂停&#34时计划永不重新计算。<br> 不同于&#34固定计划&#34&#44当前计划会被清除。<br> 这用于将活动推迟到未定日期。
+tooltipSplittable	是否可以录入半个工时额度？
+tooltipStatusOutOfWorkflow	此状态已不再属于与休假类型关联的工作流 <br/> 在其状态与缺勤类型的工作流恢复一致之前，此休假期间不能再修改 <br/> <br /> > 请参阅 '维护' 一节
+tooltipStatusSetLeaveChange	状态已被修改，且进入已提交或已接受或已验证的条件发生了变化 <br/> 在其状态与旧条件恢复一致之前，此休假期间不能更改。
+tooltipTotalAbacus	此合计在创建分配时更新
+tooltipUnit	指定在与分期相关的列中填写测算表时所使用的单位
+tooltipValueField	若列表按值使用&#44则表格每一行所填的值作为乘数。因此不必在填写字段中输入数值。
+tooltipWorkOnRealTime	将通过拉平已验证工时&#44已分配工时&#44以及修订工时来关联工时数据
+trueImputationIncomplete	低于能力&#44按日检查
+trueOnGlobalPeriod	低于能力&#44在整个期间全局检查
+unsubmittedWork	未提交
+unvalidatedWorkPeriod	未验证
+updateAbacusable	一个或多个类已更新。
+valueCorrect	值正确
+valueNotSet	值未设置
+versionPlanningShowOneTimeActivities	活动仅显示一次
+versionsWithoutActivityCheck	隐藏没有已显示活动的版本。&#13不隐藏包含组件的版本
+VotingUseRuleMainAlreadyExist	投票使用规则已存在
+VotingUseRuleMainMustHaveFixOrWorkPoint	投票使用规则必须有值
+warningAbacusLineIsClosed	此测算表用法基于一条已关闭的测算表行。你可以编辑数量&#44添加注释&#44或关闭此项&#44但不能更改类选择。
+warningChangeAffectation	此操作将在每个项目上用所选资源替换该资源<br/> &nbsp;-&nbsp;在项目投入上<br/> &nbsp;-&nbsp;在活动分配上<br/> &nbsp;&nbsp;&nbsp;（仅限所提供日期之后计划的工时）<br/> &nbsp;-&nbsp;作为项目对象的负责人<br/> <b>注意&#44此表单一经 [OK] 确认，替换过程将立即执行</b>
+warningCopyAbacusPhasingChanged	分期已更改&#58 数据（值）将不会复制；仅复制列和行
+warningPlanningPredecessorFixed	${1} 上前置项的结束日期已超过此固定里程碑的日期
+warningPlanningPredecessorFixedWithDelay	${1} 上前置项的结束日期加上 ${2} 天延迟（结果为 ${3}）已超过此固定里程碑的日期
+wbsSwitch	在事项名称之前显示 WBS
+workCommandAlreadyHasAParent	此工时订单未被定义为父级
+workCommandCannotBeItsOwnParent	工时订单不能作为自身的父级
+workCommandIsAlreadyUsed	此工时订单已被使用（已订数量和/或已完成数量和/或已开票数量）
+WorkflowMustBeDedicatedToLeaveManagment	工作流必须是专用于受管制休假管理的工作流
+workflowParameters	选择要显示或隐藏的状态
+workflowProfileParameters	选择要显示或隐藏的权限配置
+workPlanMsgNoAutoRefresh	工时计划计算已取消&#44刷新不再自动进行&#44 <br/>请单击刷新按钮以继续。
+workPlanMsgRightPart	工时计划将显示在此处
+workUnitCatalogUsedOnProject	无法更改工作单元目录，因其已用于此项目
+workUnitIsUseByActivity	工作单元已被一项活动使用
+workUnitValidityDateIsPassed	工作单元的有效日期已过
+wrongFormatAttachmentForSubTask	此附件格式不适用于待办列表
+YouMustBeAnEmployeeToAccessAtTheCalendar	你必须是员工才能访问休假日历
+YouMustBeAnEmployeeToAccessAtTheDashboardEmployeeManager	你必须是员工才能访问员工经理仪表板
+helpParamMailSmtpUsername	SMTP 登录名。与服务器进行认证连接时必填。
+helpParamMailTitleApprover	发给审批人以请求批准的邮件标题
+helpParamShowThumb	显示所选资源照片的小缩略图
+helpParamShowThumbList	在列表中显示资源照片的小缩略图
+helpParamSignatureAndTagToRemove	签名起始标识，用于从该标识处截断消息
+helpParamTopIconSize	顶部菜单栏中所显示图标的大小
+helpParamTryToHackUserProfilList	向该权限配置的全部用户发送邮件
+helpPaused	从计划中排除，并清除当前的计划工时
+helpPlanWithInfiniteCapacityCritical	按&#34关键资源&#34上的做法，在超额使用的情况下进行计划
+helpPurgeAssignment	清除没有已分配工时&#44 实际工时和剩余工时的分配
+helpRefreshAuto	启用或停用要素列表的自动刷新
+helpReorderWBS	根据优先级自动重新排列所有项目
+helpResetAssignment	清除所有没有实际工时的分配
+helpResponsibleFromProduct	根据产品或组件上的负责人来设置工单的负责人
+helpRestrictListsProject	列表限制用于隐藏该项目取值列表中的某些行
+helpRestrictListsProjectInline	列表限制用于隐藏该项目取值列表中的某些行
+helpRestrictProjectList	将项目列表限制为所选项目及其子项目
+helpRestrictTypesProjectType	为此项目类型定义类型限制
+helpSAML_attributeUid	用户登录名所用的 SAML 属性&#13必填
+helpSAML_creationAction	通过 SAML 创建用户时，同时将该用户创建为资源和／或联系人
+helpSAML_defaultProfile	从 SAML 认证插入的新用户的默认权限配置
+helpSAML_idpCert	IDP 的 X509 证书字符串&#13必填
+helpSAML_isADFS	用于兼容 ADFS IDP&#13（ADFS 会将 SAML 数据以小写进行 URL 编码）
+helpSAML_SingleLogoutService	IDP 所提供的单一注销服务 URL&#13必填
+helpSAML_SingleSignOnService	IDP 所提供的单点登录服务 URL&#13必填
+helpSAML_ssoCommonName	SSO 服务的名称&#44 即用户所知道的名称
+helpSortCompositionStructure	按类型升序、名称降序对版本的组成和结构排序
+helpSslCa	包含 SSL 证书颁发机构的文件名
+helpUserNoteDiscussionMode	以讨论模式显示备注，并对答复进行缩进
+helpVersionCompatibility	在产品版本详情中显示兼容性部分
+helpVersionNameAutoformatSeparator	产品名称与版本号之间的分隔符，用于生成版本名称
+helpVersionsWithoutAttachments	可以在不上传文件的情况下添加文档版本
+hideAssignationWihtoutLeftWork	在甘特条详情中隐藏没有剩余工时的分配
+impLockedMonth	项目已锁定，用于汇总 ${1} ${2}
+importFacturXlabel	导入 factur-X 格式的 PDF
+impValidatedMonth	项目已确认，用于汇总 ${1} ${2}
+incorectDependencyAdmin	无法与管理类项目的要素建立依赖关系。
+infiniteLoopError	在 ${1} #${2} 与 ${3} #${4} 之间检测到可能的无限依赖关系循环
+inheritedEndDate	结束日期继承自后继项或父项的已确认结束日期
+inheritedEndDateWithSource	结束日期继承自 ${1} 的已确认结束日期
+isPlanningActivity	允许将工单关联到此活动，作为其计划活动
+layoutForNewConnexion	为所选用户的每次新连接重新应用此布局
+lockPlanningBarDetailSwitch	锁定甘特图条详情的自动关闭
+mailableAttachments	将该要素的全部附件文件加入邮件
+mailableHistory	显示对象的最后一次变更
+mailableHistoryFull	显示对象的全部变更
+mailableLastAttachments	将该要素的最后一个附件文件加入邮件
+mailableNoteTd	按标准邮件格式列出该条目的备注
+mailableUrl	用于取得该条目直接链接的 URL
+maxDailyWorkError	录入超过每日上限 ${1}
+maxWeeklyWorkError	录入超过每周上限 ${1}
+menuInterrogationTitle	访问新闻&#44 快捷方式以及关于……
+messageAlertImputationWorkTooSoonTitle	${1} 在条目 ${2} #${3} 上提前填报了工时
+messageDocumentsRightsNoChangeSaved	文档权限没有需要保存的变更
+messageSkill	技能「${1}」（级别 ${2}）于 ${3} 到期。
+moduleAssetsComment	用于管理设备及其结构的资产管理模块
+moduleFinancialComment	财务管理分为支出管理和收入管理
+moduleHumanResourceComment	人力资源管理&#44 包括休假与技能
+moduleSituationComment	对每个财务要素的历史记录进行管理
+msgNoItemInPokerSession	没有打开的用户故事，无法开始此次估算
+abacusLineUsed	此填报行已用于一个或多个项目
+actionMailDELETE	从 IMAP 邮箱删除电子邮件
+addedFilterToFavoriteProjectList	筛选 '${1}' 已加入收藏项目列表
+addTempAttach	把临时附件加入该条目的关联附件
+addToFavoriteProjectList	把此筛选加入收藏项目列表
+adminCronCheckLeavesEarned	管理用 cron：检查已获得的休假额度
+affectOrganizationMembers	把组织的全部成员投入到项目
+allOfOrganizationAndSubOrganization	整个组织&nbsp;<br/>及其下级组织
+archiveOn	已启用归档模式&#13单击以关闭此模式
+assignmentsCreatedFromAbacus	已创建 ${1} 项分配&#44已删除 ${2} 项分配
+AtLeastOneContractsUnclosedForAnEmployee	该员工至少有一份未关闭的合同
+AtLeastOneOpenedEmployeeLeaveEarned	至少有一条未关闭的已获得休假额度
+CaMoreThanCommandSum	订单使用率（收入 / 订单合计）
+cantStartPausedWrok	此条目已暂停。<br/>请更改状态后再开始处理。
+changeCapacity	无法定义与该资源标准能力相同的变动
+ChangesOnStatusHasImpactOnLeaves	状态变更会影响受管制休假
+ChangesOnWorkflowHasImpactOnLeaves	工作流变更会影响受管制休假
+checkAssignmentSelection	资源池 #${4} 在 ${2} #${3} 上的分配 #${1} 不正确
+checkIncorrectBudgetAmounts	预算 #${1} 的金额不正确 &#58 ${2}
+checkIncorrectFilterCriteria	用户 ${3} 在 ${2} 上的筛选 ${1} 中属性 ${4} 的值不正确
+checkIncorrectIdleParent	未关闭的 ${1} #${2} 位于已关闭的父级 ${3} #${4} 之下
+checkInvalidPoolAllocation	资源池 ${1} 包含不存在的资源 ${2}
+checkPlanningElementEmpty	计划要素 #${3} 指向不存在的 ${1} #${2}
+checkPlanningElementExtra	${1} #${2} 的计划要素过多（${3}）
+clearOldAndAddBankOffDaysToCalendar	清除原有银行休息日并加入日历
+colDataCloningCount	当日剩余创建请求 &#58 ${1}/${2}
+colDisplayAsGanttScreen	合同视图&nbsp;<br/><i>与计划视图相同</i>
+colNbDaysAfterNowLeaveDemandIsAllowed	补记休假的最长追溯天数
+colNoteOnTicketChangeStatus	工单备注&#44将状态改为
+colSundayAndOffDayPeriodEnd	周日和休息日的结束时间
+colSynchroniseState	生成目标工单所用的状态
+componentVersionStructureAsset	关联到设备的产品版本和组件
+confirmDeleteCustomEarnedRulesOfEmpContractType	确认删除劳动合同类型上的自定义已获得休假额度规则
+confirmDeleteFavorite	删除收藏列表 '${1}' 吗？
+confirmDeleteLvTypeOfContractType	确认删除已获得休假额度的属性
+copyFilter	把此高级筛选复制为自己的筛选
+CopyWithStatus	直接转到状态 &#34${1}&#34
+criticalPathFilterEmpty	关键路径上没有任务。请在启用关键路径计算后再排程。
+criticalPathFilterNotActive	要使用此筛选&#44请先启用关键路径显示（关键路径选项）。
+criticalResourcePrintExcel	导出使用关键资源的项目 Excel
+CustomEarnedRulesOfEmploymentContractType	劳动合同类型的自定义已获得额度规则
+dataCloningPerDay	每日创建请求上限
+dataCloningProfileRight	按权限配置管理权限和限制
+dataCloningTotal	每个用户可克隆环境的最大数量
+deleteAbacusProject	从测算表使用情况中移除此行
+dialogAddAbacusProject	为测算表 ${1} 添加一行
+dialogCopyAbacusDefinition	复制测算表定义 &#58 &#34${1}&#34
+dialogEditLinkExtended	编辑与要素 ${1} #${2} 的关联
+dialogGenericBankOffDays	银行休息日定义
+diaryGotoTimesheet	转到条目 ${1} #${2} 的工时表
+displayRessourceCheckSwitch	在甘特条右侧显示已分配资源的名称
+editAbacusProject	编辑测算表使用情况中的此行
+editAffectationResourceTeam	编辑资源对资源池的投入
+editCustomEarnedRulesOfEmpContractType	编辑劳动合同类型的自定义已获得额度规则
+editLvTypeOfEmpContractType	编辑劳动合同类型的休假类型
+errorAbacusNameNotFound	在类 ${2} 中未找到记录&#58 '${1}'
+errorAddOnClosedItem	不能向已关闭的条目添加要素
+errorLeaveEarnedOverlap	已获得休假额度的开始日期与结束日期重叠
+errorLinkItemToItself	不能把条目关联到自身
+errorMailFormat	'${1}' 的电子邮件格式不正确
+errorNoDateForItem	此条目没有已确认日期或计划日期
+errorPlannedWorkManualType	已存在&#34实际&#34计划时不能退出&#34手动&#34计划模式
+errorWorkTypeFixedRequiresValueColumn	工时类型为&#34固定&#34且单位为&#34%&#34时至少需要一列数值
+everyDayUpToSkillEndDate	每天，直至技能结束日期
+everyWeekUpToSkillEndDate	每周，直至技能结束日期
+explainParameterMenu	显示可用于设置当前要素的菜单
+falseOnGlobalPeriod	与能力不同&#44在整个期间内统一检查
+fixWbsStructure	修正 ${1} #${2} 的 WBS 结构，用 WBS ${3} 替换不正确的 WBS ${3}
+ganttMsgLeftPart	请先创建项目。<br/><br/>然后为项目添加若干活动。
+helpActivateSubtasksManagement	为活动&#44工单和行动添加待办清单
+helpAddPseudoUsers	为未知电子邮件地址创建伪用户
+helpAddToFollowUp	把收件人加入所创建条目的跟进
+helpAllocateResponsibleToProject	自动为项目经理创建对该项目的投入
+helpAllowListRestrictionOnProject	列表限制可按当前项目隐藏列表中的部分值
+helpAuthorizeActivityOnDeliveredProduct	在活动的目标产品版本列表中包含已交付的产品版本
+helpAutoHideMenuLeftDashboard	在仪表板页面自动隐藏左侧菜单
+helpAutoSetAssignmentByResponsible	自动把负责人分配到活动
+helpBillNumSize	发票编号的位数
+helpBrowserLocaleTimeFormat	更改时间显示格式（24 小时制，或带 AM/PM 的 12 小时制）
+helpCheckedSurbookingDefault	超额使用模式下计算系统的默认方式
+helpClientElementList	在客户页面的分区中显示发票&#44客户报价和客户订单列表
+helpCronCheckNotifications	设定检查是否生成通知的间隔秒数
+helpCronExecutionRunConsistencyFix	允许按设定频率自动运行一致性修正
+helpCronImportLogDestination	自动集成结果日志的存放位置
+helpDefinitiveSelection	最终更改分配，把工时交给这一名资源
+helpDirectEditTestCaseRun	允许在测试场次和测试用例中直接更新测试用例执行
+helpDispatchWorkImputation	按活动和日期拆分每条工时填报
+helpDisplayListOfActivity	在组件版本上显示活动列表
+helpDisplayResourcePlan	甘特图计划中资源显示的选项
+helpDisplaySubTask	显示为该要素定义的待办清单
+helpEditor	超长字段（描述&#44;结果&#44;备注）所用的富文本编辑器
+helpExportBillInFormatFacturX	按 Factur-X 格式导出客户发票，并在 PDF 中包含 XML
+helpFilterByStatus	在对象列表中显示按状态筛选的按钮
+helpFilterByTags	在对象列表中显示按标签筛选的按钮
+helpFixPerimeter	禁止在计划中添加或移除条目
+helpGenerateProjExpense	启用或停用自动生成费用的复选框
+helpGlobalNoteDiscussionMode	以讨论方式显示备注，答复使用缩进
+helpHideEmailsSent	在动态中隐藏已发送的邮件
+helpHideRealAsPlanned	隐藏把计划工时复制为工时表实际工时的按钮
+helpImputationAlertSendToProjectLeader	向管理该资源所在项目的项目经理发送警报
+helpImputationAlertSendToTeamManager	向管理该资源所在团队的经理发送警报
+helpImputationSearchOnName	始终显示按名称搜索（保持可见）
+helpInitializePassword	为新用户自动把密码初始化为默认值
+helpL	甘特图计划中最多显示的条目数
+helpLdapCreationAction	创建 LDAP 用户时，同时创建为资源和/或联系人
+helpLdapSslOverTls	以 SSL over TLS 初始化连接
+helpLimitDisplayPlanning	甘特图计划中最多显示的条目数
+helpLineTimeline	时间线上最多可见的行数
+helpListTagsPerProject	按每个项目分别生成标签列表
+helpManageComponentOnChangeRequest	在变更请求上管理目标组件版本
+helpManageComponentOnRequirement	在需求上管理组件和目标组件版本
+helpManageTicketCustomer	在联系人和客户上显示工单列表
+helpManageTicketVersion	在产品和组件版本上显示工单列表
+helpMaxColumns	明细条目最多显示的列数
+helpMaxItemsInTodayLists	今日页面列表最多显示的行数
+helpMenuBarLeft	显示或隐藏左侧&#34;树状&#34;菜单
+helpMenuBarTop	显示或隐藏包含菜单图标的顶部栏
+helpMilestoneFromVersion	按产品版本上定义的里程碑自动设置里程碑
+helpNewGui	可用的新界面&#44更灵活也更易用
+helpNewItemAccessMode	用全局创建按钮在弹出窗口中新建条目，或直接进入该条目的菜单
+helpParamAdditionImage	在邮件中嵌入图片，而不是使用链接
+helpParamConfirmQuit	关闭页签或误按退格时显示退出确认
+helpParamDbDisplayName	显示在屏幕顶部栏中的 ProjeQtOr 实例名称
+helpParamDefaultLocale	登录页的默认语言，直到用户自行选择
+helpParamFadeLoadingMode	以淡入方式显示新页面
+helpParamIconSize	菜单树中图标的大小
+helpParamLdap_search_user	用于连接并浏览 LDAP 的主用户
+helpParamLdap_version	LDAP 协议版本（用于解决兼容问题）
+helpParamMailBodyApprover	发给审批人以请求批准的邮件正文
+noActivityFoundForPhase	未找到阶段的活动&#58 ${1}
+noActivityManualPlanningModeFound	要显示可选活动&#44请把活动定义为“手动”计划模式
+noActivityOnAdmProjectFound	请在管理类项目上添加一些活动
+noActualContractualLimitationForThisLeaveType	此休假类型目前没有合同限制
+noLeaveTypeNoLeaveCalendar	没有休假类型，因此没有休假日历
+onGlobalPeriod	是&#44在整个期间内统一控制
+otherProjects	&#34小型&#34项目<br/><span class='smallText'>（工时低于能力的 20%）</span>
+OverPlannedWork	进展（实际工时相对修订工时）
+paramActivityOnRealTime	可以按实际工时管理活动
+paramCaReplaceValidCost	把收入复制到活动的已确认成本
+paramClientElementList	在客户上列出客户报价&#44客户订单和发票
+paramDefaultSkipCopyStatus	复制条目时直接进入状态&#34已记录&#34
+paramDirectEditTestCaseRun	允许直接更新测试用例执行
+paramExportAssignmentsForXMLFormat	把分配导出为 MS-Project XML 格式
+paramHideEmailsSent	在动态中隐藏已发送的邮件
+paramHideItemTypeRestrictionOnProject	按权限配置的类型限制会隐藏条目
+paramHideRealAsPlanned	隐藏&#34按计划填入实际工时&#34按钮
+paramImputationTicketResponsible	到期日属于该负责人的工单
+paramLimitDisplayPlanning	甘特图计划中最多显示的条目数
+paramManuallyChangePlannedDate	手动更新固定里程碑的计划结束日期
+paramParamMailTitleNewUserCreated	创建新用户时的邮件标题
+paramParamTryToHackUserProfilList	向该权限配置下的全部用户发送邮件
+paramSAML_msgOnUserCreation	从 SAML 创建新用户时的消息
+paramSelectFonction	把职能限制为该资源的职能
+paramShowColorTypeActivity	计划中按类型显示活动颜色
+paramShowHatchOnPlanningBar	在计划条上显示阴影
+paramShowPoolLinesToUpdateLeftWork	显示资源池以便更新其剩余工时
+paramTypeExportXLSorODS	报表导出格式（XLS 或 ODS）
+paramVersionsWithoutAttachments	添加文档版本时不上传文件
+PlannedExpenseOverAssignedExpense	已分配费用的最终使用率（修订 / 已分配）
+PlannedExpenseOverValidatedExpense	已确认费用的最终使用率（修订 / 已确认）
+planWithInfiniteCapacityCritical	在&#34关键资源&#34模式下按超额使用排程
+refreshRevisionUpdateInProgress	正在获取可用的修订更新
+removeCustomEarnedRulesOfEmpContractType	移除劳动合同类型的自定义已获得额度规则
+removedFilterFromFavoriteProjectList	筛选 '${1}' 已从收藏项目列表移除
+removeFromFavoriteProjectList	从收藏项目列表移除此筛选
+removeLvTypeOfEmpContractType	移除劳动合同类型的休假类型
+replyToMail	要回复此邮件，请在此行上方书写并保留此行。
+reportCostMonthlyPerActivity	按活动、按月的资源成本明细
+reportUserStoriesEffortBurndownChart	用户故事燃尽图（故事点）
+reportWorkDetailTwoDate	按活动的工时明细（两个日期之间）
+reportWorkDetailTwoDates	按资源的工时明细（两个日期之间）
+reportWorkForAResourceByActivityTypeMonthly	某资源按活动类型的工时（按月）
+reportWorkForAResourceByActivityTypeTwoDates	某资源按活动类型的工时（两个日期之间）
+reportWorkForAResourceByActivityTypeYearly	某资源按活动类型的工时（按年）
+reportWorkPerActivityTwoDate	两个日期之间按活动的工时汇总
+reportWorkPlanTwoDate	按活动的工时汇总（含两个日期之间的实际工时）
+reportWorkTwoDatesResource	某资源的工时（两个日期之间）
+RuleFieldWithoutTableOrTableWithoutField	规则字段没有表，或表没有字段
+sectionBudgetSynthesis	预算汇总&#8282;下级组织差额与项目进展
+sectionComponentVersionStructureAsset	关联到设备的产品版本和组件
+sectionSkillsAlert	即将到期技能的自动警报处理
+securityConstraint1	接受任何来源的邮件（可能导致垃圾邮件）
+setToIconTxt	把菜单显示改为图标加文字
+showColorActivitySwitch	在左侧表格中用活动定义的颜色显示该行
+showColorTypeActivitySwitch	把活动颜色改为活动类型的颜色。
+showHistory	显示该要素的变更历史
+showTaskNameOnPlanningBarSwitch	在甘特条上显示条目名称
+showUserStories	显示关联到此冲刺的用户故事
+ssoDisconnectLoginMessage	结束当前会话&#13并使用内部用户账号重新连接
+ssoDisconnectSSOMessage	结束当前会话&#13并断开 ${1} 服务
+ssoRedirectionMessage	正在转到 ${1} 服务。<br>如有问题&#44请重新回到此页。
+sumOnColumnHelp	显示指定字段的合计
+SynchroniseActivityPlanning	把该活动附加为计划活动
+titleClearOldAndAddBankOffDaysToCalendar	清除原有银行休息日并加入日历
+tooltipNotifiable	选择用于建立通知生成规则的可通知要素
+tooltipNotificationMenu	选择读取通知生成规则的可通知要素
+updateResourceCostTitle	按职能默认成本的当前值更新资源成本
+weekExceedsLimit	周一开始的一周 ${1} 超出限制，合计为 ${2}。
+WhereFieldWithoutTableOrTableWithoutField	Where 字段没有表，或表没有字段
+workDefinedWrongResourceElement	为资源 ${2} 定义的工时关联到专用于资源 ${4} 的 ${1} ${3}
+workPlanDurationModeTitle	根据所选开始日期&#44按所选时间段计算结束日期
+workReferingWrongResourceElement	指向 ${2} #${3} 的工时关联到指向 ${4} #${5} 的 ${1}
+pluginRemoteUnavailable	无法获取插件的远程信息
+pluginRemoteDisabledByVersionCheck	全局参数&#34;检查新版本&#34;已关闭&#44 因此不会访问远程服务器。

@@ -1861,10 +1861,26 @@ class UserMain extends SqlElement {
     $objList=$obj->getSqlElementsFromCriteria($crit, false);
     $multipleProject=false;
     // $this->_arrayFilters[$filterObjectClass . "FilterName"]=$filter->name;
+    $explicitLocale=(getSessionValue('localeExplicit')=='1');
+    $chosenLocale=getSessionValue('currentLocale');
+    $appliedUserLang=false;
     foreach ($objList as $obj) {
       if ($obj->parameterCode=='lang' and $obj->parameterValue) {
-        setSessionValue('currentLocale', $obj->parameterValue);
+        if ($explicitLocale and projeqtorIsSupportedUiLocale($chosenLocale)) {
+          if ($obj->parameterValue!==$chosenLocale) {
+            $obj->parameterValue=$chosenLocale;
+            $obj->save();
+          }
+          setSessionValue('currentLocale', $chosenLocale);
+        } else if (projeqtorIsSupportedUiLocale($obj->parameterValue)) {
+          setSessionValue('currentLocale', $obj->parameterValue);
+        } else {
+          $fallbackLocale=Parameter::getGlobalParameter('paramDefaultLocale');
+          if (!projeqtorIsSupportedUiLocale($fallbackLocale)) $fallbackLocale='zh';
+          setSessionValue('currentLocale', $fallbackLocale);
+        }
         $i18nMessages=null;
+        $appliedUserLang=true;
       } else if ($obj->parameterCode=='defaultProject') {
         if ($obj->parameterValue=="**") {
           $obj->parameterValue=Parameter::getUserParameter('projectSelected');
@@ -1935,6 +1951,16 @@ class UserMain extends SqlElement {
           setSessionValue($obj->parameterCode, $obj->parameterValue);
         }
       }
+    }
+    if ($explicitLocale and projeqtorIsSupportedUiLocale($chosenLocale) and !$appliedUserLang) {
+      setSessionValue('currentLocale', $chosenLocale);
+      Parameter::storeUserParameter('lang', $chosenLocale, $this->id);
+      $i18nMessages=null;
+    }
+    if ($explicitLocale and projeqtorIsSupportedUiLocale($chosenLocale)) {
+      // The choice is now stored on the user. Later logins follow that value
+      // or the global default, instead of keeping this flag forever.
+      unsetSessionValue('localeExplicit');
     }
     // #6864 : purge favorites that refer non existing projects
     FavoriteProjectItem::purgeDeletedProjects();
