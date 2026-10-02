@@ -60,7 +60,7 @@ class StatusMain extends SqlElement {
   // Define the layout that will be used for lists
   private static $_layout='
     <th field="id" formatter="numericFormatter" width="10%"># ${id}</th>
-    <th field="name" width="20%">formatter="translateFormatter">${name}</th>
+    <th field="name" width="20%" formatter="translateFormatter">${name}</th>
     <th field="setHandledStatus" width="10%" formatter="booleanFormatter">${setHandledStatus}</th>
     <th field="setDoneStatus" width="10%" formatter="booleanFormatter">${setDoneStatus}</th>
     <th field="setPausedStatus" width="10%" formatter="booleanFormatter">${setPausedStatus}</th>

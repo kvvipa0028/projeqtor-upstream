@@ -1328,6 +1328,13 @@ def sanitize(text):
     return text
 
 
+def align_edges(en_value, zh_value):
+    """Keep the English leading and trailing spaces. sanitize() strips them."""
+    lead = len(en_value) - len(en_value.lstrip(" "))
+    trail = len(en_value) - len(en_value.rstrip(" "))
+    return (" " * lead) + zh_value.strip(" ") + (" " * trail)
+
+
 # Function words that must not be glued into a label as 于/到/的.
 DROP_WORDS = {
     "a", "an", "the", "of", "to", "on", "for", "in", "at", "by", "with", "from",
@@ -1871,7 +1878,8 @@ def main():
                 value = translate_value(en_value)
                 for word in re.findall(r"[A-Za-z][A-Za-z'\-]{2,}", value):
                     missing_words[word] = missing_words.get(word, 0) + 1
-        value = sanitize(value) if key != "currentLocaleOfFile" else value
+        if key != "currentLocaleOfFile":
+            value = align_edges(en_value, sanitize(value))
         if key == "currentLocaleOfFile":
             value = "zh"
         out_lines.append(f'{key}: "{value}",')

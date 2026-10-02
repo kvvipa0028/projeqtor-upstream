@@ -44,7 +44,7 @@ class Severity extends SqlElement {
   // Define the layout that will be used for lists
   private static $_layout='
     <th field="id" formatter="numericFormatter" width="10%"># ${id}</th>
-    <th field="name" width="60%">formatter="translateFormatter">${name}</th>
+    <th field="name" width="60%" formatter="translateFormatter">${name}</th>
     <th field="value" width="10%" >${value}</th>
     <th field="color" width="10%" formatter="colorFormatter">${color}</th>  
     <th field="sortOrder"  formatter="numericFormatter" width="5%">${sortOrderShort}</th>    

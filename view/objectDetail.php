@@ -2112,7 +2112,7 @@ function drawTableFromObject($obj, $included=false, $parentReadOnly=false, $pare
           }
         } else {
           if ($obj->isFieldTranslatable($col)) {
-            $val=i18n($val);
+            $val=i18nListName(get_class($obj), $val);
           }
           if (0 and $internalTable==0) {
             echo '<div style="width: 80%;'.$fieldStyle.'"> ';
@@ -3833,7 +3833,7 @@ function drawTableFromObject($obj, $included=false, $parentReadOnly=false, $pare
           echo ' class="display" ';
           echo ' readonly tabindex="-1" style="width: '.$fieldWidth.'px;" ';
           echo ' title="'.i18n("msgTranslation").'" ';
-          echo ' value="'.htmlEncode(i18n($val)).'" ></div>';
+          echo ' value="'.htmlEncode(i18nListName(get_class($obj), $val)).'" ></div>';
         }
       }
       if ($internalTable>0) {

@@ -1542,7 +1542,10 @@ if ($print) {
         if ($id=='validatedEndDate' and !$val and isset($line['inheritedEndDate']) and $line['inheritedEndDate']) {
           $val=$line['inheritedEndDate'] . '#';
         }
-        if ($formatter[$nbFields]=='colorNameFormatter') {
+        // RunStatus is translated by the next block, which i18n()s the name
+        // segment. Translating it here first turns that key into Chinese, and
+        // the second i18n() then shows [已计划]. Print mode has no second pass.
+        if ($formatter[$nbFields]=='colorNameFormatter' and $id!='colorNameRunStatus') {
           $val=projeqtorTranslateColorNameValue($id, $val);
         }
         if ($id=='colorNameRunStatus') {

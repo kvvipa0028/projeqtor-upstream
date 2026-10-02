@@ -1436,17 +1436,24 @@ function projeqtorIsSupportedUiLocale($locale) {
 function projeqtorRememberLocale($locale) {
   if (!projeqtorIsSupportedUiLocale($locale)) return;
   if (!headers_sent()) {
+    // '||' binds tighter than assignment. 'or' does not, so a chain of
+    // 'or' after '=' would keep only the first term.
     $https=(!empty($_SERVER['HTTPS']) and $_SERVER['HTTPS']!=='off')
-      or (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) and pq_strtolower((string)$_SERVER['HTTP_X_FORWARDED_PROTO'])==='https')
-      or (isset($_SERVER['SERVER_PORT']) and (string)$_SERVER['SERVER_PORT']==='443');
-    // PHP 7.3+. Secure is set only on HTTPS so an HTTP install can still remember the choice.
-    setcookie('projeqtorLocale', $locale, array(
-      'expires'=>time()+31536000,
-      'path'=>'/',
-      'secure'=>$https,
-      'httponly'=>true,
-      'samesite'=>'Lax',
-    ));
+      || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) and pq_strtolower((string)$_SERVER['HTTP_X_FORWARDED_PROTO'])==='https')
+      || (isset($_SERVER['SERVER_PORT']) and (string)$_SERVER['SERVER_PORT']==='443');
+    // readme.txt still allows PHP 5.6. The options-array form of setcookie is PHP 7.3+.
+    // Secure is set only on HTTPS so an HTTP install can still remember the choice.
+    if (PHP_VERSION_ID >= 70300) {
+      setcookie('projeqtorLocale', $locale, array(
+        'expires'=>time()+31536000,
+        'path'=>'/',
+        'secure'=>$https,
+        'httponly'=>true,
+        'samesite'=>'Lax',
+      ));
+    } else {
+      setcookie('projeqtorLocale', $locale, time()+31536000, '/', '', $https, true);
+    }
   }
   $_COOKIE['projeqtorLocale']=$locale;
 }
