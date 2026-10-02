@@ -1186,7 +1186,7 @@ OVERRIDES = {
     "messageLoading": "正在加载…",
     "buttonChangeSize": "调整大小",
     "pluginRemoteUnavailable": "无法获取插件的远程信息",
-    "pluginRemoteDisabledByVersionCheck": "全局参数“检查新版本”已关闭&#44;因此不会访问远程服务器。",
+    "pluginRemoteDisabledByVersionCheck": "全局参数&#34;检查新版本&#34;已关闭&#44 因此不会访问远程服务器。",
     "paramDefaultLocale": "默认语言",
 }
 
@@ -1273,7 +1273,8 @@ def parse(path: Path):
 
 def load_sentences():
     found = {}
-    for path in (UI_PATH, SENTENCE_PATH):
+    # Reviewed UI captions win over the longer sentence catalog.
+    for path in (SENTENCE_PATH, UI_PATH):
         if not path.exists():
             continue
         for line in path.read_text(encoding="utf-8").splitlines():
@@ -1798,6 +1799,17 @@ def translate_value(text):
     return sanitize(restore(translate_fragment(protected), tokens))
 
 
+def tokens_match(en_value, zh_value):
+    placeholder = re.compile(r"\$\{[^}]+\}")
+    entity = re.compile(r"&#\d+;?")
+    tag = re.compile(r"</?[A-Za-z][^>]*>")
+    return (
+        sorted(placeholder.findall(en_value)) == sorted(placeholder.findall(zh_value))
+        and sorted(entity.findall(en_value)) == sorted(entity.findall(zh_value))
+        and sorted(tag.findall(en_value)) == sorted(tag.findall(zh_value))
+    )
+
+
 def apply_replacements(text):
     for old, new in REPLACEMENTS:
         text = text.replace(old, new)
@@ -1839,7 +1851,9 @@ def main():
             value = sentences[key]
         else:
             old = zh.get(key, "")
-            if old and CJK.search(old):
+            # Keep an existing caption only when it still carries the same
+            # placeholders, tags and entities as the current English string.
+            if old and CJK.search(old) and tokens_match(en_value, old):
                 value = apply_replacements(old)
             else:
                 value = translate_value(en_value)

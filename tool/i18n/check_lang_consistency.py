@@ -22,7 +22,8 @@ ZH_PATH = ROOT / "tool/i18n/nls/zh/lang.js"
 LINE = re.compile(r'^([A-Za-z0-9_]+)\s*:\s*"(.*)"\s*,?\s*$')
 PLACEHOLDER = re.compile(r"\$\{[^}]+\}")
 ENTITY = re.compile(r"&#\d+;?")
-TAG = re.compile(r"</?[^>]+>")
+# A leading letter avoids treating comparisons such as "< 20%" as tags.
+TAG = re.compile(r"</?[A-Za-z][^>]*>")
 CJK = re.compile(r"[\u4e00-\u9fff]")
 
 
@@ -82,7 +83,13 @@ def main():
             entity_mismatch.append(key)
         if any(ch in zh_value for ch in ',:"'):
             raw_punct.append(key)
-        if key != "currentLocaleOfFile" and not CJK.search(zh_value) and re.search(r"[A-Za-z]{3,}", value):
+        allowed_latin = {
+            "applicationTitle", "buttonExcel", "Excel", "colBbs", "colSbs", "colWbs",
+            "labelShowWbsShort", "langEn", "oAuth2", "planningMSProject", "raci",
+            "reportCategoryKpi", "reportRida", "themeProjectom", "colScrumMaster",
+            "passNum", "pwdErrorDijit",
+        }
+        if key not in allowed_latin and key != "currentLocaleOfFile" and not CJK.search(zh_value) and re.search(r"[A-Za-z]{3,}", value):
             # Proper nouns and tokens may legitimately stay in Latin letters,
             # but a value with no Chinese at all is treated as untranslated.
             still_english.append(key)
