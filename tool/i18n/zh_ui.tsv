@@ -415,3 +415,79 @@ paramMailerTestMessage	邮件正文
 paramParamMailReplyTo	发送邮件时的回复地址
 paramParamMailSender	发送邮件时的发件地址
 paramParamMailSmtpPassword	SMTP 登录密码（将在数据库中加密）
+
+# Captions reviewed after the generated catalog. These win over an upstream zh rebuild.
+ActivityStream	动态
+addTenderSubmission	添加报价提交
+businessValueLeft	剩余业务值
+calculCriticalResource	重新计算关键资源的使用情况
+colBusinessValueShort	业务值
+colCriticality	关键程度
+colFixPerimeter	不可扩展的项目
+colIdCriticality	关键程度
+colIdSeverity	严重程度
+colIdUrgency	紧急程度
+colLeftQuantity	剩余数量
+colLeftToPlan	剩余待计划
+colSeverityShort	严重
+colTokenLeft	剩余工时额度
+colUnitLeft	剩余单位
+colUrgency	紧急程度
+colWeekday1	一
+colWeekday2	二
+colWeekday3	三
+colWeekday4	四
+colWeekday5	五
+colWeekday6	六
+colWeekday7	日
+colWorkElementLeftWork	工单上的剩余工时
+Criticality	关键程度
+earnedPeriodPlusOne	已获得/剩余<br/>下一期间
+errorMagicQuotesGpc	magic_quotes_gpc 必须禁用（置为 false）。<br/>请更新 Php.ini 文件。
+errorRegisterGlobals	register_globals 必须禁用（置为 false）。<br/>请更新 Php.ini 文件。
+errorSessionHash	当前会话发生错误。<br/>请刷新浏览器页面，或关闭浏览器后重试。<br/>并请检查 cookies 是否开启。<br/>若问题仍然存在，请联系管理员。
+helpCriticalLeftToPlan	待计划的剩余工时（剩余工时）
+helpParamAttachmentDirectory	附件的存放目录（出于安全考虑，请移出 web 访问范围）
+helpSslKey	包含 SSL 密钥的文件名
+hideListAndDetail	隐藏左侧的列表和详情
+labelShowAttributionWithoutLetf	显示没有剩余工时的投入
+leftTerms	剩余付款节点
+legendRemainingTasks	剩余活动
+menuActivityStream	动态
+menuCriticality	关键程度
+menuTerm	付款节点
+menuUrgency	紧急程度
+paramLdapSslOverTls	通过 TLS 使用 SSL
+paramMenuLeftDisplayMode	左侧菜单显示模式
+paramParamLdap_base_dn	LDAP 基准 DN
+periodicOn	在
+periodicTh	个
+pointsLeft	剩余点数
+pointsLeftClient	客户剩余点数
+raciAccountable	问责
+raciResponsible	执行
+RealWorkOverValidatedWork	已确认工时的进度%（实际/已确认）
+rememberMe	记住我
+reportTermTitle	当期设定的截止日期 
+reportTicketGlobalCrossReport	按已定性统计的工单报表 - 全局
+reportTicketMonthlyCrossReport	按已定性统计的工单报表 - 月
+reportTicketWeeklyCrossReport	按已定性统计的工单报表 - 周
+reportTicketYearlyCrossReport	按已定性统计的工单报表 - 年
+requirementLeft	剩余需求
+showAll	全部版本（无限制）
+showAllActivityStream	显示全部动态
+showColorActivity	左侧部分的颜色
+showListAndDetail	显示左侧的列表和详情
+showListLeft	在左侧显示列表
+storyPointsLeft	剩余故事点
+Term	付款节点
+ticketLeft	剩余工单
+TicketReport	按已定性统计的工单报表
+titleStream	动态
+todayAccountableTasks	我问责的任务
+todayResponsibleTodoList	我负责的待办列表
+undefinedCriticality	未定义关键程度
+undefinedUrgency	未定义紧急程度
+Urgency	紧急程度
+userPointsLeft	自己的剩余点数
+userStoryLeft	剩余用户故事

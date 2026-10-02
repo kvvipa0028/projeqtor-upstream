@@ -1438,8 +1438,13 @@ function projeqtorRememberLocale($locale) {
   if (!headers_sent()) {
     // '||' binds tighter than assignment. 'or' does not, so a chain of
     // 'or' after '=' would keep only the first term.
+    $forwardedProto='';
+    if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
+      $forwardedParts=pq_explode(',', (string)$_SERVER['HTTP_X_FORWARDED_PROTO']);
+      $forwardedProto=pq_strtolower(pq_trim($forwardedParts[0]));
+    }
     $https=(!empty($_SERVER['HTTPS']) and $_SERVER['HTTPS']!=='off')
-      || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) and pq_strtolower((string)$_SERVER['HTTP_X_FORWARDED_PROTO'])==='https')
+      || ($forwardedProto==='https')
       || (isset($_SERVER['SERVER_PORT']) and (string)$_SERVER['SERVER_PORT']==='443');
     // readme.txt still allows PHP 5.6. The options-array form of setcookie is PHP 7.3+.
     // Secure is set only on HTTPS so an HTTP install can still remember the choice.

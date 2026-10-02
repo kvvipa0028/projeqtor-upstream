@@ -1384,7 +1384,14 @@ if ($print) {
           } else if ($formatter[$numField]=="timeFormatter") {
             $disp=timeFormatter($val);
           } else if ($formatter[$numField]=="translateFormatter") {
-            $disp=translateFormatter($val);
+            // Print, PDF and the Excel HTML table receive the stored name.
+            // i18n() on "in progress" is [in progress]. The screen list does
+            // not use this branch; it sends a catalog key to the JS formatter.
+            if ($id=='name' and property_exists($obj, '_isNameTranslatable') and $obj->_isNameTranslatable) {
+              $disp=i18nListName(get_class($obj), $val);
+            } else {
+              $disp=translateFormatter($val);
+            }
           } else if ($formatter[$numField]=="tagFormatter") {
             $disp=tagFormatter($val);
           } else if ($formatter[$numField]=="percentFormatter") {
