@@ -228,7 +228,7 @@ $param['crlf02']='';
 $label['crlf02']='crlf';
 $value['crlf02']="Localization <span style='font-size:70%;'><i>(Can be changed afterwards on Global Parameters screen)</i></span>";
 
-$param['DefaultLocale'] = 'en';                              
+$param['DefaultLocale'] = 'zh';                              
 $label['DefaultLocale'] = "Default language";
 $value['DefaultLocale'] = "Default language for the General User Interface<br/><i>Each user will be able to select his own display language</i>";
 $pname['DefaultLocale'] = 'paramDefaultLocale';

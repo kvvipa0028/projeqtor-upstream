@@ -80,6 +80,7 @@
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/ckeditor/ckeditor.js');?>"></script>
   <script type="text/javascript">
         var dojoConfig = {
+            locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
             modulePaths: {"i18n":"../../tool/i18n",
                           "i18nCustom":"../../plugin"},
             parseOnLoad: true,

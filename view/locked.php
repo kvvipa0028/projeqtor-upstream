@@ -55,7 +55,8 @@ if (is_file ( "../tool/parametersLocation.php" )) {
   <?php }?>
   <title>ProjeQtOr</title>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
-    djConfig='parseOnLoad: false, 
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              parseOnLoad: false, 
               isDebug: false'></script>
   <script type="text/javascript">    
   var isNewGui=<?php echo (isNewGui())?'true':'false';?>;             
@@ -110,7 +111,7 @@ if (is_file ( "../tool/parametersLocation.php" )) {
             <td style="height:99%" align="left" valign="middle">
               <div  id="formDiv" dojoType="dijit.layout.ContentPane" region="center" style="width: 470px; height:210px;overflow:hidden">
                 <form id="indexForm" name="indexForm" action="main.php" method="post">
-                  <input type="hidden" id="xcurrentLocale" name="xcurrentLocale" value="en" />
+                  <input type="hidden" id="xcurrentLocale" name="xcurrentLocale" value="zh" />
                 </form>
                 <?php if ($locked==='maintenance') {?>
                 <div class="messageERROR" style="text-align:center;position:relative;top:20px;height:50px">Your application is locked for maintenance. <br/>Please come back later</div>

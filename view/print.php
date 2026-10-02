@@ -271,7 +271,8 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <?php }?> 
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
-    djConfig='modulePaths: {"i18n":"../../tool/i18n",
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              modulePaths: {"i18n":"../../tool/i18n",
                             "i18nCustom":"../../plugin"},
               parseOnLoad: true,
               isDebug: <?php echo getBooleanValueAsString(Parameter::getGlobalParameter('paramDebugMode'));?>'></script>

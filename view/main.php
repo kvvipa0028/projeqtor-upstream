@@ -187,6 +187,7 @@ if (isset($paramExtraHeaders) ) {
  
   <script type="text/javascript">
         var dojoConfig = {
+            locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
             modulePaths: {"i18n":"../../tool/i18n",
                           "i18nCustom":"../../plugin"},
             parseOnLoad: true,
@@ -1225,7 +1226,7 @@ if (isset($paramExtraHeaders) ) {
 	    		          else echo 'img/titleSmall.png';?>" />
     	          </div>
   	            <div style="width: 470px; height:130px;position:absolute;top:160px;overflow:hidden;text-align:center;">
-                  Loading ...    
+                  <?php echo i18n('messageLoading');?> 
                 </div>
               </div>
             </td>

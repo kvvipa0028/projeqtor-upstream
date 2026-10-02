@@ -4903,7 +4903,7 @@ function drawNotesFromObject($obj, $refresh=false) {
       $styleAdd = ($canAddNote)?'':'display:none;';
       $styleFS = ($canAddNote)?'':'margin-top:-8px;';
       $noteFunction = "changeNoteSize(" . "'" . get_class($obj) . "'" . ");";
-      echo '<a style="position:absolute;right:10px;'.$styleFS.'" onClick=' . $noteFunction . ' title="Change size">'.formatSmallButton('ButtonCollapseOpen', true).'</a>';
+      echo '<a style="position:absolute;right:10px;'.$styleFS.'" onClick=' . $noteFunction . ' title="'.i18n('buttonChangeSize').'">'.formatSmallButton('ButtonCollapseOpen', true).'</a>';
       echo '<a onClick="addNote(false);" title="'.i18n('addNote').'" style="'.$styleAdd.'">'.formatSmallButton('Add').'</a>';
     }
     echo '</td>';

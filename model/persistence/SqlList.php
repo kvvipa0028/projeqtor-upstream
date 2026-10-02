@@ -159,7 +159,7 @@ class SqlList {
         	if ($listType=='Linkable' and pq_substr($name,0,7)=='Context') {
         		$name=SqlList::getNameFromId('ContextType', pq_substr($name,7,1));
         	} else {
-            $name=i18n($name);
+            $name=i18nListName($listType, $name);
         	}
         }
         if ($displayCol=='name' and property_exists($obj,'_constructForName') and !$calculated) {
@@ -414,11 +414,7 @@ class SqlList {
       $name=$list[$id];
       $obj=new $listType();
       if ($translate and $obj->isFieldTranslatable($field)) {
-      	$trans=i18n(pq_strtolower($listType) . pq_ucfirst($name));
-      	if ($trans=='['.pq_strtolower($listType) . pq_ucfirst($name).']') {
-      		$trans=i18n($name);
-      	}
-        $name=$trans;
+        $name=i18nListName($listType, $name);
       }
 //       if (property_exists($listType, '_constructForName')) {
 //         $temp=new $listType($id,false);

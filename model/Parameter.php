@@ -2353,24 +2353,12 @@ class Parameter extends SqlElement {
     unsetSessionValue('globalParametersArray');
   }
   static public function getLangList() {
-    $dir='../tool/i18n/nls';
-    $handle = opendir($dir);
-    $result=array();
-    while ( ($file = readdir($handle)) !== false) {
-      
-      if ($file == '.' || $file == '..' || $file=='index.php' // exclude ., .. and index.php
-      || ! is_dir($dir.'/'.$file) || pq_substr($file,0,1)=='.' ) {        // non directories or directories starting with . (.svn)
-        continue;
-      }
-      $nls=$file;
-      $lang=pq_str_replace('-',' ', $file);
-      $lang=ucwords($lang);
-      $lang=pq_str_replace(' ','', $lang);
-      $result[$nls]=i18n('lang'.$lang);
-    }
-    closedir($handle);
-    asort($result);
-    return $result;
+    // The switcher offers only Chinese and English. Other locale directories
+    // under tool/i18n/nls are left on disk and are not deleted.
+    return array(
+      'zh'=>'中文',
+      'en'=>'English',
+    );
   } 
   
   // gautier ticket #2290 list of timezone

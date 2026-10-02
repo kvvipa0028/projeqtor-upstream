@@ -1429,29 +1429,85 @@ function getUserVisibleResourcesList($limitToActiveResources=false, $listScreen=
  *
  * @return void
  */
+function projeqtorIsSupportedUiLocale($locale) {
+  return $locale==='zh' or $locale==='en';
+}
+
+function projeqtorRememberLocale($locale) {
+  if (!projeqtorIsSupportedUiLocale($locale)) return;
+  if (!headers_sent()) {
+    setcookie('projeqtorLocale', $locale, time()+31536000, '/');
+  }
+  $_COOKIE['projeqtorLocale']=$locale;
+}
+
+function getDojoLocale() {
+  global $currentLocale;
+  $locale=(isset($currentLocale) and $currentLocale)?$currentLocale:'zh';
+  if ($locale==='en') return 'en-us';
+  if ($locale==='zh') return 'zh';
+  return 'zh';
+}
+
+/**
+ * Translate a reference-list name stored in the database.
+ * Keeps the stored name when no caption exists, so a missing key is not shown as [key].
+ * Names with spaces are also looked up as listType + CamelCase (statusInProgress).
+ */
+function i18nListName($listType, $storedName) {
+  if ($storedName===null or $storedName==='') return $storedName;
+  $direct=i18n($storedName);
+  if ($direct!=='['.$storedName.']') return $direct;
+  $parts=preg_split('/[^A-Za-z0-9]+/', (string)$storedName);
+  $camel='';
+  if (is_array($parts)) {
+    foreach ($parts as $part) {
+      if ($part==='') continue;
+      $camel.=pq_ucfirst($part);
+    }
+  }
+  if ($camel!=='') {
+    $key=pq_strtolower($listType).$camel;
+    $trans=i18n($key);
+    if ($trans!=='['.$key.']') return $trans;
+  }
+  return $storedName;
+}
+
 function setupLocale() {
   global $currentLocale, $browserLocale, $browserLocaleDateFormat;
   $paramDefaultLocale=Parameter::getGlobalParameter('paramDefaultLocale');
+  if (!$paramDefaultLocale or !projeqtorIsSupportedUiLocale($paramDefaultLocale)) {
+    // Installer default is zh. Empty or legacy values do not follow the browser language.
+    $paramDefaultLocale='zh';
+  }
   $paramUserLocale=Parameter::getGlobalParameter('currentLocale');
   // $paramUserLang=Parameter::getGlobalParameter('lang');
   $paramUserLang=Parameter::getUserParameter('lang');
-  if (sessionValueExists('currentLocale')) {
+  if (sessionValueExists('currentLocale') and projeqtorIsSupportedUiLocale(getSessionValue('currentLocale'))) {
     // First fetch in Session (filled in at login depending on user parameter)
     $currentLocale=getSessionValue('currentLocale');
   } else if (isset($_REQUEST['currentLocale'])) {
     // Second fetch from request (for screens before user id identified)
     $currentLocale=pq_trim($_REQUEST['currentLocale']);
     Security::checkValidLocale($currentLocale);
+    if (!projeqtorIsSupportedUiLocale($currentLocale)) $currentLocale='zh';
     setSessionValue('currentLocale', $currentLocale);
+    setSessionValue('localeExplicit', '1');
+    projeqtorRememberLocale($currentLocale);
     $i18nMessages=null; // Should be null at this moment, just to be sure
-  } else if ($paramUserLocale and sessionUserExists()) {
+  } else if ($paramUserLocale and sessionUserExists() and projeqtorIsSupportedUiLocale($paramUserLocale)) {
     $currentLocale=$paramUserLocale;
-  } else if ($paramUserLang and sessionUserExists()) {
+  } else if ($paramUserLang and sessionUserExists() and projeqtorIsSupportedUiLocale($paramUserLang)) {
     $currentLocale=$paramUserLang;
+  } else if (isset($_COOKIE['projeqtorLocale']) and projeqtorIsSupportedUiLocale($_COOKIE['projeqtorLocale'])) {
+    $currentLocale=$_COOKIE['projeqtorLocale'];
+    setSessionValue('currentLocale', $currentLocale);
   } else {
-    // none of the above methods worked : get the default one form parameter file
+    // Browser Accept-Language is intentionally not consulted.
     $currentLocale=$paramDefaultLocale;
   }
+  if (!projeqtorIsSupportedUiLocale($currentLocale)) $currentLocale='zh';
   if (sessionValueExists('browserLocale')) {
     $browserLocale=getSessionValue('browserLocale');
   } else {

@@ -86,7 +86,8 @@ if (is_file ( "../tool/parametersLocation.php" )) {
    <?php }?>
   <title>ProjeQtOr</title>
   <script type="text/javascript" src="<?php echoStaticFileNameWithCacheMgt('../external/dojo/dojo.js');?>"
-    djConfig='parseOnLoad: false, 
+    djConfig='locale: "<?php echo function_exists('getDojoLocale')?getDojoLocale():'zh';?>",
+              parseOnLoad: false, 
               isDebug: false'></script>
   <script type="text/javascript">             
      dojo.addOnLoad(function(){
@@ -126,7 +127,7 @@ if (is_file ( "../tool/parametersLocation.php" )) {
             <td style="height:99%;position:relative" align="left" valign="middle">
               <div  id="formDiv" dojoType="dijit.layout.ContentPane" region="center" style="width: 470px; height:210px;overflow:hidden">
                 <form id="indexForm" name="indexForm" action="main.php" method="post" target="_top">
-                  <input type="hidden" id="xcurrentLocale" name="xcurrentLocale" value="en" />
+                  <input type="hidden" id="xcurrentLocale" name="xcurrentLocale" value="zh" />
                   <input type="hidden" id="currentWidth" name="currentWidth" value="" />
                   <?php
                   foreach (array('objectClass', 'objectId', 'directAccess') as $directAccessParameter) {
@@ -146,7 +147,7 @@ if (is_file ( "../tool/parametersLocation.php" )) {
                   <?php    if (is_file ( "../tool/parametersLocation.php" ) and SSO::isEnabled() and ! SSO::issetAccessFromLoginScreen()) { 
                     echo '<div style="font-size:125%;font-weight:bold">'.i18n("ssoRedirectionMessage",array(SSO::getCommonName())).'</div>';
                   } else {
-                    echo  "Loading ..."; 
+                    echo function_exists('i18n')?i18n('messageLoading'):'…'; 
                     if (is_file ( "../tool/parametersLocation.php" )) SSO::unsetAccessFromLoginScreen();
                   }?>    
               </div>
